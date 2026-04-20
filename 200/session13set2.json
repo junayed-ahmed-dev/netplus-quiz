@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement BEST describes SHAP?",
+    "options": [
+      "Approximates model locally",
+      "Fairly distributes prediction among features",
+      "Removes irrelevant features",
+      "Optimizes model accuracy"
+    ],
+    "answer": "Fairly distributes prediction among features"
+  },
+  {
+    "id": 2,
+    "question": "Trap: SHAP guarantees causation because it uses game theory.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 3,
+    "question": "Which is TRUE about SHAP base value?",
+    "options": [
+      "It is maximum prediction",
+      "It is average prediction",
+      "It is minimum prediction",
+      "It is random"
+    ],
+    "answer": "It is average prediction"
+  },
+  {
+    "id": 4,
+    "question": "If all SHAP values are zero, prediction equals:",
+    "options": [
+      "0",
+      "1",
+      "Base value",
+      "Undefined"
+    ],
+    "answer": "Base value"
+  },
+  {
+    "id": 5,
+    "question": "Trap: A feature with high SHAP value always causes the prediction.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 6,
+    "question": "Why does SHAP consider all feature subsets?",
+    "options": [
+      "Reduce runtime",
+      "Ensure fairness",
+      "Simplify model",
+      "Remove noise"
+    ],
+    "answer": "Ensure fairness"
+  },
+  {
+    "id": 7,
+    "question": "If a feature has negative SHAP value, it:",
+    "options": [
+      "Increases prediction",
+      "Decreases prediction",
+      "Has no effect",
+      "Is ignored"
+    ],
+    "answer": "Decreases prediction"
+  },
+  {
+    "id": 8,
+    "question": "Which is a computational issue with SHAP?",
+    "options": [
+      "Too fast",
+      "Requires evaluating many subsets",
+      "Needs less data",
+      "Cannot scale features"
+    ],
+    "answer": "Requires evaluating many subsets"
+  },
+  {
+    "id": 9,
+    "question": "Trap: SHAP values are independent of feature interactions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 10,
+    "question": "In SHAP plot, red color typically means:",
+    "options": [
+      "Low feature value",
+      "High feature value",
+      "Negative impact",
+      "Zero impact"
+    ],
+    "answer": "High feature value"
+  },
+  {
+    "id": 11,
+    "question": "Trap: SHAP values sum to model accuracy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 12,
+    "question": "SHAP values sum to:",
+    "options": [
+      "Loss",
+      "Prediction minus base value",
+      "Accuracy",
+      "Dataset size"
+    ],
+    "answer": "Prediction minus base value"
+  },
+  {
+    "id": 13,
+    "question": "Which scenario is misleading in SHAP?",
+    "options": [
+      "Correlated features",
+      "Independent features",
+      "Small datasets",
+      "Linear models"
+    ],
+    "answer": "Correlated features"
+  },
+  {
+    "id": 14,
+    "question": "Trap: SHAP is always better than LIME.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False"
+  },
+  {
+    "id": 15,
+    "question": "Which is TRUE comparing SHAP and LIME?",
+    "options": [
+      "LIME is more stable",
+      "SHAP is more theoretically grounded",
+      "Both are identical",
+      "SHAP is faster"
+    ],
+    "answer": "SHAP is more theoretically grounded"
+  }
+]

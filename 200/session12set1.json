@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main goal of Explainable AI (xAI)?",
+    "options": ["Increase model complexity", "Improve training speed", "Make AI decisions understandable", "Reduce dataset size"],
+    "answer": "Make AI decisions understandable"
+  },
+  {
+    "id": 2,
+    "question": "Which term refers to understanding how a model works internally?",
+    "options": ["Explainability", "Transparency", "Interpretability", "Fairness"],
+    "answer": "Interpretability"
+  },
+  {
+    "id": 3,
+    "question": "Which term refers to understanding why a model made a specific decision?",
+    "options": ["Interpretability", "Explainability", "Transparency", "Accuracy"],
+    "answer": "Explainability"
+  },
+  {
+    "id": 4,
+    "question": "Transparency refers to:",
+    "options": ["Only predictions", "Access to model, data, and process", "Only accuracy", "Only features"],
+    "answer": "Access to model, data, and process"
+  },
+  {
+    "id": 5,
+    "question": "Which is an interpretable model?",
+    "options": ["Neural network", "Random forest", "Decision tree", "CNN"],
+    "answer": "Decision tree"
+  },
+  {
+    "id": 6,
+    "question": "Why are neural networks considered black boxes?",
+    "options": ["Too small", "Too simple", "Hard to interpret internal decisions", "No data used"],
+    "answer": "Hard to interpret internal decisions"
+  },
+  {
+    "id": 7,
+    "question": "What does logistic regression output?",
+    "options": ["Class only", "Probability between 0 and 1", "Loss value", "Feature importance"],
+    "answer": "Probability between 0 and 1"
+  },
+  {
+    "id": 8,
+    "question": "If probability is 0.6 (threshold 0.5), predicted class is:",
+    "options": ["0", "1", "Undefined", "Random"],
+    "answer": "1"
+  },
+  {
+    "id": 9,
+    "question": "What is the formula for odds?",
+    "options": ["P(Y=1)+P(Y=0)", "P(Y=1)/P(Y=0)", "P(Y=0)/P(Y=1)", "P(Y=1)*P(Y=0)"],
+    "answer": "P(Y=1)/P(Y=0)"
+  },
+  {
+    "id": 10,
+    "question": "If P(Y=1)=0.75 and P(Y=0)=0.25, odds = ?",
+    "options": ["0.33", "1", "3", "4"],
+    "answer": "3"
+  },
+  {
+    "id": 11,
+    "question": "Increasing feature x_j by 1 changes odds by:",
+    "options": ["w_j", "exp(w_j)", "log(w_j)", "1+w_j"],
+    "answer": "exp(w_j)"
+  },
+  {
+    "id": 12,
+    "question": "If weight is negative, feature increase will:",
+    "options": ["Increase odds", "Decrease odds", "No change", "Random"],
+    "answer": "Decrease odds"
+  },
+  {
+    "id": 13,
+    "question": "What type of explanation is LIME?",
+    "options": ["Global", "Local", "Dataset-level", "Training-level"],
+    "answer": "Local"
+  },
+  {
+    "id": 14,
+    "question": "LIME stands for:",
+    "options": ["Linear Model Explanation", "Local Interpretable Model-Agnostic Explanations", "Logical Model Estimator", "Local Independent Model Engine"],
+    "answer": "Local Interpretable Model-Agnostic Explanations"
+  },
+  {
+    "id": 15,
+    "question": "What is the main idea behind LIME?",
+    "options": ["Global replacement", "Local approximation using simple model", "Reduce features", "Increase accuracy"],
+    "answer": "Local approximation using simple model"
+  },
+  {
+    "id": 16,
+    "question": "What are perturbations in LIME?",
+    "options": ["Weights", "Nearby modified samples", "Labels", "Loss values"],
+    "answer": "Nearby modified samples"
+  },
+  {
+    "id": 17,
+    "question": "In LIME text explanation, what is done?",
+    "options": ["Add words", "Remove words", "Change labels", "Reduce dataset"],
+    "answer": "Remove words"
+  },
+  {
+    "id": 18,
+    "question": "In image LIME, what are superpixels?",
+    "options": ["Pixels", "Segments of image", "Weights", "Predictions"],
+    "answer": "Segments of image"
+  },
+  {
+    "id": 19,
+    "question": "Which is a limitation of LIME?",
+    "options": ["Too accurate", "Instability", "Too interpretable", "No flexibility"],
+    "answer": "Instability"
+  },
+  {
+    "id": 20,
+    "question": "Which is model-agnostic?",
+    "options": ["Linear regression", "Decision tree", "LIME", "Logistic regression"],
+    "answer": "LIME"
+  }
+]

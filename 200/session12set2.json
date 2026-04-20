@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement BEST describes explainability in AI?",
+    "options": [
+      "Understanding model architecture",
+      "Understanding why a model made a specific prediction",
+      "Access to training data only",
+      "Improving model accuracy"
+    ],
+    "answer": "Understanding why a model made a specific prediction"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is TRUE?",
+    "options": [
+      "All interpretable models are transparent",
+      "All transparent models are interpretable",
+      "Interpretability, explainability, and transparency are identical",
+      "Explainability is only for neural networks"
+    ],
+    "answer": "All transparent models are interpretable"
+  },
+  {
+    "id": 3,
+    "question": "A model is interpretable but not accurate. What is a possible issue?",
+    "options": [
+      "Overfitting",
+      "Underfitting due to simplicity",
+      "Too much data",
+      "Too many features"
+    ],
+    "answer": "Underfitting due to simplicity"
+  },
+  {
+    "id": 4,
+    "question": "Which is NOT a benefit of explainability?",
+    "options": [
+      "Detect bias",
+      "Improve trust",
+      "Guarantee higher accuracy",
+      "Verify model behavior"
+    ],
+    "answer": "Guarantee higher accuracy"
+  },
+  {
+    "id": 5,
+    "question": "If logistic regression outputs exactly 0.5, what is the prediction?",
+    "options": [
+      "Always 1",
+      "Always 0",
+      "Depends on threshold rule",
+      "Model fails"
+    ],
+    "answer": "Depends on threshold rule"
+  },
+  {
+    "id": 6,
+    "question": "Which scenario shows a limitation of odds interpretation?",
+    "options": [
+      "Features are independent",
+      "Features interact strongly",
+      "Weights are zero",
+      "Data is normalized"
+    ],
+    "answer": "Features interact strongly"
+  },
+  {
+    "id": 7,
+    "question": "If weight w_j = 0 in logistic regression, increasing x_j will:",
+    "options": [
+      "Increase odds",
+      "Decrease odds",
+      "Have no effect",
+      "Make odds infinite"
+    ],
+    "answer": "Have no effect"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is TRUE about LIME?",
+    "options": [
+      "It explains the global model behavior",
+      "It approximates the model locally",
+      "It modifies the original model",
+      "It requires retraining the model"
+    ],
+    "answer": "It approximates the model locally"
+  },
+  {
+    "id": 9,
+    "question": "LIME explanations can be unstable because:",
+    "options": [
+      "It uses global data",
+      "It depends on random perturbations",
+      "It ignores features",
+      "It uses exact calculations"
+    ],
+    "answer": "It depends on random perturbations"
+  },
+  {
+    "id": 10,
+    "question": "Which is a trap about LIME?",
+    "options": [
+      "It explains one prediction",
+      "It guarantees correct explanations",
+      "It works with any model",
+      "It uses local data"
+    ],
+    "answer": "It guarantees correct explanations"
+  },
+  {
+    "id": 11,
+    "question": "In LIME for images, if removing a region changes prediction drastically, it means:",
+    "options": [
+      "Region is unimportant",
+      "Region is important",
+      "Model is wrong",
+      "Prediction is random"
+    ],
+    "answer": "Region is important"
+  },
+  {
+    "id": 12,
+    "question": "Which scenario shows oversimplification in LIME?",
+    "options": [
+      "Using linear model for nonlinear boundary",
+      "Using neural network",
+      "Using more features",
+      "Using exact model"
+    ],
+    "answer": "Using linear model for nonlinear boundary"
+  },
+  {
+    "id": 13,
+    "question": "Which is TRUE about local explanations?",
+    "options": [
+      "They generalize to all data",
+      "They only apply near one instance",
+      "They replace the model",
+      "They improve training"
+    ],
+    "answer": "They only apply near one instance"
+  },
+  {
+    "id": 14,
+    "question": "Which is an example of model-agnostic method?",
+    "options": [
+      "Decision tree",
+      "Logistic regression",
+      "LIME",
+      "Linear regression"
+    ],
+    "answer": "LIME"
+  },
+  {
+    "id": 15,
+    "question": "Trap: If LIME highlights a feature as important, it means:",
+    "options": [
+      "Feature causes the outcome",
+      "Feature influences prediction locally",
+      "Feature is globally important",
+      "Feature is always correct"
+    ],
+    "answer": "Feature influences prediction locally"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "question": "SHAP stands for:",
+    "options": ["Simple Heuristic Approximation", "SHapley Additive exPlanations", "Statistical Hybrid Analysis Process", "Sequential Heuristic AI Process"],
+    "answer": "SHapley Additive exPlanations"
+  },
+  {
+    "id": 2,
+    "question": "SHAP is based on which theory?",
+    "options": ["Graph theory", "Game theory", "Probability theory", "Optimization"],
+    "answer": "Game theory"
+  },
+  {
+    "id": 3,
+    "question": "In SHAP, features are considered as:",
+    "options": ["Nodes", "Players", "Outputs", "Losses"],
+    "answer": "Players"
+  },
+  {
+    "id": 4,
+    "question": "What does SHAP distribute?",
+    "options": ["Loss", "Prediction value", "Accuracy", "Dataset"],
+    "answer": "Prediction value"
+  },
+  {
+    "id": 5,
+    "question": "What is the base value in SHAP?",
+    "options": ["Max output", "Min output", "Average prediction", "Zero"],
+    "answer": "Average prediction"
+  },
+  {
+    "id": 6,
+    "question": "SHAP values represent:",
+    "options": ["Weights", "Feature contributions", "Accuracy", "Loss"],
+    "answer": "Feature contributions"
+  },
+  {
+    "id": 7,
+    "question": "What is the Shapley value?",
+    "options": ["Max contribution", "Average marginal contribution", "Min contribution", "Total contribution"],
+    "answer": "Average marginal contribution"
+  },
+  {
+    "id": 8,
+    "question": "Why consider all subsets of features?",
+    "options": ["Reduce computation", "Fair distribution", "Speed up training", "Reduce features"],
+    "answer": "Fair distribution"
+  },
+  {
+    "id": 9,
+    "question": "If SHAP value is positive, it means:",
+    "options": ["Decrease prediction", "Increase prediction", "No effect", "Invalid"],
+    "answer": "Increase prediction"
+  },
+  {
+    "id": 10,
+    "question": "If SHAP value is negative, it means:",
+    "options": ["Increase prediction", "Decrease prediction", "No effect", "Invalid"],
+    "answer": "Decrease prediction"
+  },
+  {
+    "id": 11,
+    "question": "Which is a limitation of SHAP?",
+    "options": ["Too simple", "Computationally expensive", "Not interpretable", "Only linear"],
+    "answer": "Computationally expensive"
+  },
+  {
+    "id": 12,
+    "question": "SHAP assumes:",
+    "options": ["Causation", "Correlation", "Randomness", "No dependency"],
+    "answer": "Correlation"
+  },
+  {
+    "id": 13,
+    "question": "Which statement is true?",
+    "options": ["Correlation implies causation", "Correlation does not imply causation", "SHAP proves causation", "None"],
+    "answer": "Correlation does not imply causation"
+  },
+  {
+    "id": 14,
+    "question": "In SHAP plots, color represents:",
+    "options": ["Accuracy", "Feature value", "Loss", "Weight"],
+    "answer": "Feature value"
+  },
+  {
+    "id": 15,
+    "question": "In SHAP plots, x-axis represents:",
+    "options": ["Prediction", "Feature value", "SHAP value", "Accuracy"],
+    "answer": "SHAP value"
+  },
+  {
+    "id": 16,
+    "question": "Which method is more theoretically grounded?",
+    "options": ["LIME", "SHAP", "Regression", "KNN"],
+    "answer": "SHAP"
+  },
+  {
+    "id": 17,
+    "question": "Which is more stable?",
+    "options": ["LIME", "SHAP", "Both equal", "None"],
+    "answer": "SHAP"
+  },
+  {
+    "id": 18,
+    "question": "Prediction in SHAP is:",
+    "options": ["Base only", "Sum of contributions + base", "Only contributions", "Random"],
+    "answer": "Sum of contributions + base"
+  },
+  {
+    "id": 19,
+    "question": "SHAP explanations are:",
+    "options": ["Global only", "Local", "Dataset only", "Training only"],
+    "answer": "Local"
+  },
+  {
+    "id": 20,
+    "question": "Main goal of SHAP:",
+    "options": ["Reduce data", "Increase accuracy", "Fair feature attribution", "Speed up model"],
+    "answer": "Fair feature attribution"
+  }
+]
