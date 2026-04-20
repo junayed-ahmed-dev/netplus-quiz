@@ -1,0 +1,470 @@
+[
+{
+"id": 1,
+"question": "Need to login with fancy HTML login page first?",
+"options": ["200", "301", "303", "401", "404", "500"],
+"answer": "303"
+},
+{
+"id": 2,
+"question": "Authorization:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content"],
+"answer": "Authentication"
+},
+{
+"id": 3,
+"question": "Accept:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing"],
+"answer": "Describing Content/Typing"
+},
+{
+"id": 4,
+"question": "Access-Control-something-something:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing"],
+"answer": "Anti-Exploit"
+},
+{
+"id": 5,
+"question": "Cache-something:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing"],
+"answer": "Speed"
+},
+{
+"id": 6,
+"question": "Content-Disposition:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing"],
+"answer": "Describing Content/Typing"
+},
+{
+"id": 7,
+"question": "Cookie:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": ["Authentication", "Tracking"]
+},
+{
+"id": 8,
+"question": "If-something-something:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Speed"
+},
+{
+"id": 9,
+"question": "Origin:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Anti-Exploit"
+},
+{
+"id": 10,
+"question": "Range:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Speed"
+},
+{
+"id": 11,
+"question": "Referer:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Tracking"
+},
+{
+"id": 12,
+"question": "Sec-something:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Anti-Exploit"
+},
+{
+"id": 13,
+"question": "User-Agent:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": ["Describing Content/Typing", "Tracking"]
+},
+{
+"id": 14,
+"question": "Content-Security-Policy:",
+"options": ["Speed", "Authentication", "Anti-Exploit", "Describing Content/Typing", "Tracking"],
+"answer": "Anti-Exploit"
+},
+{
+"id": 15,
+"question": "Which of these is REQUIRED?",
+"options": ["Vary", "Date", "Allow", "Host", "X-Forwarded-For"],
+"answer": "Host"
+},
+{
+"id": 16,
+"question": "Correct way to start modern HTML document?",
+"options": ["<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\">", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "<!DOCTYPE html>"],
+"answer": "<!DOCTYPE html>"
+},
+{
+"id": 17,
+"question": "There is a void element \"link\" which specifies another URL that the current page needs. How should it be written?",
+"options": ["<link></link>", "<link>", "<link/>", "no you didn’t"],
+"answer": "<link>"
+},
+{
+"id": 18,
+"question": "I made my own element called \"apple\" that puts an apple on the page, how should its tag be written?",
+"options": ["<apple></apple>", "<apple>", "<apple/>", "no you didn’t"],
+"answer": "<apple></apple>"
+},
+{
+"id": 19,
+"question": "I made my own void tag called \"banana\" which specifies an apple element. If it can have content inside, how should it be written?",
+"options": ["<banana></banana>", "<banana>", "<banana/>", "no you didn’t"],
+"answer": "no you didn’t"
+},
+{
+"id": 20,
+"question": "Which tag style is wrong but browsers will accept it anyway?",
+"options": ["<banana></banana>", "<banana>", "<banana/>", "none"],
+"answer": "<banana/>"
+},
+{
+"id": 21,
+"question": "What is the outermost tag?",
+"options": ["<body></body>", "<head></head>", "<p></p>", "<b></b>", "<html></html>", "<a></a>"],
+"answer": "<html></html>"
+},
+{
+"id": 22,
+"question": "What goes first inside <html></html>?",
+"options": ["<body></body>", "<head></head>", "<p></p>", "<b></b>", "<html></html>", "<a></a>"],
+"answer": "<head></head>"
+},
+{
+"id": 23,
+"question": "What goes second in <html></html>?",
+"options": ["<body></body>", "<head></head>", "<p></p>", "<b></b>", "<html></html>", "<a></a>"],
+"answer": "<body></body>"
+},
+{
+"id": 24,
+"question": "Where does stuff that goes on the page go?",
+"options": ["<body></body>", "<head></head>", "<p></p>", "<b></b>", "<html></html>", "<a></a>"],
+"answer": "<body></body>"
+},
+{
+"id": 25,
+"question": "Where does metadata about the page go?",
+"options": ["<body></body>", "<head></head>", "<p></p>", "<b></b>", "<html></html>", "<a></a>"],
+"answer": "<head></head>"
+},
+{
+"id": 26,
+"question": "HTML or CSS? Indicating a chapter title",
+"options": ["HTML", "CSS"],
+"answer": "HTML"
+},
+{
+"id": 27,
+"question": "HTML or CSS? Making something bold",
+"options": ["HTML", "CSS"],
+"answer": "CSS"
+},
+{
+"id": 28,
+"question": "HTML or CSS? Making a hyperlink clickable",
+"options": ["HTML", "CSS"],
+"answer": "HTML"
+},
+{
+"id": 29,
+"question": "HTML or CSS? Marking some links as navigation",
+"options": ["HTML", "CSS"],
+"answer": "HTML"
+},
+{
+"id": 30,
+"question": "HTML or CSS? Making title nice and big",
+"options": ["HTML", "CSS"],
+"answer": "CSS"
+},
+{
+"id": 31,
+"question": "In <a href=\"https://slashdot.org\">Slashdot.org: News for Nerds Stuff that Matters</a> what’s the 'href'?",
+"options": ["tag", "element", "item", "attribute", "property"],
+"answer": "attribute"
+},
+{
+"id": 32,
+"question": "Which is selected by CSS selector .banana",
+"options": ["<tag class=\"banana\">", "<banana>", "<tag id=\"banana\">", "<tag banana>"],
+"answer": "<tag class=\"banana\">"
+},
+{
+"id": 33,
+"question": "Which is selected by CSS selector banana",
+"options": ["<tag class=\"banana\">", "<banana>", "<tag id=\"banana\">", "<tag banana>"],
+"answer": "<banana>"
+},
+{
+"id": 34,
+"question": "Which is selected by CSS selector #banana",
+"options": ["<tag class=\"banana\">", "<banana>", "<tag id=\"banana\">", "<tag banana>"],
+"answer": "<tag id=\"banana\">"
+},
+{
+"id": 35,
+"question": "Which CSS selector selects the li of <section><ul><li></li></ul></section>",
+"options": ["section ul li", "ul #li", "section>ul>li", "section ul li", "section>li"],
+"answer": ["section ul li", "section>ul>li"]
+},
+{
+"id": 36,
+"question": "Which attribute of <input name=\"foo\" value=\"bar\" class=\"baz\" id=\"zip\" type=\"text\"> becomes the key?",
+"options": ["type", "value", "name", "form", "class", "id"],
+"answer": "name"
+},
+{
+"id": 37,
+"question": "Which attribute of <input name=\"foo\" value=\"bar\" class=\"baz\" id=\"zip\" type=\"text\"> becomes the value?",
+"options": ["type", "value", "name", "form", "class", "id"],
+"answer": "value"
+},
+{
+"id": 38,
+"question": "What if there is no name?",
+"options": ["browser error popup", "browser error console", "form will not work", "runs javascript", "key value not sent", "sent anonymously"],
+"answer": "key value not sent"
+},
+{
+"id": 39,
+"question": "<input name=\"foo\" value=\"bar\" class=\"baz\" id=\"zip\" type=\"text\"> should be inside of?",
+"options": ["<form>", "<inputs>", "<label>", "<head>", "<datalist>", "<optgroup>"],
+"answer": "<form>"
+},
+{
+"id": 40,
+"question": "In the HTML <p><b>x</p></b> the <b> is what relative to the <p>?",
+"options": ["parent", "child", "container", "subclass", "descendant"],
+"answer": ["child", "descendant"]
+},
+{
+"id": 41,
+"question": "In the HTML <ul><li><em>x</em></li></ul> the <em> is what relative to the <ul>?",
+"options": ["parent", "child", "container", "subclass", "descendant"],
+"answer": "descendant"
+},
+{
+"id": 42,
+"question": "Which CSS property makes bold?",
+"options": ["font-style", "font-face", "font-size", "font-weight", "font-variant"],
+"answer": "font-weight"
+},
+{
+"id": 43,
+"question": "Which CSS property makes italics?",
+"options": ["font-style", "font-face", "font-size", "font-weight", "font-variant"],
+"answer": "font-style"
+},
+{
+"id": 44,
+"question": "A CSS px is equal to...",
+"options": ["one pixel", "1/72 of an inch", "1/96 of an inch", "the font size", "width of a 0", "height of an x"],
+"answer": "1/96 of an inch"
+},
+{
+"id": 45,
+"question": "A CSS ex is equal to...",
+"options": ["one pixel", "1/72 of an inch", "1/96 of an inch", "the font size", "width of a 0", "height of an x"],
+"answer": "height of an x"
+},
+{
+"id": 46,
+"question": "A CSS ch is equal to...",
+"options": ["one pixel", "1/72 of an inch", "1/96 of an inch", "the font size", "width of a 0", "height of an x"],
+"answer": "width of a 0"
+},
+{
+"id": 47,
+"question": "A CSS pt is equal to...",
+"options": ["one pixel", "1/72 of an inch", "1/96 of an inch", "the font size", "width of a 0", "height of an x"],
+"answer": "1/72 of an inch"
+},
+{
+"id": 48,
+"question": "In CSS nothing is equal to...",
+"options": ["one pixel", "1/72 of an inch", "1/96 of an inch", "the font size", "width of a 0", "height of an x"],
+"answer": "one pixel"
+},
+{
+"id": 49,
+"question": "Which is NOT a way to add JS to HTML?",
+"options": ["element event attributes", "inline script element", "link element in head", "script element referring to external file"],
+"answer": "link element in head"
+},
+{
+"id": 50,
+"question": "HTML Forms use ______ to make a get request?",
+"options": ["JS", "CSS", "the browser"],
+"answer": "the browser"
+},
+{
+"id": 51,
+"question": "What's a closure?",
+"options": ["same as scope", "an anonymous function", "functions can see vars from when they were defined", "special kind of class method"],
+"answer": "functions can see vars from when they were defined"
+},
+{
+"id": 52,
+"question": "What should you put at the top of every JS file?",
+"options": ["let, const & var", "imports", "doctype", "use strict"],
+"answer": "use strict"
+},
+{
+"id": 53,
+"question": "Which one scopes variables to the enclosing BLOCK?",
+"options": ["let", "const", "var", "(nothing before the variable declaration)"],
+"answer": ["let", "const"]
+},
+{
+"id": 54,
+"question": "Which one scopes variables to the enclosing FUNCTION?",
+"options": ["let", "const", "var", "(nothing before the variable declaration)"],
+"answer": "var"
+},
+{
+"id": 55,
+"question": "Which one scopes variables to GLOBAL?",
+"options": ["let", "const", "var", "(nothing before the variable declaration)"],
+"answer": "(nothing before the variable declaration)"
+},
+{
+"id": 56,
+"question": "Methods in JS are...",
+"options": ["early binding", "late binding", "not bound unless .call()", "not bound unless .bind()"],
+"answer": "late binding"
+},
+{
+"id": 57,
+"question": "Methods in Python are...",
+"options": ["early binding", "late binding", "not bound unless .call()", "not bound unless .bind()"],
+"answer": "early binding"
+},
+{
+"id": 58,
+"question": "I saw \"+someVar in some JS code, what is it there for?",
+"options": ["Doesn't do anything", "Cast to Boolean", "Cast to Number", "Cast to String", "Rounding to Integer", "Serialize"],
+"answer": "Cast to Number"
+},
+{
+"id": 59,
+"question": "Identifiers in JS CANT be...",
+"options": ["words", "have underscores", "keywords", "properties", "have digits", "unicode"],
+"answer": "keywords"
+},
+{
+"id": 60,
+"question": "Methods in JS are...",
+"options": ["early binding", "late binding", "not bound unless .call()", "not bound unless .bind()"],
+"answer": "late binding"
+},
+{
+"id": 61,
+"question": "Methods in Python are...",
+"options": ["early binding", "late binding", "not bound unless .call()", "not bound unless .bind()"],
+"answer": "early binding"
+},
+{
+"id": 62,
+"question": "General numbers in JS are always...",
+"options": ["integers", "singles", "doubles", "integers or doubles depending on operation"],
+"answer": "doubles"
+},
+{
+"id": 63,
+"question": "JS really likes to turn things into ___ when you least expect it?",
+"options": ["integers", "objects", "arrays", "strings", "errors", "null"],
+"answer": "strings"
+},
+{
+"id": 64,
+"question": "What should you put at the top of every JS file?",
+"options": ["let, const & var", "imports", "doctype", "use strict"],
+"answer": "use strict"
+},
+{
+"id": 65,
+"question": "Which comparison should you use in JS?",
+"options": ["==", "===", "!=", ".equals()", "<=>", "="],
+"answer": "==="
+},
+{
+"id": 66,
+"question": "In JS going past the end of an array...",
+"options": ["Error!", "null", "false", "undefined", "NaN", "[]"],
+"answer": "undefined"
+},
+{
+"id": 67,
+"question": "I want to loop over the values in an array...",
+"options": ["for (thing in array)", "for (thing of array)", "for (thing : array)"],
+"answer": "for (thing of array)"
+},
+{
+"id": 68,
+"question": "I want to loop over the properties in an object...",
+"options": ["for (thing in array)", "for (thing of array)", "for (thing : array)"],
+"answer": "for (thing in array)"
+},
+{
+"id": 69,
+"question": "Get elements that match a css selector?",
+"options": ["document.querySelector()", "document.getElementsBySelector()", "document.getElements()"],
+"answer": "document.querySelector()"
+},
+{
+"id": 70,
+"question": "Instantiate a new element?",
+"options": ["document.createElement()", "document.insertAt(parent, element)", "parent.appendChild(element)", "document.addElementById(parent)", "element.someAttribute"],
+"answer": "document.createElement()"
+},
+{
+"id": 71,
+"question": "<input> is represented in the DOM tree by ____?",
+"options": ["Element", "Text", "Tag", "Point", "Vertex", "JSON"],
+"answer": "Element"
+},
+{
+"id": 72,
+"question": "Actual words on the page is represented in the DOM tree by ____?",
+"options": ["Element", "Text", "Tag", "Point", "Vertex", "JSON"],
+"answer": "Text"
+},
+{
+"id": 73,
+"question": "Private fields are indicated by",
+"options": ["Name begins with _", "Name beings with #", "private keyword", "static keyword", "@private", "this"],
+"answer": "Name beings with #"
+},
+{
+"id": 74,
+"question": "Attach an element inside of another element from JS?",
+"options": ["parent.createElement()", "document.insertAt(parent, element)", "parent.appendChild(element)", "document.addElementById(parent)", "element.someAttribute"],
+"answer": "parent.appendChild(element)"
+},
+{
+"id": 75,
+"question": "Arrow functions are different because they...",
+"options": ["are anonymous", "Nothing! They're the same!", "are pass-by-reference", "can access identifiers from closure", "get this from closure", "are faster!"],
+"answer": "get this from closure"
+},
+{
+"id": 76,
+"question": "The DOM is what kind of data structure?",
+"options": ["Stack", "Queue", "Hash", "Tree"],
+"answer": "Tree"
+},
+{
+"id": 77,
+"question": "Static fields are indicated by",
+"options": ["Name begins with _", "Name beings with #", "private keyword", "static keyword", "@private", "this"],
+"answer": "static keyword"
+},
+{
+"id": 78,
+"question": "Everything in the DOM tree is a ____?",
+"options": ["Element", "Text", "Tag", "Point", "Vertex", "Node"],
+"answer": "Node"
+}
+]

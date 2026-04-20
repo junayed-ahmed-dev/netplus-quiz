@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "question": "k-anonymity primarily protects against:",
+    "options": ["Attribute disclosure", "Identity disclosure", "Both equally", "Neither"],
+    "answer": "Identity disclosure"
+  },
+  {
+    "id": 2,
+    "question": "Which attack occurs when all individuals in a group share the same sensitive value?",
+    "options": ["Background attack", "Similarity attack", "Homogeneity attack", "Membership attack"],
+    "answer": "Homogeneity attack"
+  },
+  {
+    "id": 3,
+    "question": "ℓ-diversity requires:",
+    "options": ["ℓ rows per dataset", "ℓ distinct sensitive values per group", "ℓ attributes per individual", "ℓ queries"],
+    "answer": "ℓ distinct sensitive values per group"
+  },
+  {
+    "id": 4,
+    "question": "t-closeness ensures:",
+    "options": ["Same group size", "Matching distribution with global dataset", "Randomization", "Noise addition"],
+    "answer": "Matching distribution with global dataset"
+  },
+  {
+    "id": 5,
+    "question": "Dalenius definition implies:",
+    "options": ["Some leakage allowed", "No new information should be learned", "Only identity matters", "Only attributes matter"],
+    "answer": "No new information should be learned"
+  },
+  {
+    "id": 6,
+    "question": "Randomized response provides:",
+    "options": ["Exact answers", "Aggregate statistics with privacy", "No data", "Only identity protection"],
+    "answer": "Aggregate statistics with privacy"
+  },
+  {
+    "id": 7,
+    "question": "Why is 'Yes' safe in randomized response?",
+    "options": ["Always true", "Always false", "Could be random", "Encrypted"],
+    "answer": "Could be random"
+  },
+  {
+    "id": 8,
+    "question": "Differential privacy ensures:",
+    "options": ["Exact answers", "Similar outputs for neighboring datasets", "No queries", "Encryption"],
+    "answer": "Similar outputs for neighboring datasets"
+  },
+  {
+    "id": 9,
+    "question": "Neighboring datasets differ in:",
+    "options": ["One attribute", "One individual", "One query", "One column"],
+    "answer": "One individual"
+  },
+  {
+    "id": 10,
+    "question": "Smaller ε means:",
+    "options": ["Less privacy", "More privacy", "No change", "Less noise"],
+    "answer": "More privacy"
+  },
+  {
+    "id": 11,
+    "question": "Post-processing property means:",
+    "options": ["Noise removed", "DP preserved after computation", "Data public", "DP lost"],
+    "answer": "DP preserved after computation"
+  },
+  {
+    "id": 12,
+    "question": "Composition property means:",
+    "options": ["Privacy improves", "Privacy loss accumulates", "Queries independent", "Only one query allowed"],
+    "answer": "Privacy loss accumulates"
+  },
+  {
+    "id": 13,
+    "question": "Sensitivity measures:",
+    "options": ["Dataset size", "Max change due to one individual", "Noise level", "Runtime"],
+    "answer": "Max change due to one individual"
+  },
+  {
+    "id": 14,
+    "question": "Which query has sensitivity = 1?",
+    "options": ["Mean", "Count", "Median", "Variance"],
+    "answer": "Count"
+  },
+  {
+    "id": 15,
+    "question": "Which query has lower sensitivity?",
+    "options": ["Count", "Mean", "Same", "Depends only on ε"],
+    "answer": "Mean"
+  },
+  {
+    "id": 16,
+    "question": "Noise scale in Laplace mechanism is:",
+    "options": ["ε/S(f)", "S(f)/ε", "S(f)*ε", "1/S(f)"],
+    "answer": "S(f)/ε"
+  },
+  {
+    "id": 17,
+    "question": "If ε is very small:",
+    "options": ["Small noise", "Large noise", "No noise", "Same noise"],
+    "answer": "Large noise"
+  },
+  {
+    "id": 18,
+    "question": "If ε is large:",
+    "options": ["Strong privacy", "Weak privacy", "Infinite noise", "No output"],
+    "answer": "Weak privacy"
+  },
+  {
+    "id": 19,
+    "question": "Laplace mechanism adds noise:",
+    "options": ["Before query", "After query", "To dataset", "To ε"],
+    "answer": "After query"
+  },
+  {
+    "id": 20,
+    "question": "Laplace noise is:",
+    "options": ["Always positive", "Always negative", "Symmetric around 0", "Uniform"],
+    "answer": "Symmetric around 0"
+  },
+  {
+    "id": 21,
+    "question": "Gaussian mechanism is used for:",
+    "options": ["Pure DP", "Approximate DP", "k-anonymity", "ℓ-diversity"],
+    "answer": "Approximate DP"
+  },
+  {
+    "id": 22,
+    "question": "Gaussian noise follows:",
+    "options": ["Laplace", "Normal", "Uniform", "Poisson"],
+    "answer": "Normal"
+  },
+  {
+    "id": 23,
+    "question": "If no noise is added:",
+    "options": ["DP holds", "DP fails", "Only approximate DP holds", "Sensitivity zero"],
+    "answer": "DP fails"
+  },
+  {
+    "id": 24,
+    "question": "If sensitivity increases:",
+    "options": ["Noise decreases", "Noise increases", "Same noise", "Zero noise"],
+    "answer": "Noise increases"
+  },
+  {
+    "id": 25,
+    "question": "If ε doubles:",
+    "options": ["Noise doubles", "Noise halves", "Same noise", "Zero noise"],
+    "answer": "Noise halves"
+  },
+  {
+    "id": 26,
+    "question": "Which gives largest noise?",
+    "options": ["S=1, ε=1", "S=1, ε=0.1", "S=5, ε=5", "S=2, ε=2"],
+    "answer": "S=1, ε=0.1"
+  },
+  {
+    "id": 27,
+    "question": "Plausible deniability means:",
+    "options": ["Encrypted data", "User cannot be confidently identified", "Data removed", "Queries blocked"],
+    "answer": "User cannot be confidently identified"
+  },
+  {
+    "id": 28,
+    "question": "Which method gives strongest privacy?",
+    "options": ["k-anonymity", "ℓ-diversity", "t-closeness", "Differential privacy"],
+    "answer": "Differential privacy"
+  },
+  {
+    "id": 29,
+    "question": "If output changes significantly after removing one individual:",
+    "options": ["DP holds", "DP fails", "k-anonymity holds", "ℓ-diversity holds"],
+    "answer": "DP fails"
+  },
+  {
+    "id": 30,
+    "question": "Sensitivity = 1, ε = 0.5 → noise scale?",
+    "options": ["0.5", "1", "2", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 31,
+    "question": "Sensitivity = 2, ε = 1 → noise scale?",
+    "options": ["1", "2", "0.5", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 32,
+    "question": "If sensitivity = 0:",
+    "options": ["Infinite noise", "No noise needed", "DP fails", "Only Gaussian works"],
+    "answer": "No noise needed"
+  },
+  {
+    "id": 33,
+    "question": "Which attack uses external knowledge?",
+    "options": ["Homogeneity", "Similarity", "Background knowledge", "Skewness"],
+    "answer": "Background knowledge"
+  },
+  {
+    "id": 34,
+    "question": "Which attack occurs when values are rare globally?",
+    "options": ["Homogeneity", "Similarity", "Skewness", "Membership"],
+    "answer": "Skewness"
+  },
+  {
+    "id": 35,
+    "question": "Randomized response outputs are:",
+    "options": ["Deterministic", "Always true", "Probabilistic", "Encrypted"],
+    "answer": "Probabilistic"
+  }
+]

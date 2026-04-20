@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Net+ Quiz · @junayed</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #080810;
+  --surface: #12121e;
+  --surface2:#1a1a2a;
+  --border:  #252540;
+  --accent:  #7c6fff;
+  --accent2: #00e5b8;
+  --text:    #eeeeff;
+  --muted:   #6060a0;
+  --correct: #00e096;
+  --wrong:   #ff4d6d;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* fixed canvases */
+#bgCanvas {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+}
+#fxCanvas {
+  position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+}
+
+#landing, #quiz { position: relative; z-index: 1; }
+
+/* ══════════ LANDING ══════════ */
+#landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 60px;
+}
+
+.hero-tag {
+  font-size: 11px;
+  color: var(--accent2);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeDown .6s .15s forwards;
+}
+
+@keyframes fadeDown {
+  from { opacity:0; transform:translateY(-12px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 8vw, 4.8rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.06;
+  margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeDown .6s .3s forwards;
+}
+
+.hero-title .line1 {
+  display: block;
+  background: linear-gradient(135deg, #fff 40%, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* glitch */
+.glitch {
+  display: block;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent2), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.glitch::before {
+  clip-path: polygon(0 25%, 100% 25%, 100% 45%, 0 45%);
+  animation: glitch1 4s infinite;
+}
+.glitch::after {
+  clip-path: polygon(0 62%, 100% 62%, 100% 78%, 0 78%);
+  animation: glitch2 4s infinite;
+}
+@keyframes glitch1 {
+  0%,88%,100% { transform:translateX(0); }
+  89%  { transform:translateX(-5px); filter:hue-rotate(80deg); }
+  91%  { transform:translateX(5px); }
+  93%  { transform:translateX(-2px); }
+  95%  { transform:translateX(0); }
+}
+@keyframes glitch2 {
+  0%,86%,100% { transform:translateX(0); }
+  87%  { transform:translateX(5px); filter:hue-rotate(-80deg); }
+  90%  { transform:translateX(-4px); }
+  93%  { transform:translateX(2px); }
+  95%  { transform:translateX(0); }
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 56px;
+  opacity: 0;
+  animation: fadeDown .6s .5s forwards;
+}
+
+.section-label {
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 14px;
+  align-self: flex-start;
+  max-width: 420px;
+  width: 100%;
+}
+
+/* course cards */
+.course-cards {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 44px;
+  justify-content: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+.course-card {
+  flex: 1;
+  min-width: 150px;
+  padding: 32px 20px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 22px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* spinning ring */
+.course-card::before {
+  content: '';
+  position: absolute;
+  width: 130px; height: 130px;
+  border-radius: 50%;
+  border: 1px solid rgba(124,111,255,.12);
+  top: -25px; right: -25px;
+  animation: spin 9s linear infinite;
+  pointer-events: none;
+}
+.course-card[data-course="200"]::before {
+  border-color: rgba(0,229,184,.12);
+  animation-direction: reverse;
+  animation-duration: 7s;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* glare layer */
+.course-card .shine {
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.14), transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.course-card.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 32px rgba(124,111,255,.28), inset 0 0 24px rgba(124,111,255,.06);
+}
+.course-card[data-course="200"].active {
+  border-color: var(--accent2);
+  box-shadow: 0 0 32px rgba(0,229,184,.28), inset 0 0 24px rgba(0,229,184,.06);
+}
+
+.c-check {
+  position: absolute; top: 12px; right: 12px;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: none; align-items: center; justify-content: center;
+  z-index: 2;
+  box-shadow: 0 0 12px var(--accent);
+}
+.course-card[data-course="200"] .c-check { background: var(--accent2); box-shadow: 0 0 12px var(--accent2); }
+.course-card.active .c-check { display: flex; }
+.c-check::after { content:'✓'; font-size:11px; color:#fff; font-weight:900; }
+
+.c-num {
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  position: relative; z-index: 1;
+}
+.c-course-num {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1;
+  position: relative; z-index: 1;
+  transition: transform .3s;
+}
+.course-card:hover .c-course-num { transform: scale(1.08); }
+.course-card[data-course="404"] .c-course-num {
+  color: var(--accent);
+  text-shadow: 0 0 24px rgba(124,111,255,.7);
+}
+.course-card[data-course="200"] .c-course-num {
+  color: var(--accent2);
+  text-shadow: 0 0 24px rgba(0,229,184,.7);
+}
+
+/* deck chips */
+.deck-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 44px;
+  max-width: 420px;
+  width: 100%;
+}
+.deck-chip {
+  padding: 9px 22px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .2s;
+}
+.deck-chip:hover { border-color: var(--accent); color: var(--accent); }
+.deck-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 18px rgba(124,111,255,.5);
+}
+
+/* start button */
+.start-btn {
+  padding: 18px 56px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), #b0aaff);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 8px 32px rgba(124,111,255,.5);
+  letter-spacing: .5px;
+  animation: pulse-glow 2.8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes pulse-glow {
+  0%,100% { box-shadow: 0 8px 32px rgba(124,111,255,.5); }
+  50%     { box-shadow: 0 8px 48px rgba(124,111,255,.8), 0 0 0 8px rgba(124,111,255,.08); }
+}
+.start-btn:hover { transform: translateY(-4px) scale(1.03); }
+.start-btn:active { transform: scale(.97); }
+
+.ripple {
+  position: absolute; border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255,255,255,.35);
+  animation: ripple-anim .6s linear;
+  pointer-events: none;
+}
+@keyframes ripple-anim { to { transform:scale(4); opacity:0; } }
+
+/* ══════════ QUIZ ══════════ */
+#quiz { display: none; min-height: 100vh; padding: 0 20px 60px; }
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 24px;
+  max-width: 800px;
+  margin: 0 auto 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.back-btn {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all .2s;
+}
+.back-btn:hover { border-color: var(--accent); color: var(--accent); box-shadow: 0 0 12px rgba(124,111,255,.3); }
+
+.quiz-title-bar { font-size: 14px; color: var(--muted); }
+.quiz-title-bar strong { color: var(--text); }
+.handle { font-size: 13px; color: var(--accent2); font-weight: 800; letter-spacing: .5px; }
+
+.wrap { max-width: 800px; margin: 0 auto; }
+
+/* progress */
+.prog-wrap { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+.prog-label { font-size: 13px; color: var(--muted); white-space: nowrap; min-width: 80px; }
+.prog-track { flex:1; height:6px; background: var(--surface2); border-radius:999px; overflow:visible; position:relative; }
+.prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 999px;
+  transition: width .4s cubic-bezier(.4,0,.2,1);
+  position: relative;
+  box-shadow: 0 0 12px rgba(124,111,255,.6);
+}
+.prog-fill::after {
+  content: '';
+  position: absolute;
+  right: -5px; top: 50%;
+  transform: translateY(-50%);
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--accent2);
+  box-shadow: 0 0 10px var(--accent2), 0 0 20px var(--accent2);
+}
+
+/* stat cards */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.stat-card:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(0,0,0,.4); }
+.stat-card .val { font-size: 1.7rem; font-weight: 900; transition: transform .25s; }
+.stat-card .key { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; margin-top: 4px; }
+.stat-card.s-correct .val { color: var(--correct); text-shadow: 0 0 14px rgba(0,224,150,.5); }
+.stat-card.s-score   .val { color: var(--accent2); text-shadow: 0 0 14px rgba(0,229,184,.5); }
+
+/* question card */
+.q-meta { display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.q-num { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:1.5px; }
+
+.flip-wrap { perspective: 1400px; margin-bottom: 14px; }
+
+.q-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px 28px 24px;
+  position: relative;
+  will-change: transform;
+  transition: box-shadow .3s;
+}
+.q-card:hover { box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(124,111,255,.15); }
+
+.q-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+/* option buttons */
+.opt-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px 18px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  font-size: .93rem;
+  line-height: 1.45;
+  transition: border-color .15s, background .15s, transform .18s, box-shadow .18s;
+  position: relative;
+  overflow: hidden;
+}
+.opt-btn::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(124,111,255,.1), transparent);
+  opacity: 0;
+  transition: opacity .2s;
+}
+.opt-btn:hover:not(:disabled)::before { opacity: 1; }
+.opt-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  transform: translateX(6px) translateY(-1px);
+  box-shadow: -4px 4px 20px rgba(124,111,255,.2);
+}
+
+.opt-btn .badge {
+  min-width: 30px; height: 30px;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 800; color: var(--muted);
+  flex-shrink: 0;
+  transition: all .2s;
+}
+
+.opt-btn.selected        { border-color: var(--accent); background: rgba(124,111,255,.12); }
+.opt-btn.selected .badge { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 0 10px var(--accent); }
+
+.opt-btn.correct         { border-color: var(--correct); background: rgba(0,224,150,.1); animation: correctPop .4s ease; }
+.opt-btn.correct .badge  { background: var(--correct); border-color: var(--correct); color: #fff; box-shadow: 0 0 14px var(--correct); }
+@keyframes correctPop {
+  0%  { transform: scale(1); }
+  40% { transform: scale(1.03) translateX(4px); }
+  100%{ transform: scale(1); }
+}
+
+.opt-btn.wrong           { border-color: var(--wrong); background: rgba(255,77,109,.1); animation: shake .4s ease; }
+.opt-btn.wrong .badge    { background: var(--wrong); border-color: var(--wrong); color: #fff; box-shadow: 0 0 14px var(--wrong); }
+@keyframes shake {
+  0%,100%{ transform:translateX(0); }
+  20%    { transform:translateX(-8px); }
+  40%    { transform:translateX(8px); }
+  60%    { transform:translateX(-5px); }
+  80%    { transform:translateX(5px); }
+}
+.opt-btn:disabled { cursor: default; }
+
+/* nav */
+.nav { display:flex; gap:10px; justify-content:space-between; }
+.nav-btn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 14px; font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+  position: relative; overflow: hidden;
+}
+.nav-btn:hover:not(:disabled) {
+  border-color: var(--accent); color: var(--accent);
+  box-shadow: 0 0 20px rgba(124,111,255,.25);
+  transform: translateY(-2px);
+}
+.nav-btn.primary {
+  background: linear-gradient(135deg, var(--accent), #a09aff);
+  border-color: var(--accent); color: #fff;
+  box-shadow: 0 4px 20px rgba(124,111,255,.4);
+}
+.nav-btn.primary:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(124,111,255,.55);
+  color: #fff;
+}
+.nav-btn:disabled { opacity:.3; cursor:not-allowed; transform:none; box-shadow:none; }
+
+/* wipe overlay */
+#overlay {
+  position: fixed; inset: 0;
+  background: linear-gradient(135deg, var(--accent), #3d2ea0);
+  z-index: 500;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  pointer-events: none;
+}
+
+/* footer */
+.footer-credit { text-align:center; padding:28px 0 0; font-size:12px; color:var(--muted); }
+.footer-credit span { color:var(--accent2); font-weight:700; }
+
+@media (max-width:520px) {
+  .stats-row { grid-template-columns:repeat(2,1fr); }
+  .quiz-title-bar { display:none; }
+  .q-card { padding:20px 16px 16px; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bgCanvas"></canvas>
+<canvas id="fxCanvas"></canvas>
+<div id="overlay"></div>
+
+<!-- ═══════════════ LANDING ═══════════════ -->
+<div id="landing">
+  <p class="hero-tag">Network+ Prep · @junayed</p>
+  <h1 class="hero-title">
+    <span class="line1">Test Your</span>
+    <span class="glitch" data-text="Preparation">Preparation</span>
+  </h1>
+  <p class="hero-sub">Pick a course, choose a deck, and start drilling.</p>
+
+  <p class="section-label">Choose your course</p>
+  <div class="course-cards">
+    <div class="course-card active" data-course="404" onclick="selectCourse('404')">
+      <div class="shine"></div>
+      <div class="c-check"></div>
+      <div class="c-num">CMPUT</div>
+      <div class="c-course-num">404</div>
+    </div>
+    <div class="course-card" data-course="200" onclick="selectCourse('200')">
+      <div class="shine"></div>
+      <div class="c-check"></div>
+      <div class="c-num">CMPUT</div>
+      <div class="c-course-num">200</div>
+    </div>
+  </div>
+
+  <p class="section-label">Choose a deck</p>
+  <div class="deck-row" id="landingDecks"></div>
+
+  <button class="start-btn" id="startBtn" onclick="startQuiz(event)">Start Quiz →</button>
+  <div class="footer-credit" style="margin-top:44px">built by <span>@junayed</span></div>
+</div>
+
+<!-- ═══════════════ QUIZ ═══════════════ -->
+<div id="quiz">
+  <div class="quiz-header">
+    <button class="back-btn" onclick="goHome()">← Home</button>
+    <div class="quiz-title-bar">Course <strong id="hdr-course"></strong> · <span id="hdr-deck"></span></div>
+    <div class="handle">@junayed</div>
+  </div>
+  <div class="wrap">
+    <div class="prog-wrap">
+      <span class="prog-label" id="progress">Q 1 / —</span>
+      <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card s-correct"><div class="val" id="stat-correct">0</div><div class="key">Correct</div></div>
+      <div class="stat-card"><div class="val" id="stat-answered">0</div><div class="key">Answered</div></div>
+      <div class="stat-card"><div class="val" id="stat-remaining">—</div><div class="key">Remaining</div></div>
+      <div class="stat-card s-score"><div class="val" id="stat-score">—</div><div class="key">Score</div></div>
+    </div>
+
+    <div class="q-meta"><span class="q-num" id="q-num-label"></span></div>
+
+    <div class="flip-wrap">
+      <div class="q-card" id="qCard">
+        <div class="q-text" id="question"></div>
+        <div id="options"></div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="nav-btn" id="btnPrev" onclick="prev()">← Prev</button>
+      <button class="nav-btn primary" id="btnNext" onclick="next()">Next →</button>
+    </div>
+    <div class="footer-credit">built by <span>@junayed</span></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════
+//  CANVAS — background network graph
+// ═══════════════════════════════════════════
+const bgC = document.getElementById('bgCanvas');
+const bgX = bgC.getContext('2d');
+const fxC = document.getElementById('fxCanvas');
+const fxX = fxC.getContext('2d');
+
+let W, H;
+function resize() {
+  W = bgC.width  = fxC.width  = window.innerWidth;
+  H = bgC.height = fxC.height = window.innerHeight;
+}
+window.addEventListener('resize', resize);
+resize();
+
+const NODES = Array.from({ length: 75 }, () => ({
+  x:   Math.random() * window.innerWidth,
+  y:   Math.random() * window.innerHeight,
+  vx:  (Math.random() - .5) * .45,
+  vy:  (Math.random() - .5) * .45,
+  r:   Math.random() * 2.2 + .8,
+  hue: Math.random() < .55 ? 256 : 168
+}));
+
+const mouse = { x: W / 2, y: H / 2 };
+window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+(function drawBg() {
+  bgX.clearRect(0, 0, W, H);
+
+  NODES.forEach(n => {
+    n.x += n.vx; n.y += n.vy;
+    if (n.x < 0 || n.x > W) n.vx *= -1;
+    if (n.y < 0 || n.y > H) n.vy *= -1;
+    const dx = n.x - mouse.x, dy = n.y - mouse.y;
+    const d  = Math.hypot(dx, dy);
+    if (d < 130) { n.x += (dx / d) * .6; n.y += (dy / d) * .6; }
+  });
+
+  // edges
+  for (let i = 0; i < NODES.length; i++) {
+    for (let j = i + 1; j < NODES.length; j++) {
+      const a = NODES[i], b = NODES[j];
+      const d = Math.hypot(a.x - b.x, a.y - b.y);
+      if (d < 150) {
+        bgX.beginPath();
+        bgX.moveTo(a.x, a.y);
+        bgX.lineTo(b.x, b.y);
+        bgX.strokeStyle = `hsla(${(a.hue+b.hue)/2},70%,65%,${(1-d/150)*.13})`;
+        bgX.lineWidth = .7;
+        bgX.stroke();
+      }
+    }
+  }
+
+  // nodes + glow
+  NODES.forEach(n => {
+    const grd = bgX.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 5);
+    grd.addColorStop(0, `hsla(${n.hue},80%,70%,.22)`);
+    grd.addColorStop(1, 'transparent');
+    bgX.beginPath(); bgX.arc(n.x, n.y, n.r * 5, 0, Math.PI * 2);
+    bgX.fillStyle = grd; bgX.fill();
+
+    bgX.beginPath(); bgX.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+    bgX.fillStyle = `hsla(${n.hue},80%,72%,.7)`; bgX.fill();
+  });
+
+  requestAnimationFrame(drawBg);
+})();
+
+// ═══════════════════════════════════════════
+//  FX CANVAS — particle bursts
+// ═══════════════════════════════════════════
+let particles = [];
+
+function burst(x, y, color, n = 30) {
+  for (let i = 0; i < n; i++) {
+    const angle = (Math.PI * 2 * i / n) + Math.random() * .6;
+    const spd   = Math.random() * 7 + 2;
+    particles.push({
+      x, y,
+      vx: Math.cos(angle) * spd,
+      vy: Math.sin(angle) * spd,
+      r: Math.random() * 4 + 2,
+      life: 1,
+      decay: .02 + Math.random() * .02,
+      color
+    });
+  }
+}
+
+(function drawFx() {
+  fxX.clearRect(0, 0, W, H);
+  particles = particles.filter(p => p.life > 0);
+  particles.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    p.vy += .18; p.vx *= .97;
+    p.life -= p.decay;
+    fxX.globalAlpha = Math.max(0, p.life);
+    fxX.beginPath();
+    fxX.arc(p.x, p.y, p.r * p.life, 0, Math.PI * 2);
+    fxX.fillStyle = p.color;
+    fxX.fill();
+  });
+  fxX.globalAlpha = 1;
+  requestAnimationFrame(drawFx);
+})();
+
+// ═══════════════════════════════════════════
+//  3D TILT — course cards
+// ═══════════════════════════════════════════
+document.querySelectorAll('.course-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const r  = card.getBoundingClientRect();
+    const x  = (e.clientX - r.left) / r.width  - .5;
+    const y  = (e.clientY - r.top)  / r.height - .5;
+    card.style.transition = 'border-color .3s, box-shadow .3s';
+    card.style.transform  = `perspective(700px) rotateX(${-y*24}deg) rotateY(${x*24}deg) scale(1.07) translateZ(12px)`;
+    card.querySelector('.shine').style.background =
+      `radial-gradient(circle at ${(x+.5)*100}% ${(y+.5)*100}%, rgba(255,255,255,.2), transparent 65%)`;
+    card.querySelector('.shine').style.opacity = '1';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transition = 'transform .55s ease, border-color .3s, box-shadow .3s';
+    card.style.transform  = '';
+    card.querySelector('.shine').style.opacity = '0';
+  });
+});
+
+// ═══════════════════════════════════════════
+//  3D TILT — question card (subtle)
+// ═══════════════════════════════════════════
+const qCard = document.getElementById('qCard');
+let tiltLocked = false;
+
+qCard.addEventListener('mousemove', e => {
+  if (tiltLocked) return;
+  const r = qCard.getBoundingClientRect();
+  const x = (e.clientX - r.left) / r.width  - .5;
+  const y = (e.clientY - r.top)  / r.height - .5;
+  qCard.style.transition = 'box-shadow .3s';
+  qCard.style.transform  = `perspective(1000px) rotateX(${-y*7}deg) rotateY(${x*7}deg)`;
+});
+qCard.addEventListener('mouseleave', () => {
+  if (tiltLocked) return;
+  qCard.style.transition = 'transform .55s ease, box-shadow .3s';
+  qCard.style.transform  = '';
+});
+
+// ═══════════════════════════════════════════
+//  RIPPLE on start button
+// ═══════════════════════════════════════════
+document.getElementById('startBtn').addEventListener('click', e => {
+  const btn = e.currentTarget;
+  const r   = btn.getBoundingClientRect();
+  const sz  = Math.max(btn.offsetWidth, btn.offsetHeight);
+  const el  = document.createElement('span');
+  el.className = 'ripple';
+  el.style.cssText = `width:${sz}px;height:${sz}px;left:${e.clientX-r.left-sz/2}px;top:${e.clientY-r.top-sz/2}px`;
+  btn.appendChild(el);
+  setTimeout(() => el.remove(), 600);
+});
+
+// ═══════════════════════════════════════════
+//  DATA
+// ═══════════════════════════════════════════
+let current = 0, questions = [], answers = {};
+let activeCourse = '404', activeDeck = '1';
+
+const COURSES = {
+  '404': [{ value:'1', label:'Deck 1' }, { value:'2', label:'Deck 2' }, { value:'3', label:'Deck 3' }],
+  '200': [{ value:'mix', label:'Mix' }, { value:'session10', label:'Session 10' }, { value:'session11', label:'Session 11' }]
+};
+
+// ─── LANDING ───
+function selectCourse(course) {
+  activeCourse = course;
+  document.querySelectorAll('.course-card').forEach(c =>
+    c.classList.toggle('active', c.dataset.course === course)
+  );
+  renderDeckChips();
+}
+
+function renderDeckChips() {
+  const decks = COURSES[activeCourse];
+  activeDeck  = decks[0].value;
+  document.getElementById('landingDecks').innerHTML = decks.map((d, i) =>
+    `<button class="deck-chip ${i===0?'active':''}" onclick="selectDeck('${d.value}',this)">${d.label}</button>`
+  ).join('');
+}
+
+function selectDeck(val, el) {
+  activeDeck = val;
+  document.querySelectorAll('.deck-chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+}
+
+// ─── WIPE TRANSITION ───
+function wipe(cb) {
+  const ov = document.getElementById('overlay');
+  ov.style.transition    = 'transform .32s cubic-bezier(.4,0,.2,1)';
+  ov.style.transformOrigin = 'bottom';
+  ov.style.transform     = 'scaleY(1)';
+  setTimeout(() => {
+    cb();
+    ov.style.transformOrigin = 'top';
+    ov.style.transform = 'scaleY(0)';
+    setTimeout(() => { ov.style.transition = ''; }, 340);
+  }, 320);
+}
+
+// ─── START ───
+async function startQuiz() {
+  try {
+    const folder = activeCourse === '404' ? '400' : activeCourse;
+    const res    = await fetch(`./${folder}/${activeDeck}.json`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data   = await res.json();
+    questions    = data.map(q => ({ question:q.question, options:q.options, answer:q.answer }));
+    current      = 0; answers = {};
+
+    document.getElementById('hdr-course').textContent = 'Cmput ' + activeCourse;
+    document.getElementById('hdr-deck').textContent   =
+      COURSES[activeCourse].find(d => d.value === activeDeck).label;
+
+    wipe(() => {
+      document.getElementById('landing').style.display = 'none';
+      document.getElementById('quiz').style.display    = 'block';
+      window.scrollTo(0, 0);
+      render();
+    });
+  } catch(e) {
+    console.error(e);
+    alert('Could not load deck — check console.');
+  }
+}
+
+function goHome() {
+  wipe(() => {
+    document.getElementById('quiz').style.display    = 'none';
+    document.getElementById('landing').style.display = 'flex';
+    window.scrollTo(0, 0);
+  });
+}
+
+// ─── STATS (count-up pop) ───
+function setVal(id, val) {
+  const el = document.getElementById(id);
+  if (el.textContent !== String(val)) {
+    el.style.transform = 'scale(1.35)';
+    el.textContent = val;
+    setTimeout(() => { el.style.transition = 'transform .25s'; el.style.transform = ''; }, 20);
+  }
+}
+
+function updateStats() {
+  const answered = Object.keys(answers).filter(i => answers[i].length > 0).length;
+  let correct = 0;
+  Object.keys(answers).forEach(i => {
+    const ca = Array.isArray(questions[i].answer) ? questions[i].answer : [questions[i].answer];
+    const ua = answers[i];
+    if (ua && ca.length === ua.length && ca.every(a => ua.includes(a))) correct++;
+  });
+  const remaining = questions.length - answered;
+  const pct  = answered === 0 ? '—' : Math.round((correct / questions.length) * 100) + '%';
+  const prog = Math.round(((current + 1) / questions.length) * 100);
+
+  setVal('stat-correct',   correct);
+  setVal('stat-answered',  answered);
+  setVal('stat-remaining', remaining);
+  setVal('stat-score',     pct);
+  document.getElementById('progFill').style.width       = prog + '%';
+  document.getElementById('progress').textContent       = `Q ${current+1} / ${questions.length}`;
+  document.getElementById('q-num-label').textContent    = `Question ${current+1} of ${questions.length}`;
+}
+
+// ─── RENDER ───
+function render() {
+  if (!questions.length) return;
+  const q  = questions[current];
+  document.getElementById('question').textContent = q.question;
+
+  const optsDiv = document.getElementById('options');
+  optsDiv.innerHTML = '';
+  const badges  = ['A','B','C','D','E','F','G','H'];
+  const ca      = Array.isArray(q.answer) ? q.answer : [q.answer];
+  const ua      = answers[current] || [];
+
+  q.options.forEach((opt, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'opt-btn';
+
+    const badge = document.createElement('span');
+    badge.className  = 'badge';
+    badge.textContent = badges[idx] || idx + 1;
+    btn.appendChild(badge);
+
+    const txt = document.createElement('span');
+    txt.textContent = opt;
+    btn.appendChild(txt);
+
+    if (ua.includes(opt)) btn.classList.add('selected');
+    if (ua.length > 0) {
+      if (ca.includes(opt))                        btn.classList.add('correct');
+      if (ua.includes(opt) && !ca.includes(opt))   btn.classList.add('wrong');
+      btn.disabled = true;
+    }
+
+    btn.onclick = () => pick(opt, btn);
+    optsDiv.appendChild(btn);
+  });
+
+  document.getElementById('btnPrev').disabled = current === 0;
+  document.getElementById('btnNext').disabled = current === questions.length - 1;
+  updateStats();
+}
+
+// ─── PICK with particles ───
+function pick(opt, btn) {
+  if (!answers[current]) answers[current] = [];
+  if (answers[current].includes(opt)) {
+    answers[current] = answers[current].filter(o => o !== opt);
+  } else {
+    answers[current].push(opt);
+  }
+
+  const ca = Array.isArray(questions[current].answer)
+    ? questions[current].answer : [questions[current].answer];
+  const ua = answers[current];
+
+  if (ua.length > 0) {
+    const r  = btn.getBoundingClientRect();
+    const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    const allCorrect = ca.length === ua.length && ca.every(a => ua.includes(a));
+    burst(cx, cy, allCorrect ? '#00e096' : '#ff4d6d', allCorrect ? 30 : 12);
+  }
+  render();
+}
+
+// ─── 3D FLIP NAV ───
+function flipTo(dir) {
+  tiltLocked = true;
+  qCard.style.transition = 'transform .22s ease-in, opacity .2s';
+  qCard.style.transform  = dir === 'next'
+    ? 'perspective(1400px) rotateY(-88deg)'
+    : 'perspective(1400px) rotateY(88deg)';
+  qCard.style.opacity = '.3';
+
+  setTimeout(() => {
+    if (dir === 'next') { if (current < questions.length - 1) current++; }
+    else                { if (current > 0) current--; }
+    render();
+
+    qCard.style.transition = 'none';
+    qCard.style.transform  = dir === 'next'
+      ? 'perspective(1400px) rotateY(88deg)'
+      : 'perspective(1400px) rotateY(-88deg)';
+    qCard.style.opacity = '.3';
+
+    requestAnimationFrame(() => {
+      qCard.style.transition = 'transform .3s ease-out, opacity .25s';
+      qCard.style.transform  = 'perspective(1400px) rotateY(0deg)';
+      qCard.style.opacity    = '1';
+      setTimeout(() => {
+        qCard.style.transition = '';
+        qCard.style.transform  = '';
+        tiltLocked = false;
+      }, 320);
+    });
+  }, 220);
+}
+
+function next() { if (current < questions.length - 1) flipTo('next'); }
+function prev() { if (current > 0)                    flipTo('prev'); }
+
+// ─── INIT ───
+renderDeckChips();
+</script>
+</body>
+</html>

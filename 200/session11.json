@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "Why do we add noise in differential privacy?",
+    "options": ["To improve accuracy", "To hide individual contributions", "To reduce computation time", "To remove bias"],
+    "answer": "To hide individual contributions"
+  },
+  {
+    "id": 2,
+    "question": "What determines how much noise to add?",
+    "options": ["Dataset size only", "Sensitivity and ε", "Number of queries", "Data type only"],
+    "answer": "Sensitivity and ε"
+  },
+  {
+    "id": 3,
+    "question": "Sensitivity measures:",
+    "options": ["Dataset size", "Maximum change in output due to one individual", "Noise level", "Query runtime"],
+    "answer": "Maximum change in output due to one individual"
+  },
+  {
+    "id": 4,
+    "question": "Which query typically has sensitivity = 1?",
+    "options": ["Mean", "Count", "Median", "Variance"],
+    "answer": "Count"
+  },
+  {
+    "id": 5,
+    "question": "Which query usually has lower sensitivity?",
+    "options": ["Count", "Mean", "Both same", "Depends only on ε"],
+    "answer": "Mean"
+  },
+  {
+    "id": 6,
+    "question": "If sensitivity = 0, then:",
+    "options": ["Noise must be infinite", "No noise needed", "DP fails", "Only Gaussian works"],
+    "answer": "No noise needed"
+  },
+  {
+    "id": 7,
+    "question": "If ε is extremely small:",
+    "options": ["Noise is very small", "Noise is very large", "No noise", "Sensitivity decreases"],
+    "answer": "Noise is very large"
+  },
+  {
+    "id": 8,
+    "question": "If ε is very large:",
+    "options": ["Strong privacy", "Weak privacy", "Infinite noise", "No output"],
+    "answer": "Weak privacy"
+  },
+  {
+    "id": 9,
+    "question": "If sensitivity increases, noise:",
+    "options": ["Decreases", "Stays same", "Increases", "Becomes zero"],
+    "answer": "Increases"
+  },
+  {
+    "id": 10,
+    "question": "Laplace mechanism adds noise:",
+    "options": ["Before query", "After query", "To dataset directly", "To ε"],
+    "answer": "After query"
+  },
+  {
+    "id": 11,
+    "question": "Noise is drawn from:",
+    "options": ["Uniform distribution", "Normal distribution", "Laplace distribution", "Binomial distribution"],
+    "answer": "Laplace distribution"
+  },
+  {
+    "id": 12,
+    "question": "What is the scale of Laplace noise?",
+    "options": ["ε / S(f)", "S(f) / ε", "S(f) × ε", "1 / S(f)"],
+    "answer": "S(f) / ε"
+  },
+  {
+    "id": 13,
+    "question": "Why must noise be symmetric?",
+    "options": ["For faster computation", "To avoid bias in output", "To reduce memory", "To increase ε"],
+    "answer": "To avoid bias in output"
+  },
+  {
+    "id": 14,
+    "question": "Given Sensitivity = 1 and ε = 0.5, what is the noise scale?",
+    "options": ["0.5", "1", "2", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 15,
+    "question": "Given Sensitivity = 2 and ε = 1, what is the noise scale?",
+    "options": ["1", "2", "0.5", "4"],
+    "answer": "2"
+  },
+  {
+    "id": 16,
+    "question": "Given Sensitivity = 1 and ε = 0.1, the noise is:",
+    "options": ["Very small", "Moderate", "Very large", "Zero"],
+    "answer": "Very large"
+  },
+  {
+    "id": 17,
+    "question": "A count query returns 100 but DP output is 105. Why?",
+    "options": ["Error", "Noise addition", "Wrong sensitivity", "Data leak"],
+    "answer": "Noise addition"
+  },
+  {
+    "id": 18,
+    "question": "Gaussian mechanism is used for:",
+    "options": ["Pure DP", "Approximate DP", "k-anonymity", "ℓ-diversity"],
+    "answer": "Approximate DP"
+  },
+  {
+    "id": 19,
+    "question": "Gaussian noise follows:",
+    "options": ["Laplace distribution", "Normal distribution", "Uniform distribution", "Poisson distribution"],
+    "answer": "Normal distribution"
+  },
+  {
+    "id": 20,
+    "question": "Gaussian mechanism uses:",
+    "options": ["L1 sensitivity", "L2 sensitivity", "No sensitivity", "Dataset size"],
+    "answer": "L2 sensitivity"
+  },
+  {
+    "id": 21,
+    "question": "Which query has zero sensitivity?",
+    "options": ["Count", "Mean", "Return constant value", "Sum"],
+    "answer": "Return constant value"
+  },
+  {
+    "id": 22,
+    "question": "If a query output never changes regardless of dataset:",
+    "options": ["Violates DP", "Has zero sensitivity", "Requires infinite noise", "Leaks maximum info"],
+    "answer": "Has zero sensitivity"
+  },
+  {
+    "id": 23,
+    "question": "Which scenario requires more noise?",
+    "options": ["Low sensitivity, high ε", "High sensitivity, low ε", "Low sensitivity, low ε", "High sensitivity, high ε"],
+    "answer": "High sensitivity, low ε"
+  },
+  {
+    "id": 24,
+    "question": "Which factor does NOT affect noise?",
+    "options": ["Sensitivity", "ε", "Query type", "Dataset size directly"],
+    "answer": "Dataset size directly"
+  },
+  {
+    "id": 25,
+    "question": "If no noise is added:",
+    "options": ["DP holds", "Only approximate DP holds", "DP is violated", "Sensitivity becomes zero"],
+    "answer": "DP is violated"
+  },
+  {
+    "id": 26,
+    "question": "If we double sensitivity, noise:",
+    "options": ["Halves", "Doubles", "No change", "Zero"],
+    "answer": "Doubles"
+  },
+  {
+    "id": 27,
+    "question": "If we double ε, noise:",
+    "options": ["Doubles", "Halves", "No change", "Zero"],
+    "answer": "Halves"
+  },
+  {
+    "id": 28,
+    "question": "Laplace mechanism guarantees:",
+    "options": ["Approximate DP", "Pure DP", "No DP", "k-anonymity"],
+    "answer": "Pure DP"
+  },
+  {
+    "id": 29,
+    "question": "Laplace noise is:",
+    "options": ["Always positive", "Always negative", "Symmetric around 0", "Uniform"],
+    "answer": "Symmetric around 0"
+  },
+  {
+    "id": 30,
+    "question": "Which gives largest noise?",
+    "options": ["S=1, ε=1", "S=1, ε=0.1", "S=5, ε=5", "S=2, ε=2"],
+    "answer": "S=1, ε=0.1"
+  }
+]

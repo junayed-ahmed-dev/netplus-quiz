@@ -1,0 +1,508 @@
+[
+  {
+    "id": 1,
+    "question": "I want to loop over the values in an array...",
+    "options": ["for (thing in array)", "for (thing of array)", "for (thing : array)"],
+    "answer": "for (thing of array)"
+  },
+  {
+    "id": 2,
+    "question": "I want to loop over the properties in an object...",
+    "options": ["for (thing in array)", "for (thing of array)", "for (thing : array)"],
+    "answer": "for (thing in array)"
+  },
+  {
+    "id": 3,
+    "question": "Arrow functions are different because they...",
+    "options": ["are anonymous", "Nothing! They're the same!", "are pass-by-reference", "can access identifiers from closure", "get this from closure", "are faster!"],
+    "answer": "get this from closure"
+  },
+  {
+    "id": 4,
+    "question": "The DOM is what kind of data structure?",
+    "options": ["Stack", "Queue", "Hash", "Tree"],
+    "answer": "Tree"
+  },
+  {
+    "id": 5,
+    "question": "Everything in the DOM tree is a ___?",
+    "options": ["Element", "Text", "Tag", "Point", "Vertex", "Node"],
+    "answer": "Node"
+  },
+  {
+    "id": 6,
+    "question": "<input> is represented in in the DOM tree by ___?",
+    "options": ["Element", "Text", "Tag", "Point", "Vertex", "JSON"],
+    "answer": "Element"
+  },
+  {
+    "id": 7,
+    "question": "Actual words on the page is represented in in the DOM tree by ___?",
+    "options": ["Element", "Text", "Tag", "Point", "Vertex", "JSON"],
+    "answer": "Text"
+  },
+  {
+    "id": 8,
+    "question": "Private fields are indicated by",
+    "options": ["Name begins with _", "Name beings with #", "private keyword", "static keyword", "@private", "this"],
+    "answer": "Name beings with #"
+  },
+  {
+    "id": 9,
+    "question": "Static fields are indicated by",
+    "options": ["Name begins with _", "Name beings with #", "private keyword", "static keyword", "@private", "this"],
+    "answer": "static keyword"
+  },
+  {
+    "id": 10,
+    "question": "Get elements that match a css selector?",
+    "options": ["document.querySelector()", "document.getElementsBySelector()", "document.getElements()"],
+    "answer": "document.querySelector()"
+  },
+  {
+    "id": 11,
+    "question": "Instantiate a new element?",
+    "options": ["document.createElement()", "document.insertAt(parent, element)", "parent.appendChild(element)", "document.addElementById(parent)", "element.someAttribute"],
+    "answer": "document.createElement()"
+  },
+  {
+    "id": 12,
+    "question": "Attach an element inside of another element from JS?",
+    "options": ["parent.createElement()", "document.insertAt(parent, element)", "parent.appendChild(element)", "document.addElementById", "element.someAttribute"],
+    "answer": "parent.appendChild(element)"
+  },
+  {
+    "id": 13,
+    "question": "Modify the style of an element?",
+    "options": ["element.setStyle()", "document.setStyleById()", "parent.appendStyle()", "element.style"],
+    "answer": "element.style"
+  },
+  {
+    "id": 14,
+    "question": "AJAX means...",
+    "options": ["Ancient Greek Hero", "Cleaning Product", "Asynchronous Javascript and XML"],
+    "answer": "Asynchronous Javascript and XML"
+  },
+  {
+    "id": 15,
+    "question": "promise.then(____) takes a...",
+    "options": ["class", "instance", "function", "promise"],
+    "answer": "function"
+  },
+  {
+    "id": 16,
+    "question": "new Promise(____) takes a...",
+    "options": ["class", "instance", "function", "promise"],
+    "answer": "function"
+  },
+  {
+    "id": 17,
+    "question": "new Promise((____, ____) => { ... }) ...what are the ____s?",
+    "options": ["class", "instance", "function", "promise"],
+    "answer": "function"
+  },
+  {
+    "id": 18,
+    "question": "new Promise((____) => { ... }) ...what is the ____?",
+    "options": ["timeout", "interval", "resolve", "reject"],
+    "answer": "resolve"
+  },
+  {
+    "id": 19,
+    "question": "new Promise((resolve, reject) => { ... }) when do we call resolve in { ... }?",
+    "options": ["timeout", "while making the promise", "while waiting for something to happen", "the thing we were waiting for happens", "there's an error", "before we start waiting for something to happen"],
+    "answer": "the thing we were waiting for happens"
+  },
+  {
+    "id": 20,
+    "question": "new Promise((resolve, reject) => { ... }) when do we call reject?",
+    "options": ["timeout", "while making the promise", "while waiting for something to happen", "the thing we were waiting for happens", "there's an error", "before we start waiting for something to happen"],
+    "answer": "there's an error"
+  },
+  
+  {
+    "id": 21,
+    "question": "new Promise((resolve, reject) => { ... }) where do we specify arguments for resolve and reject parameters passed to the arrow function above?",
+    "options": ["in the closure", "in the anonymous function", "in this", "in the anonymous function", "in the arrow function", "we don't"],
+    "answer": "we don't"
+  },
+  {
+    "id": 22,
+    "question": "fetch() argument is a...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Request"
+  },
+  {
+    "id": 23,
+    "question": "fetch() returns...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Promise"
+  },
+  {
+    "id": 24,
+    "question": "promise.then() takes an arugment...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Function"
+  },
+  {
+    "id": 25,
+    "question": "promise.then() returns...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Promise"
+  },
+  {
+    "id": 26,
+    "question": "fetch().then() takes...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Function"
+  },
+  {
+    "id": 27,
+    "question": "fetch().then() returns...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Promise"
+  },
+  {
+    "id": 28,
+    "question": "fetch().then() takes a function that takes...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Response"
+  },
+  {
+    "id": 29,
+    "question": "fetch().then() takes a function that returns...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": ["Promise", "Body"]
+  },
+  {
+    "id": 30,
+    "question": "fetch().then().then() takes a function that takes...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": ["Response", "Body"]
+  },
+  {
+    "id": 31,
+    "question": "fetch().then().then() returns...",
+    "options": ["Function", "Request", "Response", "Promise", "Headers", "Body"],
+    "answer": "Promise"
+  },
+  {
+    "id": 32,
+    "question": "await can only be used in what kind of function?",
+    "options": ["anonymous", "arrow", "promise", "async", "without loops"],
+    "answer": "async"
+  },
+  {
+    "id": 33,
+    "question": "await (x) where x is an expression that returns a",
+    "options": ["anonymous function", "arrow function", "promise", "async function"],
+    "answer": "promise"
+  },
+  {
+    "id": 34,
+    "question": "await should be avoided inside a...",
+    "options": ["anonymous function", "arrow function", "promise", "async function", "loop"],
+    "answer": "loop"
+  },
+  {
+    "id": 35,
+    "question": "async functions return a...",
+    "options": ["anonymous function", "arrow function", "promise", "async function", "iterator"],
+    "answer": "promise"
+  },
+  {
+    "id": 36,
+    "question": "async function with return 1 resolves when",
+    "options": ["after return statement", "when its called", "after all functions", "after returned value resolves"],
+    "answer": "after return statement"
+  },
+  {
+    "id": 37,
+    "question": "async function with return somePromise resolves when",
+    "options": ["after return statement", "when its called", "after all functions", "after returned value resolves"],
+    "answer": "after returned value resolves"
+  },
+  {
+    "id": 38,
+    "question": "When is a request repeatable?",
+    "options": ["Doing it twice in a row doesn't change the effect", "The URL is valid for a long period of time (doesn't expire)", "When the results are split into multiple pages that must be requested"],
+    "answer": "Doing it twice in a row doesn't change the effect"
+  },
+  {
+    "id": 39,
+    "question": "When is a request stateless?",
+    "options": ["Able to be processed without knowing previous requests", "When the request doesn't contain any information about state", "Similar to repeatable"],
+    "answer": "Able to be processed without knowing previous requests"
+  },
+  {
+    "id": 40,
+    "question": "When is a request cacheable?",
+    "options": ["When if there is a caching proxy layer", "When it includes the Cache-Control header", "When the response is known to not change for some period of time"],
+    "answer": "When the response is known to not change for some period of time"
+  },
+  
+  {
+    "id": 41,
+    "question": "In a stateless system, which end keeps track of whether someone is logged in (or not)?",
+    "options": ["Server", "Client", "Proxy"],
+    "answer": "Client"
+  },
+  {
+    "id": 42,
+    "question": "What is a potential DISadvantage (downside) of REST?",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Bandwidth"
+  },
+  {
+    "id": 43,
+    "question": "Replace a server with a copy of it? (fail-over)",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Reliability"
+  },
+  {
+    "id": 44,
+    "question": "Spread out data among different servers?",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Distribution"
+  },
+  {
+    "id": 45,
+    "question": "Keep a copy of data on the client or closer to the client?",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Caching"
+  },
+  {
+    "id": 46,
+    "question": "Multiple identical servers that can all share the load?",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Scalability"
+  },
+  {
+    "id": 47,
+    "question": "Which one might NOT be safe/repeatable/cacheable or stateless?",
+    "options": ["GET", "HEAD", "POST", "PUT", "DELETE"],
+    "answer": "POST"
+  },
+  {
+    "id": 48,
+    "question": "What is a potential DISadvantage (downside) of REST?",
+    "options": ["Reliability", "Scalability", "Caching", "Bandwidth", "Distribution"],
+    "answer": "Bandwidth"
+  },
+  {
+    "id": 49,
+    "question": "In session-cookie auth, when does the session cookie get generated?",
+    "options": ["Login: Correct username & password", "When database entry is set to not authenticated", "When database entry is set to authenticated", "Logout", "On any request"],
+    "answer": "On any request"
+  },
+  {
+    "id": 50,
+    "question": "In session-cookie authentication what is a good response to attempting to access private page by an unauthenticated user?",
+    "options": ["200 OK", "301 Moved Permanently", "302 Found", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+    "answer": "302 Found"
+  },
+  {
+    "id": 51,
+    "question": "In session-cookie authentication what is a good response to a successful login ?",
+    "options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 52,
+    "question": "How does JWT prevent tokens from being forged by the user?",
+    "options": ["Database entry that user can't manipulate", "Cryptographic signature", "Keeping the state in special browser-protected storage", "Encrypted HTTPS connections"],
+    "answer": "Cryptographic signature"
+  },
+  {
+    "id": 53,
+    "question": "T/F: REST with caching always decreases latency?",
+    "options": ["False", "True"],
+    "answer": "False"
+  },
+  {
+    "id": 54,
+    "question": "It's usually fastest to perform operations on the...",
+    "options": ["Client", "Reverse Proxy Webserver", "Middleware Server", "Storage Server"],
+    "answer": "Client"
+  },
+  {
+    "id": 55,
+    "question": "In session-cookie auth, when does the session cookie get generated?",
+    "options": ["Login: Correct username & password", "When database entry is set to not authenticated", "When database entry is set to authenticated", "Logout", "On any request"],
+    "answer": "On any request"
+  },
+  {
+    "id": 56,
+    "question": "How does HTTP Basic prevent your password from being stolen?",
+    "options": ["Cryptographic Signature", "Encryption", "Cryptographic Hash", "It doesn't"],
+    "answer": "It doesn't"
+  },
+  {
+    "id": 57,
+    "question": "How does HTTP Digest prevent your password from being stolen?",
+    "options": ["Cryptographic Signature", "Encryption", "Cryptographic Hash", "It doesn't"],
+    "answer": "Cryptographic Hash"
+  },
+  {
+    "id": 58,
+    "question": "Why does HTTP Basic encode the username and password?",
+    "options": ["Prevent 'sessionjacking'", "Make sure the username and password was not corrupted during transfer", "HTTP is a text based protocol, password can have any character", "It doesn't"],
+    "answer": "HTTP is a text based protocol, password can have any character"
+  },
+  {
+    "id": 59,
+    "question": "Which temporary redirect means the client should explicitly use GET request?",
+    "options": ["301 Moved Permanently", "302 Found", "303 See Other", "304 Not Modified", "307 Temporary Redirect", "308 Permanent Redirect"],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 60,
+    "question": "In session-cookie authentication what is a good response to attempting to access private page by an unauthenticated user?",
+    "options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+    "answer": "303 See Other"
+  },
+
+  {
+    "id": 61,
+    "question": "In session-cookie authentication what is a good response to a successful login ?",
+    "options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 62,
+    "question": "When dealing with a human that needs to log in we should respond with a...",
+    "options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 63,
+    "question": "When dealing with a machine that needs to log in we should respond with a...",
+    "options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+    "answer": "401 Unauthorized"
+  },
+  {
+    "id": 64,
+    "question": "When responding to a POST request from a browser (not AJAX), we should respond with a...",
+    "options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 65,
+    "question": "When responding to a POST request from a script (or AJAX), we should respond with a...",
+    "options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+    "answer": "200 OK"
+  },
+  {
+    "id": 66,
+    "question": "In OIDC user logs in to",
+    "options": ["Resource Server/Relying Party", "Authorization Server/Identity Provider"],
+    "answer": "Authorization Server/Identity Provider"
+  },
+  {
+    "id": 67,
+    "question": "In OIDC flow, if user consents they",
+    "options": ["Gets an error", "Gets a redirect", "Requests content", "Enters username & password", "Get redirected with token"],
+    "answer": "Get redirected with token"
+  },
+
+  {
+    "id": 68,
+    "question": "When a login is sent as JSON by JS running in the browser to a REST API url using Fetch API but the password is wrong we should respond with...",
+    "options": [
+      "200 OK",
+      "301 Moved Permanently",
+      "303 See Other",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "503 Service Unavailable"
+    ],
+    "answer": "401 Unauthorized"
+  },
+  {
+    "id": 69,
+    "question": "When a GET is sent and we know who the user is (they're logged in) but they don't have permission to access the resource...",
+    "options": [
+      "200 OK",
+      "301 Moved Permanently",
+      "303 See Other",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "503 Service Unavailable"
+    ],
+    "answer": "403 Forbidden"
+  },
+  {
+    "id": 70,
+    "question": "When a POST request is sent as JSON by JS running in the browser to a REST API url using Fetch api we should respond with...",
+    "options": [
+      "200 OK",
+      "301 Moved Permanently",
+      "303 See Other",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "503 Service Unavailable"
+    ],
+    "answer": "200 OK"
+  },
+  {
+    "id": 71,
+    "question": "After they consent, then where is the user taken?",
+    "options": [
+      "ID provider / authorization server consent page",
+      "ID provider / authorization server login page",
+      "Relying party/client server content page"
+    ],
+    "answer": "Relying party/client server content page"
+  },
+  {
+    "id": 72,
+    "question": "After being redirected with the token the user...",
+    "options": [
+      "Gets an error",
+      "Gets a redirect",
+      "Requests content",
+      "Enters username & password",
+      "Get redirected with token"
+    ],
+    "answer": "Requests content"
+  },
+  {
+    "id": 73,
+    "question": "What is the most appropriate redirect for OIDC flow?",
+    "options": [
+      "301 Moved Permanently",
+      "302 Found",
+      "303 See Other",
+      "304 Not Modified",
+      "307 Temporary Redirect",
+      "308 Permanent Redirect"
+    ],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 74,
+    "question": "Which temporary redirect means the client should explicitly use GET request?",
+    "options": [
+      "301 Moved Permanently",
+      "302 Found",
+      "303 See Other",
+      "304 Not Modified",
+      "307 Temporary Redirect",
+      "308 Permanent Redirect"
+    ],
+    "answer": "303 See Other"
+  },
+  {
+    "id": 75,
+    "question": "When a login is sent as JSON by JS running in the browser to a REST API URL using Fetch API we should respond with...",
+    "options": [
+      "200 OK",
+      "301 Moved Permanently",
+      "303 See Other",
+      "401 Unauthorized",
+      "403 Forbidden",
+      "503 Service Unavailable"
+    ],
+    "answer": "200 OK"
+  }
+]

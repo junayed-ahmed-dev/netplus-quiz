@@ -1,0 +1,605 @@
+[
+{
+"id": 1,
+"question": "In session-cookie authentication what is a good response to attempting to access private page by an unauthenticated user?",
+"options": ["200 OK", "301 Moved Permanently", "302 Found", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+"answer": "302 Found"
+},
+{
+"id": 2,
+"question": "In session-cookie authentication what is a good response to a successful login?",
+"options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+"answer": "303 See Other"
+},
+{
+"id": 3,
+"question": "How does JWT prevent tokens from being forged by the user?",
+"options": ["Database entry that user can't manipulate", "Cryptographic signature", "Keeping the state in special browser-protected storage", "Encrypted HTTPS connections"],
+"answer": "Cryptographic signature"
+},
+{
+"id": 4,
+"question": "T/F: REST with caching always decreases latency?",
+"options": ["False", "True"],
+"answer": "False"
+},
+{
+"id": 5,
+"question": "It's usually fastest to perform operations on the...",
+"options": ["Client", "Reverse Proxy Webserver", "Middleware Server", "Storage Server"],
+"answer": "Client"
+},
+{
+"id": 6,
+"question": "In session-cookie auth, when does the session cookie get generated?",
+"options": ["Login: Correct username & password", "When database entry is set to not authenticated", "When database entry is set to authenticated", "Logout", "On any request"],
+"answer": "On any request"
+},
+{
+"id": 7,
+"question": "How does HTTP Basic prevent your password from being stolen?",
+"options": ["Cryptographic Signature", "Encryption", "Cryptographic Hash", "It doesn't"],
+"answer": "It doesn't"
+},
+{
+"id": 8,
+"question": "How does HTTP Digest prevent your password from being stolen?",
+"options": ["Cryptographic Signature", "Encryption", "Cryptographic Hash", "It doesn't"],
+"answer": "Cryptographic Hash"
+},
+{
+"id": 9,
+"question": "Why does HTTP Basic encode the username and password?",
+"options": ["Prevent 'sessionjacking'", "Make sure the username and password was not corrupted during transfer", "HTTP is a text based protocol, password can have any character", "It doesn't"],
+"answer": "HTTP is a text based protocol, password can have any character"
+},
+{
+"id": 10,
+"question": "Which temporary redirect means the client should explicitly use GET request?",
+"options": ["301 Moved Permanently", "302 Found", "303 See Other", "304 Not Modified", "307 Temporary Redirect", "308 Permanent Redirect"],
+"answer": "303 See Other"
+},
+{
+"id": 11,
+"question": "When dealing with a human that needs to log in we should respond with a...",
+"options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+"answer": "303 See Other"
+},
+{
+"id": 12,
+"question": "When dealing with a machine that needs to log in we should respond with a...",
+"options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+"answer": "401 Unauthorized"
+},
+{
+"id": 13,
+"question": "When responding to a POST request from a browser (not AJAX), we should respond with a...",
+"options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+"answer": "303 See Other"
+},
+{
+"id": 14,
+"question": "When responding to a POST request from a script (or AJAX), we should respond with a...",
+"options": ["100 Continue", "200 OK", "303 See Other", "401 Unauthorized", "514 Login Required"],
+"answer": "200 OK"
+},
+{
+"id": 15,
+"question": "In OIDC user logs in to",
+"options": ["Resource Server/Relying Party", "Authorization Server/Identity Provider"],
+"answer": "Authorization Server/Identity Provider"
+},
+{
+"id": 16,
+"question": "In OIDC flow, if user consents they",
+"options": ["Gets an error", "Gets a redirect", "Requests content", "Enters username & password", "Get redirected with token"],
+"answer": "Get redirected with token"
+},
+{
+"id": 17,
+"question": "After they consent, then where is the user taken?",
+"options": ["ID provider / authorization server consent page", "ID provider / authorization server login page", "Relying party/client server content page"],
+"answer": "Relying party/client server content page"
+},
+{
+"id": 18,
+"question": "After being redirected with the token the user...",
+"options": ["Gets an error", "Gets a redirect", "Requests content", "Enters username & password", "Get redirected with token"],
+"answer": "Requests content"
+},
+{
+"id": 19,
+"question": "What is the most appropriate redirect for OIDC flow?",
+"options": ["301 Moved Permanently", "302 Found", "303 See Other", "304 Not Modified", "307 Temporary Redirect", "308 Permanent Redirect"],
+"answer": "303 See Other"
+},
+{
+"id": 20,
+"question": "When a login is sent as JSON by JS running in the browser to a REST API URL using Fetch API we should respond with...",
+"options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+"answer": "200 OK"
+},
+{
+"id": 21,
+"question": "When a login is sent as JSON by JS running in the browser to a REST API URL using Fetch API but the password is wrong we should respond with...",
+"options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+"answer": "401 Unauthorized"
+},
+{
+"id": 22,
+"question": "When a GET is sent and we know who the user is (they're logged in) but they don't have permission to access the resource...",
+"options": ["200 OK", "301 Moved Permanently", "303 See Other", "401 Unauthorized", "403 Forbidden", "503 Service Unavailable"],
+"answer": "403 Forbidden"
+},
+{
+"id": 23,
+"question": "What protocol does TLS work inside of (on top of)?",
+"options": ["Ethernet", "IP", "TCP/UDP", "HTTP(S)", "HTML"],
+"answer": "TCP/UDP"
+},
+{
+"id": 24,
+"question": "What protocol goes inside of (on top of) TLS?",
+"options": ["Ethernet", "IP", "TCP/UDP", "HTTP(S)", "HTML"],
+"answer": "HTTP(S)"
+},
+{
+"id": 25,
+"question": "What is the current version of TLS?",
+"options": ["SSL", "TLS1.0", "TLS1.1", "TLS1.2", "TLS1.3", "TLS1.4"],
+"answer": "TLS1.3"
+},
+{
+"id": 26,
+"question": "When someone says 'encryption' usually what are they referring to providing?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Privacy"
+},
+{
+"id": 27,
+"question": "Ensuring messages aren't repeated?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Authenticity"
+},
+{
+"id": 28,
+"question": "Ensuring you're actually talking to who you think you're talking to?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Identity"
+},
+{
+"id": 29,
+"question": "A certificate is checked by the...",
+"options": ["Government", "Certificate Authority", "User Agent", "HTTP Server", "DNS Server", "Router"],
+"answer": "User Agent"
+},
+{
+"id": 30,
+"question": "A certificate is signed by the...",
+"options": ["Government", "Certificate Authority", "User Agent", "HTTP Server", "DNS Server", "Router"],
+"answer": "Certificate Authority"
+},
+{
+"id": 31,
+"question": "A signature is verified by combining it with the... (1/2)",
+"options": ["Shared Secret", "Private Key", "Public Key", "Certificate", "Certificate Authority", "User Agent"],
+"answer": "Public Key"
+},
+{
+"id": 32,
+"question": "A signature is verified by combining it with the... (2/2)",
+"options": ["Contents of the thing that was signed", "TLS protocol", "HTTP Headers", "IP Address", "Cipher Suite Negotiation", "Ephemeral Key"],
+"answer": "Contents of the thing that was signed"
+},
+{
+"id": 33,
+"question": "What is the most crucial part of the text of a signed certificate, apart from the signature...",
+"options": ["IP Address", "Ethernet Address", "Server version", "IP Address", "HTTP vs HTTPS", "Domain Name"],
+"answer": "Domain Name"
+},
+{
+"id": 34,
+"question": "How do you get the Certificate Authority's public key?",
+"options": ["DNS", "Browser/OS", "TCP/UDP", "HTTP", "Ethernet", "IP"],
+"answer": "Browser/OS"
+},
+{
+"id": 35,
+"question": "When should you optimize?",
+"options": ["Never", "Continuously", "Early development", "Late development", "Between iterations", "When you have a performance problem"],
+"answer": "When you have a performance problem"
+},
+{
+"id": 36,
+"question": "When does ETag change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When content changes"
+},
+{
+"id": 37,
+"question": "When does Expires change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When there's a new request to the original server"
+},
+{
+"id": 38,
+"question": "When does Last-Modified change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When content changes"
+},
+{
+"id": 39,
+"question": "ETag works with which request header for caching?",
+"options": ["If-None-Match", "If-Match", "If-Modified-Since"],
+"answer": "If-None-Match"
+},
+{
+"id": 40,
+"question": "Caching increases",
+"options": ["Locality", "Round trips", "Latency", "Download size"],
+"answer": "Locality"
+},
+{
+"id": 41,
+"question": "Static content (content that never changes) should use what header?",
+"options": ["Expires: 60", "Authorization basic ...", "Cache-Control: max-age=60", "Cache-Control: public"],
+"answer": "Cache-Control: public"
+},
+{
+"id": 42,
+"question": "Attackers modified server data so that when users clicked checkout they were taken to a fake website that stole their credit card.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "XSS (Cross-Site Scripting)"
+},
+{
+"id": 43,
+"question": "Attackers stole authorization info and submitted requests to TikTok that appeared to be coming from users, but wasn’t really.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "CSRF (Cross-Site Request Forgery)"
+},
+{
+"id": 44,
+"question": "Server A only responds to server B. Attacker tricks B into making request to A and returning result over web.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "SSRF (Server-Side Request Forgery)"
+},
+{
+"id": 45,
+"question": "Attacker customized social media profile with JavaScript that would cause anyone visiting profile to automatically add as friend.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "XSS (Cross-Site Scripting)"
+},
+{
+"id": 46,
+"question": "Attacker makes a request with a special path, server uses log4j to log request paths, special string in log4j can run any code.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "RCE (Remote Code Execution)"
+},
+{
+"id": 47,
+"question": "Attackers used flaw in Perl’s implementation of hashes (dicts) to make access to data O(2^n) and webservers use up all with just a few requests.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "DoS (Denial of Service)"
+},
+{
+"id": 48,
+"question": "Attacker modifies a legitimate cookie to indicate authorized access to payed content they haven't payed for.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "CSRF (Cross-Site Request Forgery)"
+},
+{
+"id": 49,
+"question": "Snowflake login with long username allows access to other user’s data.",
+"options": ["XSS (Cross-Site Scripting)", "RCE (Remote Code Execution)", "CSRF (Cross-Site Request Forgery)", "SSRF (Server-Side Request Forgery)", "DoS (Denial of Service)"],
+"answer": "CSRF (Cross-Site Request Forgery)"
+},
+{
+"id": 50,
+"question": "Changing program arguments (exec, system, subprocess…) with variables can lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "RCE by Shell Injection"
+},
+{
+"id": 51,
+"question": "Allowing very large uploads can lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "DoS"
+},
+{
+"id": 52,
+"question": "Poorly written in-browser JS code can lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "Client-side CSRF"
+},
+{
+"id": 53,
+"question": "Not filtering and validating path component of URL can lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "Path traversal"
+},
+{
+"id": 54,
+"question": "Using templates to form database queries can lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "SQL Injection"
+},
+{
+"id": 55,
+"question": "Stolen cookies may lead to...",
+"options": ["Server-side CSRF", "Client-side CSRF", "Path traversal", "SQL Injection", "RCE by Shell Injection", "DoS"],
+"answer": "Server-side CSRF"
+},
+{
+"id": 56,
+"question": "What protocol does TLS work inside of (on top of)?",
+"options": ["Ethernet", "IP", "TCP/UDP", "HTTP(S)", "HTML"],
+"answer": "TCP/UDP"
+},
+{
+"id": 57,
+"question": "What protocol goes inside of (on top of) TLS?",
+"options": ["Ethernet", "IP", "TCP/UDP", "HTTP(S)", "HTML"],
+"answer": "HTTP(S)"
+},
+{
+"id": 58,
+"question": "What is the current version of TLS?",
+"options": ["SSL", "TLS1.0", "TLS1.1", "TLS1.2", "TLS1.3", "TLS1.4"],
+"answer": "TLS1.3"
+},
+{
+"id": 59,
+"question": "When someone says 'encryption' usually what are they referring to providing?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Privacy"
+},
+{
+"id": 60,
+"question": "Ensuring messages aren't repeated?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Authenticity"
+},
+{
+"id": 61,
+"question": "Ensuring you're actually talking to who you think you're talking to?",
+"options": ["Identity", "Privacy", "Authenticity"],
+"answer": "Identity"
+},
+{
+"id": 62,
+"question": "A certificate is checked by the...",
+"options": ["Government", "Certificate Authority", "User Agent", "HTTP Server", "DNS Server", "Router"],
+"answer": "User Agent"
+},
+{
+"id": 63,
+"question": "A certificate is signed by the...",
+"options": ["Government", "Certificate Authority", "User Agent", "HTTP Server", "DNS Server", "Router"],
+"answer": "Certificate Authority"
+},
+{
+"id": 64,
+"question": "A signature is verified by combining it with the... (1/2)",
+"options": ["Shared Secret", "Private Key", "Public Key", "Certificate", "Certificate Authority", "User Agent"],
+"answer": "Public Key"
+},
+{
+"id": 65,
+"question": "A signature is verified by combining it with the... (2/2)",
+"options": ["Contents of the thing that was signed", "TLS protocol", "HTTP Headers", "IP Address", "Cipher Suite Negotiation", "Ephemeral Key"],
+"answer": "Contents of the thing that was signed"
+},
+{
+"id": 66,
+"question": "What is the most crucial part of the text of a signed certificate, apart from the signature...",
+"options": ["IP Address", "Ethernet Address", "Server version", "IP Address", "HTTP vs HTTPS", "Domain Name"],
+"answer": "Domain Name"
+},
+{
+"id": 67,
+"question": "How do you get the Certificate Authority's public key?",
+"options": ["DNS", "Browser/OS", "TCP/UDP", "HTTP", "Ethernet", "IP"],
+"answer": "Browser/OS"
+},
+{
+"id": 68,
+"question": "When should you optimize?",
+"options": ["Never", "Continuously", "Early development", "Late development", "Between iterations", "When you have a performance problem"],
+"answer": "When you have a performance problem"
+},
+{
+"id": 69,
+"question": "When does ETag change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When content changes"
+},
+{
+"id": 70,
+"question": "When does Expires change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When there's a new request to the original server"
+},
+{
+"id": 71,
+"question": "When does Last-Modified change?",
+"options": ["When content changes", "When there's a new request to the original server", "When there's a new request to a reverse proxy", "Never"],
+"answer": "When content changes"
+},
+{
+"id": 72,
+"question": "ETag works with which request header for caching?",
+"options": ["If-None-Match", "If-Match", "If-Modified-Since"],
+"answer": "If-None-Match"
+},
+{
+"id": 73,
+"question": "Caching increases",
+"options": ["Locality", "Round trips", "Latency", "Download size"],
+"answer": "Locality"
+},
+{
+"id": 74,
+"question": "Static content (content that never changes) should use what header?",
+"options": ["Expires: 60", "Authorization basic ...", "Cache-Control: max-age=60", "Cache-Control: public"],
+"answer": "Cache-Control: public"
+},
+  {
+    "id": 75,
+    "question": "PWA/ServiceWorker has what benefits?",
+    "options": ["Notifications", "Runs all the time", "3D Rendering", "Offline use", "Makes page easy to debug", "Advanced DOM features"],
+    "answer": ["Notifications", "Offline use"]
+  },
+  {
+    "id": 76,
+    "question": "If my serviceworker script is at http://example.com/banana/sw.js what it can it manage?",
+    "options": [
+      "http://example.com/banana/index.html",
+      "http://example.com/index.html",
+      "http://example.com/apple/index.html",
+      "http://example2.com/banana/index.html",
+      "Nothing"
+    ],
+    "answer": "Nothing"
+  },
+  {
+    "id": 77,
+    "question": "If my serviceworker script is at https://example.com/banana/sw.js what it can it manage?",
+    "options": [
+      "https://example.com/banana/index.html",
+      "https://example.com/index.html",
+      "https://example.com/apple/index.html",
+      "https://example2.com/banana/index.html",
+      "Nothing"
+    ],
+    "answer": "https://example.com/banana/index.html"
+  },
+  {
+    "id": 78,
+    "question": "Notifications are those things that...",
+    "options": [
+      "are sent between threads",
+      "Pop up in your OS",
+      "Forces cache to be updated",
+      "Pops up over your page",
+      "Causes code to run when something happens",
+      "Do something asynchronously"
+    ],
+    "answer": "Pop up in your OS"
+  },
+  {
+    "id": 79,
+    "question": "What does the <picture> element do?",
+    "options": [
+      "Same thing as <img>",
+      "Groups multiple sources for the same image",
+      "Allows the user to draw a picture",
+      "Allows JS to draw a picture",
+      "Enables AVIF"
+    ],
+    "answer": "Groups multiple sources for the same image"
+  },
+  {
+    "id": 80,
+    "question": "What is the worst HTTP method for performance?",
+    "options": ["GET", "HEAD", "POST", "PUT", "DELETE", "PATCH"],
+    "answer": "POST"
+  },
+  {
+    "id": 81,
+    "question": "DNS CNAME is similar to",
+    "options": ["HTTP 1xx", "HTTP 2xx", "HTTP 3xx", "HTTP 4xx", "HTTP 5xx"],
+    "answer": "HTTP 3xx"
+  },
+  {
+    "id": 82,
+    "question": "Asynchronous loading helps reduce...",
+    "options": ["Download size", "Bandwidth", "# Requests", "Concurrency", "Round Trips", "Locality"],
+    "answer": "Round Trips"
+  },
+  {
+    "id": 83,
+    "question": "\"Asynchronous loading\" loads things...",
+    "options": ["One after the other", "Slowly", "In parallel"],
+    "answer": "In parallel"
+  },
+  {
+    "id": 84,
+    "question": "What is the best HTTP method for performance?",
+    "options": ["GET", "HEAD", "POST", "PUT", "DELETE", "PATCH"],
+    "answer": "HEAD"
+  },
+  {
+    "id": 85,
+    "question": "ServiceWorker refers to open tabs of the app as...",
+    "options": ["page", "tab", "window", "frame", "client", "registration"],
+    "answer": "client"
+  },
+  {
+    "id": 86,
+    "question": "Alerts are those things that...",
+    "options": [
+      "are sent between threads",
+      "Pop up in your OS",
+      "Forces cache to be updated",
+      "Pops up over your page",
+      "Causes code to run when something happens",
+      "Do something asynchronously"
+    ],
+    "answer": "Pops up over your page"
+  },
+  {
+    "id": 87,
+    "question": "What is cache-busting?",
+    "options": [
+      "Using etag headers",
+      "Using http HEAD method",
+      "Putting a version # in the filename",
+      "Using Authorization:"
+    ],
+    "answer": "Putting a version # in the filename"
+  },
+  {
+    "id": 88,
+    "question": "Asynchronous loading helps reduce...",
+    "options": ["Download size", "Bandwidth", "# Requests", "Concurrency", "Round Trips", "Locality"],
+    "answer": "Round Trips"
+  },
+  {
+    "id": 89,
+    "question": "\"Asynchronous loading\" loads things...",
+    "options": ["One after the other", "Slowly", "In parallel"],
+    "answer": "In parallel"
+  },
+  {
+    "id": 90,
+    "question": "When should you optimize?",
+    "options": [
+      "Never",
+      "Continuously",
+      "Early development",
+      "Late development",
+      "Between iterations",
+      "When you have a performance problem"
+    ],
+    "answer": "When you have a performance problem"
+  },
+  {
+    "id": 91,
+    "question": "Which one has the best compression?",
+    "options": ["GIF", "WebP", "GIF", "AVIF", "JPEG"],
+    "answer": "AVIF"
+  },
+  {
+    "id": 92,
+    "question": "What loads the installer script?",
+    "options": ["HTML page", "navigator.serviceWorker", "Cache"],
+    "answer": "HTML page"
+  },
+  {
+    "id": 93,
+    "question": "Service worker has access to what APIs?",
+    "options": ["window", "document", "location", "fetch", "XMLHttpRequest", "Storage"],
+    "answer": "fetch"
+  }
+]
+

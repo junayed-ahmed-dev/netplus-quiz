@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "question": "k-anonymity primarily protects against:",
+    "options": ["Attribute disclosure", "Identity disclosure", "Both equally", "Neither"],
+    "answer": "Identity disclosure"
+  },
+  {
+    "id": 2,
+    "question": "Which attack occurs when all individuals in a group share the same sensitive value?",
+    "options": ["Background attack", "Similarity attack", "Homogeneity attack", "Membership attack"],
+    "answer": "Homogeneity attack"
+  },
+  {
+    "id": 3,
+    "question": "ℓ-diversity requires:",
+    "options": ["ℓ rows per dataset", "ℓ distinct sensitive values per group", "ℓ attributes per individual", "ℓ queries"],
+    "answer": "ℓ distinct sensitive values per group"
+  },
+  {
+    "id": 4,
+    "question": "Similarity attack occurs when:",
+    "options": ["Values are identical", "Values are different but semantically similar", "Values are missing", "Values are random"],
+    "answer": "Values are different but semantically similar"
+  },
+  {
+    "id": 5,
+    "question": "Skewness attack happens when:",
+    "options": ["All values identical", "Group distribution differs from global distribution", "Dataset too small", "Query too large"],
+    "answer": "Group distribution differs from global distribution"
+  },
+  {
+    "id": 6,
+    "question": "t-closeness ensures:",
+    "options": ["Same group size", "Same number of attributes", "Group distribution close to global distribution", "No missing values"],
+    "answer": "Group distribution close to global distribution"
+  },
+  {
+    "id": 7,
+    "question": "Dalenius definition states that:",
+    "options": ["Data must be encrypted", "No additional information should be learned from released data", "Only identity must be protected", "Only attributes must be protected"],
+    "answer": "No additional information should be learned from released data"
+  },
+  {
+    "id": 8,
+    "question": "Why is Dalenius definition impractical?",
+    "options": ["Too weak", "Too strict", "Too slow", "Too simple"],
+    "answer": "Too strict"
+  },
+  {
+    "id": 9,
+    "question": "Randomized response is used for:",
+    "options": ["Removing bias", "Collecting sensitive survey data", "Encrypting data", "Sorting data"],
+    "answer": "Collecting sensitive survey data"
+  },
+  {
+    "id": 10,
+    "question": "In randomized response, why is 'Yes' not incriminating?",
+    "options": ["Always true", "Always false", "Could be random", "Encrypted"],
+    "answer": "Could be random"
+  },
+  {
+    "id": 11,
+    "question": "Randomized response provides:",
+    "options": ["Exact answers", "No data", "Aggregate statistics with privacy", "Only identity protection"],
+    "answer": "Aggregate statistics with privacy"
+  },
+  {
+    "id": 12,
+    "question": "Differential privacy ensures:",
+    "options": ["Exact answers", "Data encryption", "Similar outputs for neighboring datasets", "No queries allowed"],
+    "answer": "Similar outputs for neighboring datasets"
+  },
+  {
+    "id": 13,
+    "question": "Neighboring datasets differ in:",
+    "options": ["One attribute", "One individual", "One query", "One column"],
+    "answer": "One individual"
+  },
+  {
+    "id": 14,
+    "question": "What is the key idea of differential privacy?",
+    "options": ["Encrypt data", "Remove individuals", "One individual's data should not affect output significantly", "Store less data"],
+    "answer": "One individual's data should not affect output significantly"
+  },
+  {
+    "id": 15,
+    "question": "Smaller ε means:",
+    "options": ["Less privacy", "More privacy", "No change", "Less noise"],
+    "answer": "More privacy"
+  },
+  {
+    "id": 16,
+    "question": "Larger ε means:",
+    "options": ["More privacy", "Less privacy", "No noise", "Same privacy"],
+    "answer": "Less privacy"
+  },
+  {
+    "id": 17,
+    "question": "What does δ represent?",
+    "options": ["Dataset size", "Failure probability", "Noise level", "Query count"],
+    "answer": "Failure probability"
+  },
+  {
+    "id": 18,
+    "question": "Approximate DP allows:",
+    "options": ["No privacy", "Exact answers", "Small probability of privacy failure", "No randomness"],
+    "answer": "Small probability of privacy failure"
+  },
+  {
+    "id": 19,
+    "question": "Post-processing property means:",
+    "options": ["Noise can be removed", "DP remains after further computation", "Data becomes public", "DP is lost"],
+    "answer": "DP remains after further computation"
+  },
+  {
+    "id": 20,
+    "question": "Composition property means:",
+    "options": ["Privacy improves", "Privacy loss accumulates", "Queries are independent", "Only one query allowed"],
+    "answer": "Privacy loss accumulates"
+  },
+  {
+    "id": 21,
+    "question": "If multiple queries are made, privacy:",
+    "options": ["Improves", "Decreases", "Remains same", "Becomes zero"],
+    "answer": "Decreases"
+  },
+  {
+    "id": 22,
+    "question": "Plausible deniability means:",
+    "options": ["Data is encrypted", "User cannot deny participation", "User cannot be confidently identified", "Data removed"],
+    "answer": "User cannot be confidently identified"
+  },
+  {
+    "id": 23,
+    "question": "Which method provides strongest guarantee?",
+    "options": ["k-anonymity", "ℓ-diversity", "t-closeness", "Differential privacy"],
+    "answer": "Differential privacy"
+  },
+  {
+    "id": 24,
+    "question": "k-anonymity fails because:",
+    "options": ["Too much noise", "Attribute disclosure attacks", "No groups", "Too slow"],
+    "answer": "Attribute disclosure attacks"
+  },
+  {
+    "id": 25,
+    "question": "ℓ-diversity fails due to:",
+    "options": ["No diversity", "Similarity attacks", "No groups", "Too much noise"],
+    "answer": "Similarity attacks"
+  },
+  {
+    "id": 26,
+    "question": "t-closeness improves over ℓ-diversity by:",
+    "options": ["Increasing group size", "Matching distributions", "Adding noise", "Removing data"],
+    "answer": "Matching distributions"
+  },
+  {
+    "id": 27,
+    "question": "Randomized response uses:",
+    "options": ["Deterministic answers", "Randomization", "Encryption", "Sorting"],
+    "answer": "Randomization"
+  },
+  {
+    "id": 28,
+    "question": "In randomized response, responses are:",
+    "options": ["Deterministic", "Always true", "Probabilistic", "Encrypted"],
+    "answer": "Probabilistic"
+  },
+  {
+    "id": 29,
+    "question": "Differential privacy protects:",
+    "options": ["Only identity", "Only attributes", "Both identity and attributes", "Neither"],
+    "answer": "Both identity and attributes"
+  },
+  {
+    "id": 30,
+    "question": "If output changes significantly when one person is removed:",
+    "options": ["DP holds", "DP fails", "k-anonymity holds", "ℓ-diversity holds"],
+    "answer": "DP fails"
+  }
+]
