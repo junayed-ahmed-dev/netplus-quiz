@@ -2,156 +2,255 @@
   {
     "id": 1,
     "question": "A machine learning model achieves very high performance on the training data but significantly lower performance on the test data. Which of the following is the most appropriate explanation and solution?",
-    "image_url": null,
     "options": [
-      "A) The model is underfitting; increase model complexity.",
-      "B) The model is overfitting; apply early stopping or use more data.",
-      "C) The model has high bias; train for more epochs.",
-      "D) The model generalizes well; no changes are required."
+      "The model is underfitting; increase model complexity.",
+      "The model is overfitting; apply early stopping or use more data.",
+      "The model has high bias; train for more epochs.",
+      "The model generalizes well; no changes are required."
     ],
     "answer": "B"
   },
   {
     "id": 2,
-    "question": "Consider a binary classification problem with 100 samples:\n• 90 samples belong to Class 0\n• 10 samples belong to Class 1\nA model predicts:\n• 85 of Class 0 correctly\n• 5 of Class 0 incorrectly as Class 1\n• 5 of Class 1 correctly\n• 5 of Class 1 incorrectly as Class 0\nWhich statement is most accurate?",
-    "image_url": null,
+    "question": "Consider a binary classification problem with 100 samples...",
     "options": [
-      "A) The model’s accuracy is 90%, indicating strong and balanced performance.",
-      "B) The model’s accuracy is 90%, but performance on the minority class is limited.",
-      "C) The model’s accuracy is 85%, and it completely ignores the minority class.",
-      "D) The model’s accuracy is 80%, showing severe overfitting."
+      "The model\u2019s accuracy is 90%, indicating strong and balanced performance.",
+      "The model\u2019s accuracy is 90%, but performance on the minority class is limited.",
+      "The model\u2019s accuracy is 85%, and it completely ignores the minority class.",
+      "The model\u2019s accuracy is 80%, showing severe overfitting."
     ],
     "answer": "B"
   },
   {
     "id": 3,
-    "question": "A binary classifier produces the following results on 100 samples:\n• TP = 40\n• FP = 10\n• FN = 20\n• TN = 30\nWhich statement is most correct?",
-    "image_url": null,
+    "question": "A binary classifier produces TP=40, FP=10, FN=20, TN=30. Which statement is most correct?",
     "options": [
-      "A) Precision is higher than recall, and F1 score is closer to precision.",
-      "B) Recall is higher than precision, and F1 score is closer to recall.",
-      "C) Precision and recall are equal.",
-      "D) F1 score is higher than both precision and recall."
+      "Precision is higher than recall, and F1 score is closer to precision.",
+      "Recall is higher than precision, and F1 score is closer to recall.",
+      "Precision and recall are equal.",
+      "F1 score is higher than both precision and recall."
     ],
     "answer": "A"
   },
   {
     "id": 4,
     "question": "Ethics in AI primarily refers to:",
-    "image_url": null,
     "options": [
-      "A) Increasing the speed of AI algorithms",
-      "B) Principles that guide the safe, fair, and beneficial development and use of AI",
-      "C) Maximizing profit through automation",
-      "D) Replacing human decision-making in all systems"
+      "Increasing the speed of AI algorithms",
+      "Principles that guide the safe, fair, and beneficial development and use of AI",
+      "Maximizing profit through automation",
+      "Replacing human decision-making in all systems"
     ],
     "answer": "B"
   },
   {
     "id": 5,
     "question": "Which of the following situations would most clearly violate PIPEDA principles?",
-    "image_url": null,
     "options": [
-      "A) A company collects customer data with clear consent and uses it only for the stated purpose.",
-      "B) An organization collects more personal data than necessary for future unspecified AI projects.",
-      "C) A company allows individuals to request access to and correction of their personal data.",
-      "D) An organization implements safeguards to protect stored personal information."
+      "A company collects customer data with clear consent and uses it only for the stated purpose.",
+      "An organization collects more personal data than necessary for future unspecified AI projects.",
+      "A company allows individuals to request access to and correction of their personal data.",
+      "An organization implements safeguards to protect stored personal information."
     ],
     "answer": "B"
   },
   {
     "id": 6,
-    "question": "Which of the following best describes demographic parity in a binary classification system?",
-    "image_url": null,
+    "question": "Which of the following best describes demographic parity?",
     "options": [
-      "A) The model has equal accuracy for all demographic groups.",
-      "B) The probability of predicting a positive outcome is the same across different sensitive groups.",
-      "C) The true positive rate is equal across groups.",
-      "D) The model ignores all input features related to qualifications."
+      "Equal accuracy for all groups",
+      "Equal probability of positive prediction across groups",
+      "Equal true positive rate",
+      "Ignoring demographic features"
     ],
     "answer": "B"
   },
   {
     "id": 7,
-    "question": "What is one major drawback of enforcing demographic parity in a hiring model?",
-    "image_url": null,
+    "question": "What is a drawback of demographic parity?",
     "options": [
-      "A) The model becomes more accurate for all groups.",
-      "B) The model may reject qualified candidates or accept unqualified ones to balance outcomes.",
-      "C) The model guarantees fairness without trade-offs.",
-      "D) The model stops using demographic information completely."
+      "More accuracy",
+      "Rejecting qualified or accepting unqualified candidates",
+      "No trade-offs",
+      "Stops using demographic info"
     ],
     "answer": "B"
   },
   {
     "id": 8,
-    "question": "A classifier is evaluated for two demographic groups. The clasifier satisfies equalized odds. What is the missing value?",
-    "image_url": "./images/q8.png",
-    "has_image": true,
-    "options": ["A) 6", "B) 8", "C) 12", "D) 16"],
-    "answer": "C"
+    "question": "Equalized Odds missing value question",
+    "options": [
+      "6",
+      "8",
+      "12",
+      "16"
+    ],
+    "answer": "C",
+    "image_url": "./images/q8.png"
   },
   {
     "id": 9,
-    "question": "According to the Impossibility Theorem in algorithmic fairness, when different demographic groups have different base rates,\nP(Y = 1 | A = a) ≠ P(Y = 1 | A = b),\nit is impossible to simultaneously satisfy all fairness goals unless:",
-    "image_url": null,
+    "question": "Impossibility Theorem condition",
     "options": [
-      "A) The classifier satisfies demographic parity.",
-      "B) The classifier is unbiased.",
-      "C) The classifier is perfect (M = Y) or the base rates are equal P(Y = 1 | A = a) = P(Y = 1 | A = b).",
-      "D) Equalized odds holds across groups."
+      "Demographic parity holds",
+      "Classifier is unbiased",
+      "Classifier is perfect or base rates equal",
+      "Equalized odds holds"
     ],
     "answer": "C"
   },
   {
     "id": 10,
-    "question": "A government scholarship aims to increase representation of underrepresented groups. The goal is equal access, not strictly merit-based selection. Which fairness definition best aligns with this goal?",
-    "image_url": null,
+    "question": "Scholarship fairness goal",
     "options": [
-      "A) Demographic Parity – Equal outcomes across groups",
-      "B) Equal Opportunity – Equal true positive rates for qualified individuals",
-      "C) Equalized Odds – Equal true positive and false positive rates across groups",
-      "D) Calibration – Equal predictive accuracy across groups"
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Calibration"
     ],
     "answer": "A"
   },
-
+  {
+    "id": 11,
+    "question": "Definition of bias in ML",
+    "options": [
+      "Random noise",
+      "Systematic errors affecting groups",
+      "High complexity",
+      "Only performance differences"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "question": "Historical bias",
+    "options": [
+      "Random noise",
+      "Removing sensitive attributes",
+      "Learning from biased historical data",
+      "Small datasets"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "question": "Measurement bias",
+    "options": [
+      "Historical bias",
+      "High complexity",
+      "Inaccurate representation of real-world data",
+      "Class imbalance"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 14,
+    "question": "WWII airplane example bias",
+    "options": [
+      "Measurement bias",
+      "Historical bias",
+      "Selection bias (survivorship bias)",
+      "Confirmation bias"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "question": "Mitigating selection bias",
+    "options": [
+      "Fairness constraints",
+      "Oversampling",
+      "Targeted data collection and adaptation",
+      "Reweighting"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "Definition of PII",
+    "options": [
+      "Any data",
+      "Identifiable information",
+      "Only IDs",
+      "Anonymous data"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "question": "Quasi-identifiers",
+    "options": [
+      "Direct identifiers",
+      "Attributes that identify when combined",
+      "Sensitive info",
+      "Noise"
+    ],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "question": "k-anonymity definition",
+    "options": [
+      "Remove names",
+      "Encrypt data",
+      "Each quasi-identifier appears at least k times",
+      "Remove attributes"
+    ],
+    "answer": "C"
+  },
   {
     "id": 19,
-    "question": "Consider the following released dataset (after removing direct identifiers): Assume Age Range, Gender, and Postal Code are quasi-identifiers. What is the value of k for this dataset?",
-    "image_url": "./images/q19.png",
-    "has_image": true,
+    "question": "Value of k in dataset",
     "options": [
-      "A) k = 2",
-      "B) k = 3",
-      "C) k = 4",
-      "D) k = 8"
+      "2",
+      "3",
+      "4",
+      "8"
     ],
-    "answer": "B"
+    "answer": "B",
+    "image_url": "./images/q19.png"
   },
-
   {
     "id": 20,
-    "question": "A dataset satisfies k-anonymity. However, in one equivalence class (same quasi-identifiers), all individuals have the same disease value. What is the main privacy problem in this situation?",
-    "image_url": null,
+    "question": "Homogeneity problem",
     "options": [
-      "A) The dataset does not satisfy k-anonymity.",
-      "B) The dataset is vulnerable to a homogeneity attack due to lack of diversity in the sensitive attribute.",
-      "C) The quasi-identifiers are not properly generalized.",
-      "D) The value of k is too large."
+      "Not k-anonymous",
+      "Homogeneity attack",
+      "Bad generalization",
+      "k too large"
     ],
     "answer": "B"
   },
-
+  {
+    "id": 21,
+    "question": "True statement about k-anonymity",
+    "options": [
+      "Guarantees protection",
+      "No generalization",
+      "Simple baseline method",
+      "Strong guarantees"
+    ],
+    "answer": "C"
+  },
+  {
+    "id": 22,
+    "question": "\u2113-diversity definition",
+    "options": [
+      "\u2113 records total",
+      "\u2113 different sensitive values",
+      "k \u2265 \u2113",
+      "Same value"
+    ],
+    "answer": "B"
+  },
   {
     "id": 23,
-    "question": "A dataset satisfies 4-diversity in every equivalence class. However, in one class the sensitive values are:\n• Lung cancer\n• Liver cancer\n• Pancreatic cancer\n• Brain cancer\nWhich statement best describes the privacy risk?",
-    "image_url": null,
+    "question": "\u2113-diversity limitation",
     "options": [
-      "A) There is no privacy risk because ℓ-diversity is satisfied.",
-      "B) The dataset violates k-anonymity.",
-      "C) ℓ-diversity may still leak sensitive information because the values are semantically similar.",
-      "D) The dataset should reduce ℓ to improve privacy."
+      "No risk",
+      "Violates k-anonymity",
+      "Semantic similarity leak",
+      "Reduce \u2113"
     ],
     "answer": "C"
   }
