@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "Why is fairness important in AI systems?",
+    "options": [
+      "To increase computation speed",
+      "AI decisions impact real-world outcomes like hiring and healthcare",
+      "To reduce storage cost",
+      "To simplify algorithms"
+    ],
+    "answer": "AI decisions impact real-world outcomes like hiring and healthcare"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is NOT a reason fairness matters?",
+    "options": [
+      "Trust and adoption",
+      "Legal risk",
+      "Competitive advantage",
+      "Faster training time"
+    ],
+    "answer": "Faster training time"
+  },
+  {
+    "id": 3,
+    "question": "What was the key issue in Amazon’s hiring AI?",
+    "options": [
+      "Too slow",
+      "Too accurate",
+      "Gender bias from historical data",
+      "No training data"
+    ],
+    "answer": "Gender bias from historical data"
+  },
+  {
+    "id": 4,
+    "question": "What is the main lesson from Amazon’s hiring system?",
+    "options": [
+      "AI always improves fairness",
+      "Historical data can amplify bias",
+      "More data solves all problems",
+      "Fairness is automatic"
+    ],
+    "answer": "Historical data can amplify bias"
+  },
+  {
+    "id": 5,
+    "question": "Why is defining fairness difficult?",
+    "options": [
+      "Too many algorithms",
+      "No universal mathematical definition",
+      "Too much data",
+      "Lack of models"
+    ],
+    "answer": "No universal mathematical definition"
+  },
+  {
+    "id": 6,
+    "question": "What is group fairness?",
+    "options": [
+      "Treating all individuals equally",
+      "Ensuring fairness across demographic groups",
+      "Minimizing loss",
+      "Improving speed"
+    ],
+    "answer": "Ensuring fairness across demographic groups"
+  },
+  {
+    "id": 7,
+    "question": "What is individual fairness?",
+    "options": [
+      "Treat groups equally",
+      "Treat similar individuals similarly",
+      "Maximize accuracy",
+      "Reduce bias only"
+    ],
+    "answer": "Treat similar individuals similarly"
+  },
+  {
+    "id": 8,
+    "question": "In fairness notation, what does A represent?",
+    "options": [
+      "Accuracy",
+      "Algorithm",
+      "Sensitive attribute",
+      "Prediction"
+    ],
+    "answer": "Sensitive attribute"
+  },
+  {
+    "id": 9,
+    "question": "What does Y represent?",
+    "options": [
+      "Prediction",
+      "Feature",
+      "True label",
+      "Bias"
+    ],
+    "answer": "True label"
+  },
+  {
+    "id": 10,
+    "question": "What does Y’ represent?",
+    "options": [
+      "True label",
+      "Prediction",
+      "Feature",
+      "Sensitive attribute"
+    ],
+    "answer": "Prediction"
+  },
+  {
+    "id": 11,
+    "question": "What is Demographic Parity?",
+    "options": [
+      "Equal accuracy",
+      "Equal prediction rates across groups",
+      "Equal true labels",
+      "Equal features"
+    ],
+    "answer": "Equal prediction rates across groups"
+  },
+  {
+    "id": 12,
+    "question": "Demographic parity requires independence between:",
+    "options": [
+      "Y and X",
+      "Y’ and A",
+      "Y and A",
+      "X and A"
+    ],
+    "answer": "Y’ and A"
+  },
+  {
+    "id": 13,
+    "question": "What is the Disparate Impact (DI) threshold?",
+    "options": [
+      "≥ 0.5",
+      "≥ 0.8",
+      "≥ 1.0",
+      "≤ 0.2"
+    ],
+    "answer": "≥ 0.8"
+  },
+  {
+    "id": 14,
+    "question": "Group A positive rate = 0.40, Group B = 0.20. What is DI?",
+    "options": [
+      "0.2",
+      "0.4",
+      "0.5",
+      "0.8"
+    ],
+    "answer": "0.5"
+  },
+  {
+    "id": 15,
+    "question": "If DI = 0.5, what does it indicate?",
+    "options": [
+      "Fair system",
+      "Perfect fairness",
+      "Violation of demographic parity",
+      "Balanced model"
+    ],
+    "answer": "Violation of demographic parity"
+  },
+  {
+    "id": 16,
+    "question": "When is Demographic Parity useful?",
+    "options": [
+      "When labels are unbiased",
+      "When correcting historical bias",
+      "When maximizing accuracy",
+      "When minimizing error"
+    ],
+    "answer": "When correcting historical bias"
+  },
+  {
+    "id": 17,
+    "question": "What is a drawback of Demographic Parity?",
+    "options": [
+      "Too fast",
+      "May accept unqualified or reject qualified individuals",
+      "No fairness",
+      "No bias"
+    ],
+    "answer": "May accept unqualified or reject qualified individuals"
+  },
+  {
+    "id": 18,
+    "question": "What is Equal Opportunity?",
+    "options": [
+      "Equal prediction rates",
+      "Equal true positive rates",
+      "Equal false positives",
+      "Equal accuracy"
+    ],
+    "answer": "Equal true positive rates"
+  },
+  {
+    "id": 19,
+    "question": "Equal Opportunity focuses on:",
+    "options": [
+      "All predictions",
+      "Qualified individuals only",
+      "Unqualified individuals",
+      "All features"
+    ],
+    "answer": "Qualified individuals only"
+  },
+  {
+    "id": 20,
+    "question": "Group A TPR = 0.80, Group B TPR = 0.60. What does this mean?",
+    "options": [
+      "Fair system",
+      "Equal opportunity satisfied",
+      "Equal opportunity violated",
+      "Balanced system"
+    ],
+    "answer": "Equal opportunity violated"
+  },
+  {
+    "id": 21,
+    "question": "When is Equal Opportunity preferred?",
+    "options": [
+      "Random decisions",
+      "When ensuring fairness for qualified individuals",
+      "When minimizing computation",
+      "When labels are ignored"
+    ],
+    "answer": "When ensuring fairness for qualified individuals"
+  },
+  {
+    "id": 22,
+    "question": "What is Equalized Odds?",
+    "options": [
+      "Equal TPR only",
+      "Equal FPR only",
+      "Equal TPR and FPR",
+      "Equal accuracy"
+    ],
+    "answer": "Equal TPR and FPR"
+  },
+  {
+    "id": 23,
+    "question": "Equalized Odds ensures:",
+    "options": [
+      "Equal outcomes",
+      "Equal error rates",
+      "Equal features",
+      "Equal labels"
+    ],
+    "answer": "Equal error rates"
+  },
+  {
+    "id": 24,
+    "question": "When is Equalized Odds useful?",
+    "options": [
+      "When only positives matter",
+      "When both false positives and false negatives matter",
+      "When ignoring errors",
+      "When maximizing speed"
+    ],
+    "answer": "When both false positives and false negatives matter"
+  },
+  {
+    "id": 25,
+    "question": "Edge Case: A model satisfies Demographic Parity but violates Equal Opportunity. What does it mean?",
+    "options": [
+      "Fair in all aspects",
+      "Equal outcomes but unequal treatment of qualified individuals",
+      "Perfect model",
+      "No bias"
+    ],
+    "answer": "Equal outcomes but unequal treatment of qualified individuals"
+  },
+  {
+    "id": 26,
+    "question": "Edge Case: A model satisfies Equal Opportunity but not Demographic Parity. Why?",
+    "options": [
+      "Different base rates across groups",
+      "Same predictions",
+      "No bias",
+      "Perfect fairness"
+    ],
+    "answer": "Different base rates across groups"
+  },
+  {
+    "id": 27,
+    "question": "Which fairness definition focuses on outcomes only?",
+    "options": [
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Demographic Parity",
+      "Individual Fairness"
+    ],
+    "answer": "Demographic Parity"
+  },
+  {
+    "id": 28,
+    "question": "Which fairness definition focuses only on qualified individuals?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equal Opportunity"
+  },
+  {
+    "id": 29,
+    "question": "Which fairness definition is the strictest?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equalized Odds"
+  },
+  {
+    "id": 30,
+    "question": "Final Trap: Can all fairness definitions be satisfied at the same time?",
+    "options": [
+      "Yes always",
+      "No, often they conflict",
+      "Only in small datasets",
+      "Only in supervised learning"
+    ],
+    "answer": "No, often they conflict"
+  }
+]

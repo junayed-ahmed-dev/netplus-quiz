@@ -1,0 +1,40 @@
+[
+{"id":1,"question":"A model has high training and test error. What is the issue?","options":["Overfitting","Underfitting","Data leakage","Bias in labels"],"answer":"Underfitting"},
+{"id":2,"question":"Which learning type uses rewards?","options":["Supervised","Unsupervised","Reinforcement","Regression"],"answer":"Reinforcement"},
+{"id":3,"question":"Classification output is:","options":["Continuous","Discrete","Random","Probabilistic only"],"answer":"Discrete"},
+{"id":4,"question":"Historical bias arises from:","options":["Algorithm design","Past data patterns","Evaluation metrics","Noise"],"answer":"Past data patterns"},
+{"id":5,"question":"Measurement bias example:","options":["Wrong labels","Unrepresentative data","Using proxies like arrests","Bad model"],"answer":"Using proxies like arrests"},
+{"id":6,"question":"Equalized odds requires:","options":["Equal accuracy","Equal TPR only","Equal TPR & FPR","Equal predictions"],"answer":"Equal TPR & FPR"},
+{"id":7,"question":"Equal opportunity focuses on:","options":["All predictions","Only qualified individuals","All individuals equally","Random predictions"],"answer":"Only qualified individuals"},
+{"id":8,"question":"Which fairness ignores labels?","options":["Equal opportunity","Equalized odds","Demographic parity","Individual fairness"],"answer":"Demographic parity"},
+{"id":9,"question":"Membership disclosure reveals:","options":["Identity","Sensitive attribute","Dataset inclusion","Label"],"answer":"Dataset inclusion"},
+{"id":10,"question":"Quasi-identifiers are:","options":["Direct identifiers","Sensitive attributes","Indirect identifiers","Noise"],"answer":"Indirect identifiers"},
+
+{"id":11,"question":"K-anonymity ensures each record is indistinguishable among:","options":["k records","k attributes","k groups","k features"],"answer":"k records"},
+{"id":12,"question":"ℓ-diversity fixes:","options":["Overfitting","Homogeneity attack","Noise","Accuracy"],"answer":"Homogeneity attack"},
+{"id":13,"question":"Skewness attack occurs when:","options":["Balanced data","Rare sensitive values","High accuracy","No diversity"],"answer":"Rare sensitive values"},
+{"id":14,"question":"Differential privacy uses:","options":["Exact values","Random noise","Bias correction","Sampling"],"answer":"Random noise"},
+{"id":15,"question":"Neighboring datasets differ by:","options":["All rows","One individual","All features","One label"],"answer":"One individual"},
+
+{"id":16,"question":"TP=30, FP=20. Precision?","options":["0.6","0.5","0.75","0.8"],"answer":"0.6"},
+{"id":17,"question":"TP=30, FN=10. Recall?","options":["0.75","0.6","0.8","0.5"],"answer":"0.75"},
+{"id":18,"question":"TP=30, FP=20, FN=10. F1 approx?","options":["0.67","0.7","0.75","0.6"],"answer":"0.67"},
+
+{"id":19,"question":"Group A: 50/100 positive, Group B: 30/100. DI?","options":["0.6","0.5","0.3","0.8"],"answer":"0.6"},
+
+{"id":20,"question":"Entropy of distribution [0.5,0.5]?","options":["0","1","0.5","2"],"answer":"1"},
+{"id":21,"question":"Entropy of [1,0]?","options":["0","1","0.5","2"],"answer":"0"},
+
+{"id":22,"question":"Explainability vs interpretability:","options":["Same","Explain=why, interpret=how","Opposite","Irrelevant"],"answer":"Explain=why, interpret=how"},
+{"id":23,"question":"Which is model-agnostic?","options":["Decision tree","SHAP","Linear regression","Rule-based"],"answer":"SHAP"},
+{"id":24,"question":"Transparency ensures:","options":["Accuracy","Accountability","Bias removal","Noise"],"answer":"Accountability"},
+
+{"id":25,"question":"PIPEDA requires:","options":["Unlimited data","Consent","No protection","Public data"],"answer":"Consent"},
+{"id":26,"question":"GDPR includes:","options":["No rules","Data minimization","Unlimited storage","No consent"],"answer":"Data minimization"},
+{"id":27,"question":"AIDA requires:","options":["Ignore risk","Monitor AI systems","Remove fairness","No accountability"],"answer":"Monitor AI systems"},
+
+{"id":28,"question":"Randomized response provides:","options":["Exact truth","Privacy with statistics","Noise only","Bias"],"answer":"Privacy with statistics"},
+{"id":29,"question":"Plausible deniability means:","options":["No privacy","Cannot infer individual","Exact inference","Bias"],"answer":"Cannot infer individual"},
+{"id":30,"question":"Sensitivity of count query:","options":["1","0","n","depends"],"answer":"1"},
+{"id":31,"question":"Main DP tradeoff:","options":["Bias vs fairness","Privacy vs accuracy","Speed vs memory","None"],"answer":"Privacy vs accuracy"}
+]

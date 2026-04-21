@@ -1,0 +1,22 @@
+[
+  {"id":1,"question":"OCAP stands for:","options":["Ownership Control Access Protection","Ownership Control Access Possession","Organization Control Access Possession","Ownership Consent Access Possession"],"answer":"Ownership Control Access Possession"},
+  {"id":2,"question":"OCAP asserts:","options":["Government control","Researcher control","First Nations control data","Public data"],"answer":"First Nations control data"},
+  {"id":3,"question":"OCAP is:","options":["Law","Algorithm","Governance principles","Dataset"],"answer":"Governance principles"},
+  {"id":4,"question":"Ownership means:","options":["Individual ownership","Company ownership","Collective ownership","No ownership"],"answer":"Collective ownership"},
+  {"id":5,"question":"Control includes:","options":["Storage only","Access only","Full lifecycle control","Sharing only"],"answer":"Full lifecycle control"},
+  {"id":6,"question":"Access means:","options":["Public","Government","Community access","No access"],"answer":"Community access"},
+  {"id":7,"question":"Possession refers to:","options":["Legal ownership","Physical control","Sharing rights","Deletion"],"answer":"Physical control"},
+  {"id":8,"question":"OCAP was created due to:","options":["AI growth","Data misuse","Government policy","Tech limits"],"answer":"Data misuse"},
+  {"id":9,"question":"Havasupai case issue:","options":["No data","Reuse beyond consent","Deleted data","No research"],"answer":"Reuse beyond consent"},
+  {"id":10,"question":"Consent allows unlimited use.","options":["True","False"],"answer":"False"},
+  {"id":11,"question":"Data sovereignty means:","options":["Gov control","Public access","Community control","Individual global control"],"answer":"Community control"},
+  {"id":12,"question":"OCAP applies globally.","options":["True","False"],"answer":"False"},
+  {"id":13,"question":"Anonymized data is:","options":["Always safe","Illegal","Can be misused","Deleted"],"answer":"Can be misused"},
+  {"id":14,"question":"Indigenous data is unique because:","options":["Small","Less accurate","Cultural significance","Always private"],"answer":"Cultural significance"},
+  {"id":15,"question":"Reusing data without consent violates:","options":["Accuracy","Speed","Ownership and control","Minimization"],"answer":"Ownership and control"},
+  {"id":16,"question":"Trap: OCAP is a government law.","options":["True","False"],"answer":"False"},
+  {"id":17,"question":"Trap: Consent once = consent forever.","options":["True","False"],"answer":"False"},
+  {"id":18,"question":"Scenario: DNA used for unrelated research","options":["Transparency","Consent violation","Accuracy","Storage issue"],"answer":"Consent violation"},
+  {"id":19,"question":"Scenario: community denied access to own data","options":["Ownership issue","Access violation","Accuracy issue","Security"],"answer":"Access violation"},
+  {"id":20,"question":"Deep: Indigenous data includes:","options":["Only numbers","Only text","Cultural, spiritual context","Only scientific data"],"answer":"Cultural, spiritual context"}
+]

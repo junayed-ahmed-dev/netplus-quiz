@@ -1,0 +1,22 @@
+[
+  {"id":1,"question":"AIDA regulates:","options":["All AI","Government AI","High-impact AI","Open-source AI"],"answer":"High-impact AI"},
+  {"id":2,"question":"High-impact AI affects:","options":["Speed","Accuracy","Rights and safety","Hardware"],"answer":"Rights and safety"},
+  {"id":3,"question":"AIDA requires:","options":["Deploy once","Continuous monitoring","Ignore risk","Reduce features"],"answer":"Continuous monitoring"},
+  {"id":4,"question":"Responsibility ends after deployment.","options":["True","False"],"answer":"False"},
+  {"id":5,"question":"Transparency requires:","options":["Open-source","General explanation","Full disclosure","No black box"],"answer":"General explanation"},
+  {"id":6,"question":"Accountability includes:","options":["Ignoring logs","Keeping records","Reducing data","Testing once"],"answer":"Keeping records"},
+  {"id":7,"question":"AIDA prohibits:","options":["AI use","ML models","Harmful deployment","Open-source"],"answer":"Harmful deployment"},
+  {"id":8,"question":"AIDA applies to:","options":["Developers only","Users only","Both","Government only"],"answer":"Both"},
+  {"id":9,"question":"AIDA is:","options":["Law","Rejected proposal","Ethical only","Algorithm"],"answer":"Rejected proposal"},
+  {"id":10,"question":"Enforcement is by:","options":["Companies","Government","Users","Developers"],"answer":"Government"},
+  {"id":11,"question":"Anonymized data is always safe.","options":["True","False"],"answer":"False"},
+  {"id":12,"question":"Strict liability on open-source may:","options":["Improve speed","Harm innovation","Reduce bias","Improve fairness"],"answer":"Harm innovation"},
+  {"id":13,"question":"Low-impact classification is hard because:","options":["Data missing","Depends on context","Too many models","Too simple"],"answer":"Depends on context"},
+  {"id":14,"question":"AI extinction risk means:","options":["Accuracy drop","Existential threat","Slow training","Data issue"],"answer":"Existential threat"},
+  {"id":15,"question":"AI should remain uncertain to:","options":["Reduce cost","Increase speed","Stay aligned","Avoid training"],"answer":"Stay aligned"},
+  {"id":16,"question":"Trap: AIDA only applies to developers.","options":["True","False"],"answer":"False"},
+  {"id":17,"question":"Trap: More regulation is always better.","options":["True","False"],"answer":"False"},
+  {"id":18,"question":"Scenario: No logs kept in AI system","options":["Transparency issue","Accountability failure","Speed issue","Data issue"],"answer":"Accountability failure"},
+  {"id":19,"question":"Scenario: AI harms users due to lack of monitoring","options":["Bias only","Risk management failure","Transparency only","Hardware issue"],"answer":"Risk management failure"},
+  {"id":20,"question":"Trap: AI systems are safe after deployment.","options":["True","False"],"answer":"False"}
+]

@@ -1,0 +1,22 @@
+[
+  {"id":1,"question":"Ethics differs from law because:","options":["It is enforced","It has penalties","It is moral guidance","It is written in code"],"answer":"It is moral guidance"},
+  {"id":2,"question":"Which is TRUE?","options":["All legal actions are ethical","All ethical actions are legal","Something can be legal but unethical","Ethics is enforced by courts"],"answer":"Something can be legal but unethical"},
+  {"id":3,"question":"Which is sensitive data?","options":["Name","Email","Health condition","Username"],"answer":"Health condition"},
+  {"id":4,"question":"Collecting unnecessary data violates:","options":["Accuracy","Security","Data minimization","Transparency"],"answer":"Data minimization"},
+  {"id":5,"question":"Transparency means:","options":["Open-source code","Public dataset","Understandable explanation","Full system access"],"answer":"Understandable explanation"},
+  {"id":6,"question":"Which country has no unified AI law?","options":["EU","Canada","USA","UK"],"answer":"USA"},
+  {"id":7,"question":"AIA focuses on:","options":["Accuracy","Speed","Risk and impact","Dataset size"],"answer":"Risk and impact"},
+  {"id":8,"question":"Higher AIA level means:","options":["Less regulation","Same rules","More strict requirements","Faster deployment"],"answer":"More strict requirements"},
+  {"id":9,"question":"PIA is required when:","options":["Offline tool","No data collected","Using personal data","Using GPU"],"answer":"Using personal data"},
+  {"id":10,"question":"Bias in AI leads to:","options":["Only technical issue","Ethical only","Legal and ethical risk","No issue"],"answer":"Legal and ethical risk"},
+  {"id":11,"question":"Model drift refers to:","options":["Better accuracy","Training faster","Change in behavior over time","Less data"],"answer":"Change in behavior over time"},
+  {"id":12,"question":"Documentation helps:","options":["Speed","UI","Legal protection and accountability","Data cleaning"],"answer":"Legal protection and accountability"},
+  {"id":13,"question":"User appeal relates to:","options":["Accuracy","Transparency","Speed","Optimization"],"answer":"Transparency"},
+  {"id":14,"question":"All AI systems require same regulation.","options":["True","False"],"answer":"False"},
+  {"id":15,"question":"OECD principles are:","options":["Laws","Ethical guidelines","Algorithms","Policies"],"answer":"Ethical guidelines"},
+  {"id":16,"question":"Trap: Transparency means making code public.","options":["True","False"],"answer":"False"},
+  {"id":17,"question":"Trap: High accuracy removes bias concerns.","options":["True","False"],"answer":"False"},
+  {"id":18,"question":"Scenario: AI rejects loan unfairly. Issue?","options":["Speed","Bias and fairness","GPU","Accuracy"],"answer":"Bias and fairness"},
+  {"id":19,"question":"Scenario: model outdated due to new data","options":["Privacy issue","Drift","Transparency","Ethics only"],"answer":"Drift"},
+  {"id":20,"question":"Which is NOT a GDPR principle?","options":["Security","Minimization","Fairness","Optimization"],"answer":"Optimization"}
+]

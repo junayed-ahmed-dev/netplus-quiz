@@ -1,0 +1,53 @@
+[
+{"id":1,"question":"High bias means:","options":["Overfitting","Underfitting","High variance","Noise"],"answer":"Underfitting"},
+{"id":2,"question":"Which is unsupervised?","options":["Classification","Regression","Clustering","RL"],"answer":"Clustering"},
+{"id":3,"question":"Learning bias arises from:","options":["Data","Algorithm","Labels","Noise"],"answer":"Algorithm"},
+{"id":4,"question":"Evaluation bias affects:","options":["Training","Testing fairness","Data collection","Labels"],"answer":"Testing fairness"},
+{"id":5,"question":"Representation bias example:","options":["Wrong labels","Underrepresented groups","Algorithm issue","Noise"],"answer":"Underrepresented groups"},
+
+{"id":6,"question":"Equalized odds includes:","options":["TPR only","FPR only","Both TPR & FPR","None"],"answer":"Both TPR & FPR"},
+{"id":7,"question":"Individual fairness:","options":["Group equality","Similar individuals treated similarly","Random","Equal labels"],"answer":"Similar individuals treated similarly"},
+
+{"id":8,"question":"Identity disclosure risk:","options":["Re-identification","Noise","Accuracy","Bias"],"answer":"Re-identification"},
+{"id":9,"question":"Attribute disclosure risk:","options":["Identity","Sensitive info leakage","Dataset inclusion","Noise"],"answer":"Sensitive info leakage"},
+
+{"id":10,"question":"K-anonymity fails when:","options":["Groups small","Sensitive values same","Data large","Noise added"],"answer":"Sensitive values same"},
+{"id":11,"question":"ℓ-diversity requires:","options":["≥1 value","≥ℓ distinct sensitive values","Equal labels","Equal groups"],"answer":"≥ℓ distinct sensitive values"},
+
+{"id":12,"question":"TP=10, FP=0, FN=10. Precision?","options":["1","0.5","0","0.75"],"answer":"1"},
+{"id":13,"question":"Same case recall?","options":["0.5","1","0","0.75"],"answer":"0.5"},
+
+{"id":14,"question":"Group A TPR=0.8, B=0.6 → Equal opportunity?","options":["Yes","No","Cannot tell","Depends"],"answer":"No"},
+
+{"id":15,"question":"Entropy increases when:","options":["One class dominates","Distribution uniform","Data small","Noise added"],"answer":"Distribution uniform"},
+
+{"id":16,"question":"DP noise depends on:","options":["Accuracy","Sensitivity","Dataset size only","Labels"],"answer":"Sensitivity"},
+{"id":17,"question":"Laplace mechanism uses:","options":["Gaussian","Laplace distribution","Uniform","Random"],"answer":"Laplace distribution"},
+
+{"id":18,"question":"Explainability helps:","options":["Reduce bias","Understand errors","Increase data","Remove noise"],"answer":"Understand errors"},
+{"id":19,"question":"Transparent system allows:","options":["Hidden model","Access info","No info","Random outputs"],"answer":"Access info"},
+
+{"id":20,"question":"OCAP means:","options":["Ownership Control Access Possession","Open Control AI Policy","Ownership AI Data","Control Policy"],"answer":"Ownership Control Access Possession"},
+
+{"id":21,"question":"AIDA targets:","options":["Low risk AI","High impact AI","All AI equally","None"],"answer":"High impact AI"},
+
+{"id":22,"question":"Randomized response probability of yes =","options":["π","1/4 + π/2","π/2","1/2"],"answer":"1/4 + π/2"},
+
+{"id":23,"question":"Precision vs recall tradeoff occurs in:","options":["All models","Classification","Regression","Clustering"],"answer":"Classification"},
+
+{"id":24,"question":"Fairness impossibility occurs when:","options":["Same distribution","Different distributions","No labels","Noise"],"answer":"Different distributions"},
+
+{"id":25,"question":"Differential privacy guarantees:","options":["Exact output","Similar outputs","High accuracy","No noise"],"answer":"Similar outputs"},
+
+{"id":26,"question":"Bias leads to:","options":["Fairness","Unfairness","Accuracy","Noise"],"answer":"Unfairness"},
+
+{"id":27,"question":"SHAP based on:","options":["Statistics","Game theory","Probability","Optimization"],"answer":"Game theory"},
+
+{"id":28,"question":"Interpretability models include:","options":["Deep NN","Decision tree","Transformer","CNN"],"answer":"Decision tree"},
+
+{"id":29,"question":"Data minimization means:","options":["Collect everything","Collect needed data","No data","Random data"],"answer":"Collect needed data"},
+
+{"id":30,"question":"PIPEDA protects:","options":["Public data","Personal data","All data","Model"],"answer":"Personal data"},
+
+{"id":31,"question":"Main fairness tradeoff:","options":["Accuracy vs fairness","Speed vs fairness","Noise vs fairness","None"],"answer":"Accuracy vs fairness"}
+]

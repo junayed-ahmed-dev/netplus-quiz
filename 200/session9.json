@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main weakness of k-anonymity?",
+    "options": [
+      "Too complex",
+      "Lack of diversity in sensitive attributes",
+      "Too accurate",
+      "Too slow"
+    ],
+    "answer": "Lack of diversity in sensitive attributes"
+  },
+  {
+    "id": 2,
+    "question": "k-anonymity can fail because:",
+    "options": [
+      "Too much data",
+      "Sensitive values may be identical within a group",
+      "No identifiers",
+      "Too many features"
+    ],
+    "answer": "Sensitive values may be identical within a group"
+  },
+  {
+    "id": 3,
+    "question": "What is ℓ-diversity?",
+    "options": [
+      "Each group has k records",
+      "Each group has ℓ distinct sensitive values",
+      "Each dataset has ℓ attributes",
+      "Each record is unique"
+    ],
+    "answer": "Each group has ℓ distinct sensitive values"
+  },
+  {
+    "id": 4,
+    "question": "ℓ-diversity was introduced to fix:",
+    "options": [
+      "Data size issues",
+      "k-anonymity weaknesses",
+      "Model errors",
+      "Privacy laws"
+    ],
+    "answer": "k-anonymity weaknesses"
+  },
+  {
+    "id": 5,
+    "question": "What is a q*-block?",
+    "options": [
+      "Random group",
+      "Group of tuples with same quasi-identifiers",
+      "Sensitive attribute group",
+      "Dataset split"
+    ],
+    "answer": "Group of tuples with same quasi-identifiers"
+  },
+  {
+    "id": 6,
+    "question": "A table is ℓ-diverse if:",
+    "options": [
+      "At least one group is diverse",
+      "Every q*-block is ℓ-diverse",
+      "Only sensitive data varies",
+      "Only identifiers are removed"
+    ],
+    "answer": "Every q*-block is ℓ-diverse"
+  },
+  {
+    "id": 7,
+    "question": "What does distinct ℓ-diversity require?",
+    "options": [
+      "Same values",
+      "At least ℓ distinct sensitive values",
+      "Only one value",
+      "No sensitive data"
+    ],
+    "answer": "At least ℓ distinct sensitive values"
+  },
+  {
+    "id": 8,
+    "question": "Recursive (c,ℓ)-diversity controls:",
+    "options": [
+      "Dataset size",
+      "Dominance of most frequent value",
+      "Number of features",
+      "Number of rows"
+    ],
+    "answer": "Dominance of most frequent value"
+  },
+  {
+    "id": 9,
+    "question": "Entropy ℓ-diversity ensures:",
+    "options": [
+      "No diversity",
+      "Entropy ≥ log(ℓ)",
+      "Same values",
+      "Perfect balance"
+    ],
+    "answer": "Entropy ≥ log(ℓ)"
+  },
+  {
+    "id": 10,
+    "question": "Which attack occurs when values are different but similar in meaning?",
+    "options": [
+      "Linkage attack",
+      "Similarity attack",
+      "Membership attack",
+      "Noise attack"
+    ],
+    "answer": "Similarity attack"
+  },
+  {
+    "id": 11,
+    "question": "Example of similarity attack:",
+    "options": [
+      "Flu vs cancer",
+      "Gastritis, stomach cancer, ulcer",
+      "Age vs ZIP",
+      "Name vs ID"
+    ],
+    "answer": "Gastritis, stomach cancer, ulcer"
+  },
+  {
+    "id": 12,
+    "question": "Why does similarity attack work?",
+    "options": [
+      "Too much data",
+      "Different values have similar meaning",
+      "No sensitive data",
+      "Perfect diversity"
+    ],
+    "answer": "Different values have similar meaning"
+  },
+  {
+    "id": 13,
+    "question": "What is skewness attack?",
+    "options": [
+      "Random guessing",
+      "Rare values dominate inference",
+      "No diversity",
+      "Too many features"
+    ],
+    "answer": "Rare values dominate inference"
+  },
+  {
+    "id": 14,
+    "question": "Skewness attack happens when:",
+    "options": [
+      "All values equal",
+      "Global distribution is imbalanced",
+      "No data exists",
+      "Perfect balance"
+    ],
+    "answer": "Global distribution is imbalanced"
+  },
+  {
+    "id": 15,
+    "question": "ℓ-diversity fails because:",
+    "options": [
+      "Too complex",
+      "Ignores semantic similarity and global distribution",
+      "Too accurate",
+      "No privacy"
+    ],
+    "answer": "Ignores semantic similarity and global distribution"
+  },
+  {
+    "id": 16,
+    "question": "What is t-closeness?",
+    "options": [
+      "Equal group size",
+      "Distribution in group close to global distribution",
+      "Same sensitive values",
+      "No data loss"
+    ],
+    "answer": "Distribution in group close to global distribution"
+  },
+  {
+    "id": 17,
+    "question": "t-closeness controls:",
+    "options": [
+      "Accuracy",
+      "Information gain",
+      "Dataset size",
+      "Model speed"
+    ],
+    "answer": "Information gain"
+  },
+  {
+    "id": 18,
+    "question": "t-closeness requires:",
+    "options": [
+      "Exact match",
+      "Distance between distributions ≤ t",
+      "Same values",
+      "Equal size"
+    ],
+    "answer": "Distance between distributions ≤ t"
+  },
+  {
+    "id": 19,
+    "question": "What is P in t-closeness?",
+    "options": [
+      "Prediction",
+      "Global distribution",
+      "Local distribution",
+      "Model output"
+    ],
+    "answer": "Global distribution"
+  },
+  {
+    "id": 20,
+    "question": "What is PE?",
+    "options": [
+      "Prediction error",
+      "Distribution in equivalence class",
+      "Model parameter",
+      "Loss function"
+    ],
+    "answer": "Distribution in equivalence class"
+  },
+  {
+    "id": 21,
+    "question": "Which is NOT a distance measure?",
+    "options": [
+      "KL divergence",
+      "Earth mover distance",
+      "Variational distance",
+      "Accuracy score"
+    ],
+    "answer": "Accuracy score"
+  },
+  {
+    "id": 22,
+    "question": "t-closeness prevents:",
+    "options": [
+      "All attacks",
+      "Similarity and skewness attacks",
+      "Only linkage attacks",
+      "Only noise"
+    ],
+    "answer": "Similarity and skewness attacks"
+  },
+  {
+    "id": 23,
+    "question": "What happens if t is small?",
+    "options": [
+      "Weak privacy",
+      "Strong privacy",
+      "No effect",
+      "More data"
+    ],
+    "answer": "Strong privacy"
+  },
+  {
+    "id": 24,
+    "question": "Which model is strongest?",
+    "options": [
+      "k-anonymity",
+      "ℓ-diversity",
+      "t-closeness",
+      "All equal"
+    ],
+    "answer": "t-closeness"
+  },
+  {
+    "id": 25,
+    "question": "Which model only protects against re-identification?",
+    "options": [
+      "k-anonymity",
+      "ℓ-diversity",
+      "t-closeness",
+      "None"
+    ],
+    "answer": "k-anonymity"
+  },
+  {
+    "id": 26,
+    "question": "Which model adds diversity requirement?",
+    "options": [
+      "k-anonymity",
+      "ℓ-diversity",
+      "t-closeness",
+      "None"
+    ],
+    "answer": "ℓ-diversity"
+  },
+  {
+    "id": 27,
+    "question": "Which model considers distribution?",
+    "options": [
+      "k-anonymity",
+      "ℓ-diversity",
+      "t-closeness",
+      "None"
+    ],
+    "answer": "t-closeness"
+  },
+  {
+    "id": 28,
+    "question": "Final Trap: ℓ-diversity guarantees privacy?",
+    "options": [
+      "Yes",
+      "No, still vulnerable to similarity and skewness attacks",
+      "Only for large datasets",
+      "Only for small datasets"
+    ],
+    "answer": "No, still vulnerable to similarity and skewness attacks"
+  },
+  {
+    "id": 29,
+    "question": "Final Trap: t-closeness guarantees perfect privacy?",
+    "options": [
+      "Yes",
+      "No, but stronger than ℓ-diversity",
+      "Only for small data",
+      "Only for big data"
+    ],
+    "answer": "No, but stronger than ℓ-diversity"
+  },
+  {
+    "id": 30,
+    "question": "Final Trap: Increasing ℓ always guarantees better privacy?",
+    "options": [
+      "Yes",
+      "No, semantic similarity and skewness still matter",
+      "Only for k-anonymity",
+      "Only for t-closeness"
+    ],
+    "answer": "No, semantic similarity and skewness still matter"
+  }
+]

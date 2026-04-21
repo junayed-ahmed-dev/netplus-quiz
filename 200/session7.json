@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "What is privacy?",
+    "options": [
+      "Hiding data",
+      "Control over how personal data is collected, used, and shared",
+      "Encryption only",
+      "Data storage"
+    ],
+    "answer": "Control over how personal data is collected, used, and shared"
+  },
+  {
+    "id": 2,
+    "question": "Which is NOT part of privacy?",
+    "options": [
+      "Consent",
+      "Control",
+      "Data protection",
+      "Model accuracy"
+    ],
+    "answer": "Model accuracy"
+  },
+  {
+    "id": 3,
+    "question": "Privacy matters at which stage?",
+    "options": [
+      "Only collection",
+      "Only processing",
+      "Only output",
+      "All stages of data pipeline"
+    ],
+    "answer": "All stages of data pipeline"
+  },
+  {
+    "id": 4,
+    "question": "Which is a privacy risk during data collection?",
+    "options": [
+      "High accuracy",
+      "Data shared without consent",
+      "Better models",
+      "Faster training"
+    ],
+    "answer": "Data shared without consent"
+  },
+  {
+    "id": 5,
+    "question": "Which stage involves model design and internal data sharing?",
+    "options": [
+      "Collection",
+      "Processing",
+      "Output",
+      "Deployment only"
+    ],
+    "answer": "Processing"
+  },
+  {
+    "id": 6,
+    "question": "Which stage involves publishing results?",
+    "options": [
+      "Collection",
+      "Processing",
+      "Output",
+      "Training"
+    ],
+    "answer": "Output"
+  },
+  {
+    "id": 7,
+    "question": "What was the risk in extracting training data from LLMs?",
+    "options": [
+      "Low accuracy",
+      "Memorizing and leaking sensitive data",
+      "Slow processing",
+      "No bias"
+    ],
+    "answer": "Memorizing and leaking sensitive data"
+  },
+  {
+    "id": 8,
+    "question": "What kind of data was extracted from models?",
+    "options": [
+      "Only public data",
+      "Phone numbers, emails, private text",
+      "Only images",
+      "Only labels"
+    ],
+    "answer": "Phone numbers, emails, private text"
+  },
+  {
+    "id": 9,
+    "question": "Which prompt could trigger data leakage?",
+    "options": [
+      "Hello world",
+      "My phone number is",
+      "Train model",
+      "Optimize loss"
+    ],
+    "answer": "My phone number is"
+  },
+  {
+    "id": 10,
+    "question": "What is attribute disclosure?",
+    "options": [
+      "Identifying a person",
+      "Revealing sensitive attributes about a person",
+      "Finding dataset membership",
+      "Removing data"
+    ],
+    "answer": "Revealing sensitive attributes about a person"
+  },
+  {
+    "id": 11,
+    "question": "What is identity disclosure?",
+    "options": [
+      "Revealing dataset",
+      "Linking anonymized data to a person",
+      "Predicting labels",
+      "Removing bias"
+    ],
+    "answer": "Linking anonymized data to a person"
+  },
+  {
+    "id": 12,
+    "question": "What is membership disclosure?",
+    "options": [
+      "Finding labels",
+      "Revealing if someone is in a dataset",
+      "Predicting outcomes",
+      "Removing data"
+    ],
+    "answer": "Revealing if someone is in a dataset"
+  },
+  {
+    "id": 13,
+    "question": "Beacon system responds with:",
+    "options": [
+      "Full data",
+      "Names",
+      "Yes/No answers",
+      "Raw DNA"
+    ],
+    "answer": "Yes/No answers"
+  },
+  {
+    "id": 14,
+    "question": "What attack is used on Beacon?",
+    "options": [
+      "Injection attack",
+      "Membership inference attack",
+      "SQL attack",
+      "Data poisoning"
+    ],
+    "answer": "Membership inference attack"
+  },
+  {
+    "id": 15,
+    "question": "How many queries were enough to infer membership?",
+    "options": [
+      "1-5",
+      "10-20",
+      "50-200",
+      "1000+"
+    ],
+    "answer": "50-200"
+  },
+  {
+    "id": 16,
+    "question": "What confidence level was achieved in membership inference?",
+    "options": [
+      "50%",
+      "70%",
+      "95%+",
+      "100%"
+    ],
+    "answer": "95%+"
+  },
+  {
+    "id": 17,
+    "question": "What are demographics?",
+    "options": [
+      "Model outputs",
+      "Statistical characteristics of populations",
+      "Loss functions",
+      "Algorithms"
+    ],
+    "answer": "Statistical characteristics of populations"
+  },
+  {
+    "id": 18,
+    "question": "Example of demographic data:",
+    "options": [
+      "Loss value",
+      "Age, gender, ZIP code",
+      "Prediction",
+      "Model weights"
+    ],
+    "answer": "Age, gender, ZIP code"
+  },
+  {
+    "id": 19,
+    "question": "Why are demographics dangerous?",
+    "options": [
+      "Too complex",
+      "Can uniquely identify individuals",
+      "Reduce accuracy",
+      "Increase cost"
+    ],
+    "answer": "Can uniquely identify individuals"
+  },
+  {
+    "id": 20,
+    "question": "Sweeney (2000) showed that:",
+    "options": [
+      "Data is safe",
+      "87% can be identified using ZIP, birth date, gender",
+      "No re-identification possible",
+      "Only names identify people"
+    ],
+    "answer": "87% can be identified using ZIP, birth date, gender"
+  },
+  {
+    "id": 21,
+    "question": "What is the key lesson from Sweeney’s study?",
+    "options": [
+      "Remove names is enough",
+      "Demographics alone can re-identify people",
+      "Data is always safe",
+      "No privacy risk"
+    ],
+    "answer": "Demographics alone can re-identify people"
+  },
+  {
+    "id": 22,
+    "question": "What is PII?",
+    "options": [
+      "Public information",
+      "Information that identifies a person",
+      "Model output",
+      "Dataset label"
+    ],
+    "answer": "Information that identifies a person"
+  },
+  {
+    "id": 23,
+    "question": "Which is direct identifier?",
+    "options": [
+      "Gender",
+      "ZIP code",
+      "Name",
+      "Age"
+    ],
+    "answer": "Name"
+  },
+  {
+    "id": 24,
+    "question": "Which is indirect identifier?",
+    "options": [
+      "Email",
+      "Phone number",
+      "Birth date",
+      "SSN"
+    ],
+    "answer": "Birth date"
+  },
+  {
+    "id": 25,
+    "question": "Which is NOT always considered PII?",
+    "options": [
+      "Device fingerprint",
+      "Name",
+      "Email",
+      "SSN"
+    ],
+    "answer": "Device fingerprint"
+  },
+  {
+    "id": 26,
+    "question": "Why is location data risky?",
+    "options": [
+      "Too large",
+      "Movement patterns identify individuals",
+      "No data",
+      "Too slow"
+    ],
+    "answer": "Movement patterns identify individuals"
+  },
+  {
+    "id": 27,
+    "question": "NY Times investigation showed:",
+    "options": [
+      "Data is safe",
+      "Anonymous location data can identify individuals",
+      "No tracking possible",
+      "Perfect privacy"
+    ],
+    "answer": "Anonymous location data can identify individuals"
+  },
+  {
+    "id": 28,
+    "question": "What is the main lesson about anonymization?",
+    "options": [
+      "Always safe",
+      "Not enough to protect privacy",
+      "Removes all risk",
+      "Improves accuracy"
+    ],
+    "answer": "Not enough to protect privacy"
+  },
+  {
+    "id": 29,
+    "question": "What is one mitigation technique?",
+    "options": [
+      "Increase bias",
+      "Encryption",
+      "Remove models",
+      "Ignore data"
+    ],
+    "answer": "Encryption"
+  },
+  {
+    "id": 30,
+    "question": "Final Trap: Removing names guarantees privacy?",
+    "options": [
+      "Yes",
+      "No, indirect identifiers can re-identify individuals",
+      "Only sometimes",
+      "Only for small datasets"
+    ],
+    "answer": "No, indirect identifiers can re-identify individuals"
+  }
+]

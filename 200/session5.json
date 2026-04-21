@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "Why should fairness metrics be evaluated on test data?",
+    "options": [
+      "To improve speed",
+      "To ensure fairness generalizes beyond training data",
+      "To reduce bias",
+      "To increase accuracy"
+    ],
+    "answer": "To ensure fairness generalizes beyond training data"
+  },
+  {
+    "id": 2,
+    "question": "Which variable represents sensitive attributes?",
+    "options": [
+      "X",
+      "Y",
+      "Y’",
+      "A"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": 3,
+    "question": "What does Y represent?",
+    "options": [
+      "Prediction",
+      "True outcome",
+      "Sensitive feature",
+      "Model"
+    ],
+    "answer": "True outcome"
+  },
+  {
+    "id": 4,
+    "question": "What does Y’ represent?",
+    "options": [
+      "Feature",
+      "Prediction",
+      "Sensitive attribute",
+      "Loss"
+    ],
+    "answer": "Prediction"
+  },
+  {
+    "id": 5,
+    "question": "Which fairness definition ensures equal outcomes?",
+    "options": [
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Demographic Parity",
+      "Individual Fairness"
+    ],
+    "answer": "Demographic Parity"
+  },
+  {
+    "id": 6,
+    "question": "Which fairness definition ensures equal opportunity for qualified individuals?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equal Opportunity"
+  },
+  {
+    "id": 7,
+    "question": "Which fairness definition ensures equal error behavior?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equalized Odds"
+  },
+  {
+    "id": 8,
+    "question": "What does the Impossibility Theorem state?",
+    "options": [
+      "Fairness is always achievable",
+      "All fairness metrics can be satisfied simultaneously",
+      "Cannot satisfy all fairness metrics when base rates differ",
+      "Accuracy guarantees fairness"
+    ],
+    "answer": "Cannot satisfy all fairness metrics when base rates differ"
+  },
+  {
+    "id": 9,
+    "question": "When can all fairness definitions be satisfied?",
+    "options": [
+      "Always",
+      "When base rates differ",
+      "When classifier is perfect OR base rates equal",
+      "Never"
+    ],
+    "answer": "When classifier is perfect OR base rates equal"
+  },
+  {
+    "id": 10,
+    "question": "What are base rates?",
+    "options": [
+      "Prediction rates",
+      "Distribution of true labels",
+      "Model accuracy",
+      "Feature values"
+    ],
+    "answer": "Distribution of true labels"
+  },
+  {
+    "id": 11,
+    "question": "University admission scenario: Only qualified applicants should be admitted. Which fairness is best?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equal Opportunity"
+  },
+  {
+    "id": 12,
+    "question": "Why is Equal Opportunity best for admissions?",
+    "options": [
+      "Equal outcomes",
+      "Focus on qualified individuals",
+      "Minimize bias",
+      "Maximize speed"
+    ],
+    "answer": "Focus on qualified individuals"
+  },
+  {
+    "id": 13,
+    "question": "Loan approval scenario: Both approving bad loans and rejecting good ones are costly. Which fairness?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Equalized Odds"
+  },
+  {
+    "id": 14,
+    "question": "Why is Equalized Odds best for loans?",
+    "options": [
+      "Equal outcomes",
+      "Only positives matter",
+      "Both types of errors matter",
+      "Ignore fairness"
+    ],
+    "answer": "Both types of errors matter"
+  },
+  {
+    "id": 15,
+    "question": "Scholarship outreach scenario: Goal is equal access across groups. Which fairness?",
+    "options": [
+      "Demographic Parity",
+      "Equal Opportunity",
+      "Equalized Odds",
+      "Individual Fairness"
+    ],
+    "answer": "Demographic Parity"
+  },
+  {
+    "id": 16,
+    "question": "Why is Demographic Parity best for outreach?",
+    "options": [
+      "Focus on qualified only",
+      "Equal selection rates across groups",
+      "Minimize errors",
+      "Reduce bias only"
+    ],
+    "answer": "Equal selection rates across groups"
+  },
+  {
+    "id": 17,
+    "question": "What is Individual Fairness?",
+    "options": [
+      "Equal groups",
+      "Equal outcomes",
+      "Similar individuals treated similarly",
+      "Equal errors"
+    ],
+    "answer": "Similar individuals treated similarly"
+  },
+  {
+    "id": 18,
+    "question": "In individual fairness, what determines similarity?",
+    "options": [
+      "Accuracy",
+      "Distance metric in feature space",
+      "Loss function",
+      "Training size"
+    ],
+    "answer": "Distance metric in feature space"
+  },
+  {
+    "id": 19,
+    "question": "Two applicants with similar credit scores and income should:",
+    "options": [
+      "Be treated differently",
+      "Have similar outcomes",
+      "Be randomly selected",
+      "Be rejected"
+    ],
+    "answer": "Have similar outcomes"
+  },
+  {
+    "id": 20,
+    "question": "Fairness mitigation occurs at how many stages?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3"
+  },
+  {
+    "id": 21,
+    "question": "Which stage is BEFORE training?",
+    "options": [
+      "Post-processing",
+      "In-processing",
+      "Pre-processing",
+      "Evaluation"
+    ],
+    "answer": "Pre-processing"
+  },
+  {
+    "id": 22,
+    "question": "Which stage modifies the model during training?",
+    "options": [
+      "Pre-processing",
+      "In-processing",
+      "Post-processing",
+      "Testing"
+    ],
+    "answer": "In-processing"
+  },
+  {
+    "id": 23,
+    "question": "Which stage modifies outputs after training?",
+    "options": [
+      "Pre-processing",
+      "In-processing",
+      "Post-processing",
+      "Validation"
+    ],
+    "answer": "Post-processing"
+  },
+  {
+    "id": 24,
+    "question": "Oversampling means:",
+    "options": [
+      "Removing data",
+      "Adding synthetic data for minority group",
+      "Reducing model size",
+      "Ignoring minority"
+    ],
+    "answer": "Adding synthetic data for minority group"
+  },
+  {
+    "id": 25,
+    "question": "Undersampling means:",
+    "options": [
+      "Adding data",
+      "Removing majority class samples",
+      "Increasing bias",
+      "Reducing features"
+    ],
+    "answer": "Removing majority class samples"
+  },
+  {
+    "id": 26,
+    "question": "What is a risk of removing sensitive attributes?",
+    "options": [
+      "Better fairness always",
+      "No bias",
+      "Proxy bias can still exist",
+      "Improved accuracy"
+    ],
+    "answer": "Proxy bias can still exist"
+  },
+  {
+    "id": 27,
+    "question": "What is reweighting?",
+    "options": [
+      "Removing data",
+      "Assigning higher importance to minority samples",
+      "Reducing dataset size",
+      "Changing labels"
+    ],
+    "answer": "Assigning higher importance to minority samples"
+  },
+  {
+    "id": 28,
+    "question": "Fairness-aware loss function includes:",
+    "options": [
+      "Only prediction loss",
+      "Prediction loss + fairness penalty",
+      "Only fairness loss",
+      "No loss"
+    ],
+    "answer": "Prediction loss + fairness penalty"
+  },
+  {
+    "id": 29,
+    "question": "Group-specific thresholds are used in:",
+    "options": [
+      "Pre-processing",
+      "In-processing",
+      "Post-processing",
+      "Training"
+    ],
+    "answer": "Post-processing"
+  },
+  {
+    "id": 30,
+    "question": "Final Trap: Removing sensitive attribute guarantees fairness?",
+    "options": [
+      "Yes always",
+      "No, proxy bias can still exist",
+      "Only sometimes",
+      "Only for small data"
+    ],
+    "answer": "No, proxy bias can still exist"
+  }
+]

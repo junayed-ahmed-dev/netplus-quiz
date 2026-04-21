@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "What is machine learning according to the definition provided?",
+    "options": [
+      "A method of manually programming rules",
+      "A field focused on statistical algorithms that learn from data and generalize",
+      "A database management technique",
+      "A rule-based AI system"
+    ],
+    "answer": "A field focused on statistical algorithms that learn from data and generalize"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is NOT a type of machine learning?",
+    "options": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Deterministic learning"
+    ],
+    "answer": "Deterministic learning"
+  },
+  {
+    "id": 3,
+    "question": "In supervised learning, what does the model learn?",
+    "options": [
+      "Patterns without labels",
+      "Mapping from input X to output Y",
+      "Only clustering structures",
+      "Only rewards"
+    ],
+    "answer": "Mapping from input X to output Y"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is an example of supervised learning?",
+    "options": [
+      "Clustering customers",
+      "Grouping similar images",
+      "Spam detection",
+      "Finding hidden patterns"
+    ],
+    "answer": "Spam detection"
+  },
+  {
+    "id": 5,
+    "question": "What type of problem is predicting house prices?",
+    "options": [
+      "Classification",
+      "Regression",
+      "Clustering",
+      "Reinforcement"
+    ],
+    "answer": "Regression"
+  },
+  {
+    "id": 6,
+    "question": "Which output type corresponds to classification?",
+    "options": [
+      "Continuous values",
+      "Discrete labels",
+      "Probabilities only",
+      "Random values"
+    ],
+    "answer": "Discrete labels"
+  },
+  {
+    "id": 7,
+    "question": "What is unsupervised learning?",
+    "options": [
+      "Learning with labeled data",
+      "Learning without labels to find structure",
+      "Learning with rewards",
+      "Learning with predefined rules"
+    ],
+    "answer": "Learning without labels to find structure"
+  },
+  {
+    "id": 8,
+    "question": "Which task is unsupervised learning?",
+    "options": [
+      "Spam classification",
+      "House price prediction",
+      "Clustering customers",
+      "Digit recognition"
+    ],
+    "answer": "Clustering customers"
+  },
+  {
+    "id": 9,
+    "question": "What is reinforcement learning based on?",
+    "options": [
+      "Labels",
+      "Rewards and actions",
+      "Clustering",
+      "Static rules"
+    ],
+    "answer": "Rewards and actions"
+  },
+  {
+    "id": 10,
+    "question": "What is the goal of reinforcement learning?",
+    "options": [
+      "Minimize labels",
+      "Maximize cumulative reward",
+      "Cluster data",
+      "Reduce noise"
+    ],
+    "answer": "Maximize cumulative reward"
+  },
+  {
+    "id": 11,
+    "question": "What does a loss function measure?",
+    "options": [
+      "Model accuracy",
+      "How wrong predictions are",
+      "Training speed",
+      "Data size"
+    ],
+    "answer": "How wrong predictions are"
+  },
+  {
+    "id": 12,
+    "question": "What is the goal when minimizing loss?",
+    "options": [
+      "Worse predictions",
+      "Better predictions",
+      "Slower learning",
+      "More data"
+    ],
+    "answer": "Better predictions"
+  },
+  {
+    "id": 13,
+    "question": "Which dataset is used to train the model?",
+    "options": [
+      "Test set",
+      "Training set",
+      "Validation set only",
+      "Random set"
+    ],
+    "answer": "Training set"
+  },
+  {
+    "id": 14,
+    "question": "Why do we use a test set?",
+    "options": [
+      "To train model",
+      "To evaluate generalization",
+      "To increase data",
+      "To reduce loss"
+    ],
+    "answer": "To evaluate generalization"
+  },
+  {
+    "id": 15,
+    "question": "What is overfitting?",
+    "options": [
+      "Model performs well on test but poorly on training",
+      "Model memorizes training data and fails on test",
+      "Model learns nothing",
+      "Model ignores training data"
+    ],
+    "answer": "Model memorizes training data and fails on test"
+  },
+  {
+    "id": 16,
+    "question": "Which indicates overfitting?",
+    "options": [
+      "Low training error, low test error",
+      "High training error, high test error",
+      "Low training error, high test error",
+      "High training error, low test error"
+    ],
+    "answer": "Low training error, high test error"
+  },
+  {
+    "id": 17,
+    "question": "What causes overfitting?",
+    "options": [
+      "Too little training",
+      "Model too simple",
+      "Model too complex",
+      "Too little data usage"
+    ],
+    "answer": "Model too complex"
+  },
+  {
+    "id": 18,
+    "question": "What is underfitting?",
+    "options": [
+      "Model too complex",
+      "Model memorizes data",
+      "Model fails to learn patterns",
+      "Model overgeneralizes perfectly"
+    ],
+    "answer": "Model fails to learn patterns"
+  },
+  {
+    "id": 19,
+    "question": "Which indicates underfitting?",
+    "options": [
+      "Low training error, low test error",
+      "High training error, high test error",
+      "Low training error, high test error",
+      "High training error, low test error"
+    ],
+    "answer": "High training error, high test error"
+  },
+  {
+    "id": 20,
+    "question": "What is good generalization?",
+    "options": [
+      "High training error only",
+      "High test error only",
+      "High performance on both training and test",
+      "Low training only"
+    ],
+    "answer": "High performance on both training and test"
+  },
+  {
+    "id": 21,
+    "question": "What is accuracy?",
+    "options": [
+      "Incorrect predictions / total",
+      "Correct predictions / total predictions",
+      "TP only",
+      "FP only"
+    ],
+    "answer": "Correct predictions / total predictions"
+  },
+  {
+    "id": 22,
+    "question": "Why can accuracy be misleading?",
+    "options": [
+      "Always correct",
+      "Ignores data size",
+      "Fails in imbalanced datasets",
+      "Uses too many calculations"
+    ],
+    "answer": "Fails in imbalanced datasets"
+  },
+  {
+    "id": 23,
+    "question": "If a model always predicts 0 and most labels are 0, what happens?",
+    "options": [
+      "Low accuracy",
+      "High accuracy but poor performance",
+      "Perfect recall",
+      "Perfect precision"
+    ],
+    "answer": "High accuracy but poor performance"
+  },
+  {
+    "id": 24,
+    "question": "What is precision?",
+    "options": [
+      "TP / (TP + FN)",
+      "TP / (TP + FP)",
+      "TN / total",
+      "FP / total"
+    ],
+    "answer": "TP / (TP + FP)"
+  },
+  {
+    "id": 25,
+    "question": "What is recall?",
+    "options": [
+      "TP / (TP + FP)",
+      "TP / (TP + FN)",
+      "TN / total",
+      "FN / total"
+    ],
+    "answer": "TP / (TP + FN)"
+  },
+  {
+    "id": 26,
+    "question": "What does F1 score combine?",
+    "options": [
+      "Accuracy and loss",
+      "Precision and recall",
+      "TP and TN",
+      "FP and FN"
+    ],
+    "answer": "Precision and recall"
+  },
+  {
+    "id": 27,
+    "question": "If TP=0, FP=0, FN=1, what is precision?",
+    "options": [
+      "1",
+      "0",
+      "Undefined but treated as 0",
+      "0.5"
+    ],
+    "answer": "Undefined but treated as 0"
+  },
+  {
+    "id": 28,
+    "question": "If a model predicts all zeros and misses all positives, recall is:",
+    "options": [
+      "1",
+      "0",
+      "0.5",
+      "Undefined"
+    ],
+    "answer": "0"
+  },
+  {
+    "id": 29,
+    "question": "Which metric focuses on positive prediction correctness?",
+    "options": [
+      "Recall",
+      "Precision",
+      "Accuracy",
+      "Loss"
+    ],
+    "answer": "Precision"
+  },
+  {
+    "id": 30,
+    "question": "Which metric focuses on capturing all actual positives?",
+    "options": [
+      "Precision",
+      "Recall",
+      "Accuracy",
+      "Loss"
+    ],
+    "answer": "Recall"
+  }
+]

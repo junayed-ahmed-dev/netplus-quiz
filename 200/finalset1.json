@@ -1,0 +1,208 @@
+[
+{
+"id": 1,
+"question": "A model performs well on training data but poorly on test data. What is the issue?",
+"options": ["Underfitting", "Overfitting", "High variance in labels", "Data leakage"],
+"answer": "Overfitting"
+},
+{
+"id": 2,
+"question": "Which best describes supervised learning?",
+"options": ["Learning without labels", "Learning from input-output pairs", "Random exploration", "Clustering without targets"],
+"answer": "Learning from input-output pairs"
+},
+{
+"id": 3,
+"question": "Which is an example of regression?",
+"options": ["Spam detection", "Digit classification", "House price prediction", "Face recognition"],
+"answer": "House price prediction"
+},
+{
+"id": 4,
+"question": "Bias in AI refers to:",
+"options": ["Random errors", "Systematic unfair errors", "Model complexity", "High accuracy"],
+"answer": "Systematic unfair errors"
+},
+{
+"id": 5,
+"question": "Which is NOT a type of bias?",
+"options": ["Selection bias", "Measurement bias", "Entropy bias", "Evaluation bias"],
+"answer": "Entropy bias"
+},
+{
+"id": 6,
+"question": "Which fairness metric requires equal TPR across groups?",
+"options": ["Demographic parity", "Equal opportunity", "Equalized odds", "Individual fairness"],
+"answer": "Equal opportunity"
+},
+{
+"id": 7,
+"question": "Demographic parity requires:",
+"options": ["Equal accuracy", "Equal positive prediction rate", "Equal recall", "Equal precision"],
+"answer": "Equal positive prediction rate"
+},
+{
+"id": 8,
+"question": "Main drawback of demographic parity:",
+"options": ["Improves fairness always", "Forces incorrect decisions", "Removes bias completely", "Increases accuracy"],
+"answer": "Forces incorrect decisions"
+},
+{
+"id": 9,
+"question": "Privacy refers to:",
+"options": ["Data storage", "Control over personal data", "Model accuracy", "Prediction fairness"],
+"answer": "Control over personal data"
+},
+{
+"id": 10,
+"question": "Which is identity disclosure?",
+"options": ["Learning disease probability", "Linking data to a person", "Knowing dataset membership", "Learning averages"],
+"answer": "Linking data to a person"
+},
+
+{
+"id": 11,
+"question": "Which is attribute disclosure?",
+"options": ["Knowing dataset contains someone", "Knowing sensitive info about someone", "Knowing dataset size", "Knowing labels"],
+"answer": "Knowing sensitive info about someone"
+},
+{
+"id": 12,
+"question": "K-anonymity protects against:",
+"options": ["Attribute disclosure", "Identity disclosure", "Membership disclosure", "Bias"],
+"answer": "Identity disclosure"
+},
+{
+"id": 13,
+"question": "Weakness of k-anonymity:",
+"options": ["Too much diversity", "Homogeneity attack", "Too much noise", "Overfitting"],
+"answer": "Homogeneity attack"
+},
+{
+"id": 14,
+"question": "ℓ-diversity ensures:",
+"options": ["Equal dataset size", "Diverse sensitive attributes", "Equal predictions", "Equal features"],
+"answer": "Diverse sensitive attributes"
+},
+{
+"id": 15,
+"question": "t-closeness ensures:",
+"options": ["Equal dataset size", "Distribution similarity", "Equal labels", "Equal accuracy"],
+"answer": "Distribution similarity"
+},
+
+{
+"id": 16,
+"question": "Differential privacy ensures:",
+"options": ["Exact results", "Individual data protection", "High accuracy only", "No randomness"],
+"answer": "Individual data protection"
+},
+{
+"id": 17,
+"question": "What is sensitivity in DP?",
+"options": ["Model accuracy", "Max change in output by one individual", "Data size", "Noise level"],
+"answer": "Max change in output by one individual"
+},
+{
+"id": 18,
+"question": "Why add noise in DP?",
+"options": ["Increase accuracy", "Protect privacy", "Reduce bias", "Improve fairness"],
+"answer": "Protect privacy"
+},
+
+{
+"id": 19,
+"question": "TP=40, FP=10, FN=20. What is precision?",
+"options": ["0.8", "0.67", "0.75", "0.5"],
+"answer": "0.8"
+},
+{
+"id": 20,
+"question": "TP=40, FN=20. What is recall?",
+"options": ["0.5", "0.67", "0.8", "0.75"],
+"answer": "0.67"
+},
+
+{
+"id": 21,
+"question": "TP=0, FP=0, FN=1, TN=5. Accuracy?",
+"options": ["0", "0.5", "0.83", "0.8"],
+"answer": "0.83",
+"table": {
+"TP": 0,
+"FP": 0,
+"FN": 1,
+"TN": 5
+}
+},
+
+{
+"id": 22,
+"question": "Group A positive rate = 0.4, Group B = 0.2. Disparate impact?",
+"options": ["0.2", "0.4", "0.5", "2"],
+"answer": "0.5"
+},
+
+{
+"id": 23,
+"question": "Which satisfies equalized odds?",
+"options": ["Equal accuracy", "Equal TPR and FPR", "Equal predictions", "Equal labels"],
+"answer": "Equal TPR and FPR"
+},
+
+{
+"id": 24,
+"question": "Explainability means:",
+"options": ["Understanding how model works", "Understanding why prediction made", "Access to data", "Data cleaning"],
+"answer": "Understanding why prediction made"
+},
+
+{
+"id": 25,
+"question": "Transparency includes:",
+"options": ["Only model weights", "Only data", "Full system understanding", "Only outputs"],
+"answer": "Full system understanding"
+},
+
+{
+"id": 26,
+"question": "Which model is interpretable?",
+"options": ["Neural network", "Decision tree", "Transformer", "Deep CNN"],
+"answer": "Decision tree"
+},
+
+{
+"id": 27,
+"question": "SHAP explains:",
+"options": ["Model training", "Feature contributions", "Dataset size", "Labels"],
+"answer": "Feature contributions"
+},
+
+{
+"id": 28,
+"question": "PIPEDA requires:",
+"options": ["No consent", "Unlimited data collection", "Consent and limited use", "Public sharing"],
+"answer": "Consent and limited use"
+},
+
+{
+"id": 29,
+"question": "AIDA focuses on:",
+"options": ["All AI equally", "High-impact AI", "Only research AI", "Low-risk AI"],
+"answer": "High-impact AI"
+},
+
+{
+"id": 30,
+"question": "OCAP stands for:",
+"options": ["Ownership, Control, Access, Possession", "Open Control Access Policy", "Organized Control Act Process", "Ownership Collection AI Policy"],
+"answer": "Ownership, Control, Access, Possession"
+},
+
+{
+"id": 31,
+"question": "Which best describes fairness impossibility?",
+"options": ["All fairness metrics always satisfied", "Cannot satisfy all fairness definitions simultaneously", "Fairness not needed", "Fairness only for small data"],
+"answer": "Cannot satisfy all fairness definitions simultaneously"
+}
+]

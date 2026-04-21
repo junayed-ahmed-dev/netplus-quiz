@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "question": "What is bias in AI?",
+    "options": [
+      "Random error",
+      "Systematic error causing unfair treatment",
+      "Noise in data",
+      "High accuracy"
+    ],
+    "answer": "Systematic error causing unfair treatment"
+  },
+  {
+    "id": 2,
+    "question": "Bias leads to:",
+    "options": [
+      "Better performance",
+      "Fairness",
+      "Unfair outcomes",
+      "Faster models"
+    ],
+    "answer": "Unfair outcomes"
+  },
+  {
+    "id": 3,
+    "question": "Which is NOT a type of bias?",
+    "options": [
+      "Historical bias",
+      "Selection bias",
+      "Representation bias",
+      "Computation bias"
+    ],
+    "answer": "Computation bias"
+  },
+  {
+    "id": 4,
+    "question": "Historical bias occurs when:",
+    "options": [
+      "Data is missing",
+      "Past inequalities are reflected in data",
+      "Model is too simple",
+      "Evaluation is wrong"
+    ],
+    "answer": "Past inequalities are reflected in data"
+  },
+  {
+    "id": 5,
+    "question": "Example of historical bias:",
+    "options": [
+      "Balanced dataset",
+      "Hiring data favoring certain groups",
+      "Random sampling",
+      "Perfect labels"
+    ],
+    "answer": "Hiring data favoring certain groups"
+  },
+  {
+    "id": 6,
+    "question": "Selection bias occurs when:",
+    "options": [
+      "Data is perfectly balanced",
+      "Dataset is not representative",
+      "Model is accurate",
+      "No data exists"
+    ],
+    "answer": "Dataset is not representative"
+  },
+  {
+    "id": 7,
+    "question": "WWII aircraft example illustrates:",
+    "options": [
+      "Historical bias",
+      "Selection bias",
+      "Learning bias",
+      "Evaluation bias"
+    ],
+    "answer": "Selection bias"
+  },
+  {
+    "id": 8,
+    "question": "Why is reinforcing damaged areas of returning planes incorrect?",
+    "options": [
+      "Planes are random",
+      "Survivorship bias ignores planes that didn’t return",
+      "Too much data",
+      "Wrong labels"
+    ],
+    "answer": "Survivorship bias ignores planes that didn’t return"
+  },
+  {
+    "id": 9,
+    "question": "Representation bias occurs when:",
+    "options": [
+      "Data is balanced",
+      "Groups are underrepresented",
+      "Model is simple",
+      "Evaluation is correct"
+    ],
+    "answer": "Groups are underrepresented"
+  },
+  {
+    "id": 10,
+    "question": "Example of representation bias:",
+    "options": [
+      "Balanced dataset",
+      "ImageNet mostly Western data",
+      "Random sampling",
+      "Perfect labels"
+    ],
+    "answer": "ImageNet mostly Western data"
+  },
+  {
+    "id": 11,
+    "question": "Measurement bias occurs when:",
+    "options": [
+      "Data is large",
+      "Variables are inaccurately measured",
+      "Model is complex",
+      "No bias exists"
+    ],
+    "answer": "Variables are inaccurately measured"
+  },
+  {
+    "id": 12,
+    "question": "Example of measurement bias:",
+    "options": [
+      "Using crime data",
+      "Using arrest records as crime proxy",
+      "Balanced dataset",
+      "Correct labels"
+    ],
+    "answer": "Using arrest records as crime proxy"
+  },
+  {
+    "id": 13,
+    "question": "Learning bias occurs due to:",
+    "options": [
+      "Dataset imbalance",
+      "Model design choices",
+      "Evaluation errors",
+      "Random noise"
+    ],
+    "answer": "Model design choices"
+  },
+  {
+    "id": 14,
+    "question": "Example of learning bias:",
+    "options": [
+      "Balanced data",
+      "Model optimizing only accuracy",
+      "Perfect evaluation",
+      "Random sampling"
+    ],
+    "answer": "Model optimizing only accuracy"
+  },
+  {
+    "id": 15,
+    "question": "Evaluation bias occurs when:",
+    "options": [
+      "Training data is large",
+      "Evaluation data is not representative",
+      "Model is complex",
+      "Labels are correct"
+    ],
+    "answer": "Evaluation data is not representative"
+  },
+  {
+    "id": 16,
+    "question": "Example of evaluation bias:",
+    "options": [
+      "Testing on all groups",
+      "Testing only on young adults",
+      "Balanced dataset",
+      "Perfect evaluation"
+    ],
+    "answer": "Testing only on young adults"
+  },
+  {
+    "id": 17,
+    "question": "COMPAS is used for:",
+    "options": [
+      "Hiring",
+      "Loan approval",
+      "Predicting recidivism",
+      "Image classification"
+    ],
+    "answer": "Predicting recidivism"
+  },
+  {
+    "id": 18,
+    "question": "COMPAS predicts:",
+    "options": [
+      "Income",
+      "Crime likelihood",
+      "Recidivism risk",
+      "Education level"
+    ],
+    "answer": "Recidivism risk"
+  },
+  {
+    "id": 19,
+    "question": "COMPAS uses how many features?",
+    "options": [
+      "10",
+      "50",
+      "137",
+      "1000"
+    ],
+    "answer": "137"
+  },
+  {
+    "id": 20,
+    "question": "What was a major issue with COMPAS?",
+    "options": [
+      "Too accurate",
+      "Biased predictions across racial groups",
+      "Too slow",
+      "No data"
+    ],
+    "answer": "Biased predictions across racial groups"
+  },
+  {
+    "id": 21,
+    "question": "ProPublica found that:",
+    "options": [
+      "All groups treated equally",
+      "African-Americans mislabeled high-risk more often",
+      "Model perfect",
+      "No bias exists"
+    ],
+    "answer": "African-Americans mislabeled high-risk more often"
+  },
+  {
+    "id": 22,
+    "question": "COMPAS lacks transparency because:",
+    "options": [
+      "Open source",
+      "Proprietary algorithm",
+      "Simple model",
+      "Public data"
+    ],
+    "answer": "Proprietary algorithm"
+  },
+  {
+    "id": 23,
+    "question": "Which tool helps improve fairness in AI?",
+    "options": [
+      "TensorFlow",
+      "Fairlearn",
+      "NumPy",
+      "Scikit-learn"
+    ],
+    "answer": "Fairlearn"
+  },
+  {
+    "id": 24,
+    "question": "Trade-off in fairness:",
+    "options": [
+      "Accuracy vs speed",
+      "Accuracy vs fairness",
+      "Data vs model",
+      "Labels vs features"
+    ],
+    "answer": "Accuracy vs fairness"
+  },
+  {
+    "id": 25,
+    "question": "Why are black-box models problematic?",
+    "options": [
+      "Too fast",
+      "Hard to audit and understand",
+      "Too simple",
+      "No bias"
+    ],
+    "answer": "Hard to audit and understand"
+  },
+  {
+    "id": 26,
+    "question": "Human judgment in AI is important because:",
+    "options": [
+      "AI is perfect",
+      "Humans correct algorithmic limitations",
+      "Reduces data",
+      "Increases bias"
+    ],
+    "answer": "Humans correct algorithmic limitations"
+  },
+  {
+    "id": 27,
+    "question": "Mitigation for historical bias:",
+    "options": [
+      "Remove data",
+      "Fairness constraints and reweighting",
+      "Ignore bias",
+      "Increase features"
+    ],
+    "answer": "Fairness constraints and reweighting"
+  },
+  {
+    "id": 28,
+    "question": "Mitigation for selection bias:",
+    "options": [
+      "Remove features",
+      "Targeted data collection",
+      "Ignore groups",
+      "Reduce data"
+    ],
+    "answer": "Targeted data collection"
+  },
+  {
+    "id": 29,
+    "question": "Mitigation for representation bias:",
+    "options": [
+      "Oversampling and synthetic data",
+      "Remove labels",
+      "Reduce dataset",
+      "Ignore bias"
+    ],
+    "answer": "Oversampling and synthetic data"
+  },
+  {
+    "id": 30,
+    "question": "Final Trap: High accuracy guarantees fairness?",
+    "options": [
+      "Yes",
+      "No, bias can still exist",
+      "Only sometimes",
+      "Only for large data"
+    ],
+    "answer": "No, bias can still exist"
+  }
+]
