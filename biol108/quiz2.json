@@ -1,0 +1,218 @@
+[
+  {
+    "question": "Which of the following statements about species, as defined by the biological species concept, are correct?\nBiological species are defined by reproductive isolation.\nBiological species are the model used for grouping extinct forms of life.\nThe biological species is the largest unit of population in which successful interbreeding is possible.",
+    "options": [
+      "II and III",
+      "I, II, and III",
+      "I and II",
+      "I and III"
+    ],
+    "answer": "I and III"
+  },
+  {
+    "question": "You are confronted with a box of preserved grasshoppers of various species that are new to science and have not been described. Your assignment is to separate them into species. There is no accompanying information as to where or when they were collected. Which species concept will you have to use?",
+    "options": [
+      "ecological",
+      "morphological",
+      "biological",
+      "phylogenetic"
+    ],
+    "answer": "morphological"
+  },
+  {
+    "question": "Two species of frogs belonging to the same genus occasionally mate, but the offspring fail to develop and hatch. What is the mechanism for keeping the two frog species separate?",
+    "options": [
+      "the postzygotic barrier called hybrid inviability",
+      "gametic isolation",
+      "the postzygotic barrier called mechanical isolation",
+      "the prezygotic barrier called hybrid sterility",
+      "the postzygotic barrier called hybrid breakdown"
+    ],
+    "answer": "the postzygotic barrier called hybrid inviability"
+  },
+  {
+    "question": "Two closely related populations of mice have been separated for many generations by a river. Climatic change causes the river to dry up, thereby bringing the mice populations back into contact in a zone of overlap. Which of the following is not a possible outcome when they meet?",
+    "options": [
+      "They interbreed in the region of overlap, producing an inferior hybrid. Subsequent interbreeding between inferior hybrids produces progressively superior hybrids over several generations.",
+      "They interbreed in the region of overlap, but produce sterile offspring.",
+      "They no longer attempt to interbreed.",
+      "They interbreed freely and produce fertile hybrid offspring.",
+      "They remain separate in the extremes of their ranges but develop a persistent hybrid zone in the area of overlap."
+    ],
+    "answer": "They interbreed in the region of overlap, producing an inferior hybrid. Subsequent interbreeding between inferior hybrids produces progressively superior hybrids over several generations."
+  },
+  {
+    "question": "The difference between geographic isolation and habitat differentiation is the",
+    "options": [
+      "relative locations of two populations as speciation occurs.",
+      "the ploidy of the two populations as speciation occurs.",
+      "amount of genetic variation that occurs among two gene pools as speciation occurs.",
+      "identity of the phylogenetic kingdom or domain in which these phenomena occur.",
+      "speed (tempo) at which two populations undergo speciation."
+    ],
+    "answer": "relative locations of two populations as speciation occurs."
+  },
+  {
+    "question": "Allopatric speciation is most likely to be observed among which species?",
+    "options": [
+      "tigers and wolves",
+      "pollen of pine trees and grass",
+      "bats and butterflies",
+      "mice and snails",
+      "eagles and gulls"
+    ],
+    "answer": "mice and snails"
+  },
+  {
+    "question": "Polyploidy can be best described as",
+    "options": [
+      "an error in mitosis.",
+      "a condition that could lead to speciation as a result of duplication of chromosomes.",
+      "a condition that enhances gene flow.",
+      "a form of speciation that commonly occurs in plants and animals.",
+      "a condition that requires geographic isolation."
+    ],
+    "answer": "a condition that could lead to speciation as a result of duplication of chromosomes."
+  },
+  {
+    "question": "When studying hybridization over time, researchers have found that",
+    "options": [
+      "when stability occurs, barriers to reproduction are strong, and hybrid numbers decline.",
+      "when fusion occurs, there is a weakening of reproductive barriers, gene flow continues, and the two hybridizing species become increasingly more alike.",
+      "hybridization between polar bears and grizzly bears is one of reinforcement.",
+      "when reinforcement occurs, the production of hybrid individuals continues because hybridization is favoured or reinforced."
+    ],
+    "answer": "when fusion occurs, there is a weakening of reproductive barriers, gene flow continues, and the two hybridizing species become increasingly more alike."
+  },
+  {
+    "question": "A small number of birds arrive on an island from a neighboring larger island. This small population begins to adapt to the new food plants available on the island, and their beaks begin to change. About twice a year, one or two more birds from the neighboring island arrive. These new arrivals",
+    "options": [
+      "represent a colonizing event.",
+      "tend to promote adaptation to the new food plants.",
+      "decrease gene flow.",
+      "speed up the process of speciation.",
+      "tend to delay adaptation to the new food plants."
+    ],
+    "answer": "tend to delay adaptation to the new food plants."
+  },
+  {
+    "question": "You are shown caterpillars of the moth Nemoria arizonaria. The caterpillars belong to the same species, but some of the caterpillars that were collected from oak flowers resemble oak flowers, while caterpillars collected from oak twigs resemble oak twigs. What is the most plausible explanation for the phenotypic variation?",
+    "options": [
+      "The variation is due to heterozygote protection.",
+      "More data needs to be collected.",
+      "Some of the caterpillars had a mutation that changed the genotype and phenotype.",
+      "Variation among individuals in this species is common, but over time one phenotype will outcompete the other phenotype.",
+      "The phenotypic variation appears to be influenced by the environment/diet."
+    ],
+    "answer": "The phenotypic variation appears to be influenced by the environment/diet."
+  },
+  {
+    "question": "How can recessive deleterious alleles remain hidden from selection?",
+    "options": [
+      "The recessive allele can change into a dominant allele.",
+      "Recessive alleles are not expressed in the phenotype, so they remain undetected.",
+      "It can take millions of years for evolution to remove deleterious alleles.",
+      "A rare mutation can make the deleterious allele beneficial.",
+      "The dominant allele, which is favourable, can mask the deleterious allele."
+    ],
+    "answer": "The dominant allele, which is favourable, can mask the deleterious allele."
+  },
+  {
+    "question": "Which of the following is a true statement concerning genetic variation?",
+    "options": [
+      "It is created by the direct action of natural selection.",
+      "A population that has a higher average heterozygosity has less genetic variation than one with a lower average heterozygosity.",
+      "It tends to be reduced by the processes involved when diploid organisms produce gametes.",
+      "It arises in response to changes in the environment.",
+      "It must be present in a population before natural selection can act upon the population."
+    ],
+    "answer": "It must be present in a population before natural selection can act upon the population."
+  },
+  {
+    "question": "The Dunkers are a religious group that moved from Germany to Pennsylvania in the mid-1700s. They do not marry with members outside their own immediate community. Today, the Dunkers are genetically unique and differ in gene frequencies, at many loci, from all other populations including those in their original homeland. Which of the following likely explains the genetic uniqueness of this population?",
+    "options": [
+      "founder effect and genetic drift",
+      "population bottleneck and stabilizing selection",
+      "mutation and natural selection",
+      "population bottleneck and Hardy-Weinberg equilibrium",
+      "heterozygote advantage and stabilizing selection"
+    ],
+    "answer": "founder effect and genetic drift"
+  },
+  {
+    "question": "In the wild, male house finches (Carpodus mexicanus) vary considerably in the amount of red pigmentation in their head and throat feathers, with colours ranging from pale yellow to bright red. These colours come from carotenoid pigments that are found in the birds' diets; no vertebrates are known to synthesize carotenoid pigments. Thus, the brighter red the male's feathers are, the more successful he has been at acquiring the red carotenoid pigment by his food-gathering efforts (all other factors being equal). During breeding season, one should expect female house finches to prefer to mate with males with the brightest red feathers. Which of the following is true of this situation?",
+    "options": [
+      "Three of the statements are correct.",
+      "Alleles that promote more efficient acquisition of carotenoid-containing foods by males should increase over the course of generations.",
+      "Two of the statements are correct.",
+      "There should be directional selection for bright red feathers in males.",
+      "Alleles that promote more effective deposition of carotenoid pigments in the feathers of males should increase over the course of generations."
+    ],
+    "answer": "Three of the statements are correct."
+  },
+  {
+    "question": "During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?",
+    "options": [
+      "Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "If the giraffes did not have to compete with each other, longer necks would not have been passed on to the next generation.",
+      "Only favourable adaptations have survival value.",
+      "Disuse of an organ may lead to its eventual disappearance.",
+      "Spontaneous mutations can result in the appearance of new traits."
+    ],
+    "answer": "Characteristics acquired during an organism's life are generally not passed on through genes."
+  },
+  {
+    "question": "Which of these conditions should completely prevent the occurrence of natural selection in a population over time?",
+    "options": [
+      "All variation between individuals is due only to environmental factors.",
+      "The population lives in a habitat where there are no competing species present.",
+      "The population size is large.",
+      "The environment is changing at a relatively slow rate.",
+      "The population lives on an island."
+    ],
+    "answer": "All variation between individuals is due only to environmental factors."
+  },
+  {
+    "question": "Given a population that contains genetic variation, which of the following events would be under the influence of natural selection?\nWell-adapted individuals leave more offspring than poorly adapted individuals.\nA change occurs in the environment leading to a physical change in the individuals.\nHeritable traits that negatively affect an individual will result in the production of more offspring.\nWell-adapted individuals have decreased survivorship.\nGenetic frequencies within the population change.",
+    "options": [
+      "Events 1, 2, and 5.",
+      "Events 1, 2, 3, and 4.",
+      "All events are under the influence of natural selection.",
+      "Events 2, and 5.",
+      "Events 1, and 2."
+    ],
+    "answer": "Events 1, 2, and 5."
+  },
+  {
+    "question": "Cotton-topped tamarins are small primates with tufts of long white hair on their heads. While studying these creatures, you notice that males with longer hair get more opportunities to mate and produce more offspring. To test the hypothesis that having longer hair is adaptive in these males, you should",
+    "options": [
+      "measure the length of hair on female tamarins.",
+      "look for evidence of hair in ancestors of tamarins.",
+      "test whether other traits in these males are also adaptive.",
+      "test whether males with shaved heads are still able to mate.",
+      "determine if hair length is heritable."
+    ],
+    "answer": "determine if hair length is heritable."
+  },
+  {
+    "question": "Males of different species of the fruit fly Drosophila that live in the same parts of the Hawaiian Islands have different elaborate courtship rituals. These rituals involve fighting other males and making stylized movements that attract females. What type of reproductive isolation does this represent?",
+    "options": [
+      "habitat isolation",
+      "behavioural isolation",
+      "gametic isolation",
+      "temporal isolation"
+    ],
+    "answer": "behavioural isolation"
+  },
+  {
+    "question": "In Kluane National Park, red squirrels have been recorded giving birth 18 days earlier than a decade ago. Offspring born earlier become larger and are more likely to survive. What mode of selection best describes these current research findings?",
+    "options": [
+      "Selection will vary depending on temperature and amount of snow in spring.",
+      "transitional selection",
+      "directional selection",
+      "stabilizing selection",
+      "disruptive selection"
+    ],
+    "answer": "directional selection"
+  }
+]

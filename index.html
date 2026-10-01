@@ -422,6 +422,10 @@ body {
       <div class="shine"></div><div class="c-check"></div>
       <div class="c-num">CMPUT</div><div class="c-course-num">200</div>
     </div>
+    <div class="course-card" data-course="biol108" onclick="selectCourse('biol108')">
+      <div class="shine"></div><div class="c-check"></div>
+      <div class="c-num">BIOL</div><div class="c-course-num">108</div>
+    </div>
   </div>
 
   <!-- Step 2a: Category (200 only) -->
@@ -659,6 +663,10 @@ const DECKS_404 = [
   {value:'2',label:'Deck 2'},
   {value:'3',label:'Deck 3'},
 ];
+const DECKS_BIOL108 = [
+  {value:'quiz1',label:'Quiz 1 (Topics 1-3)'},
+  {value:'quiz2',label:'Quiz 2 (Topics 4-7)'},
+];
 
 let activeCourse   = '404';
 let activeCategory = null;   // 'sessions' | 'midterm' | 'final'
@@ -690,6 +698,15 @@ function selectCourse(course){
     document.getElementById('deckStepLabel').textContent='Choose a deck';
     renderChips(DECKS_404,'var(--accent)');
     activeDeck=DECKS_404[0].value;
+    showPanel('deckStep');
+    setStartEnabled(true);
+  } else if(course==='biol108'){
+    activeFolder='biol108';
+    hidePanel('catStep');
+    hidePanel('timer-notice');
+    document.getElementById('deckStepLabel').textContent='Choose a quiz';
+    renderChips(DECKS_BIOL108,'var(--accent)');
+    activeDeck=DECKS_BIOL108[0].value;
     showPanel('deckStep');
     setStartEnabled(true);
   } else {
@@ -803,7 +820,7 @@ async function startQuiz(e){
     current=0; answers={};
 
     // header labels
-    let courseLabel = activeCourse==='404' ? 'Cmput 404' : 'Cmput 200';
+    let courseLabel = activeCourse==='404' ? 'Cmput 404' : activeCourse==='biol108' ? 'Biol 108' : 'Cmput 200';
     let deckLabel = activeDeck;
     if(activeCategory==='sessions'){
       const found=SESSIONS.find(d=>d.value===activeDeck);
@@ -813,6 +830,9 @@ async function startQuiz(e){
     } else if(activeCategory==='final'){
       const found=FINAL_SETS.find(d=>d.value===activeDeck);
       deckLabel='Final · '+(found?found.label:activeDeck);
+    } else if(activeCourse==='biol108'){
+      const found=DECKS_BIOL108.find(d=>d.value===activeDeck);
+      deckLabel=found?found.label:activeDeck;
     } else {
       const found=DECKS_404.find(d=>d.value===activeDeck);
       deckLabel=found?found.label:activeDeck;

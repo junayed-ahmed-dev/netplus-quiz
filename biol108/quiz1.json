@@ -1,0 +1,187 @@
+[
+  {
+    "question": "Which of the following terms includes all of the others?",
+    "options": [
+      "species richness",
+      "ecosystem diversity",
+      "genetic diversity",
+      "species diversity",
+      "biodiversity"
+    ],
+    "answer": "biodiversity"
+  },
+  {
+    "question": "If all individuals in the last remaining population of a particular bird species were all highly related, which type of diversity would be of greatest concern when planning to keep the species from going extinct?\n\nI)\tgenetic diversity\nII)\tspecies diversity\nIII)\tecosystem diversity",
+    "options": [
+      "only I",
+      "only II",
+      "only III",
+      "only II and III"
+    ],
+    "answer": "only I"
+  },
+  {
+    "question": "The difference between an endangered species and a threatened one is that",
+    "options": [
+      "an endangered species is closer to extinction.",
+      "a threatened species is closer to extinction.",
+      "threatened species are endangered species outside the Canadian borders.",
+      "endangered species are mainly tropical.",
+      "only endangered species are vertebrates."
+    ],
+    "answer": "an endangered species is closer to extinction."
+  },
+  {
+    "question": "Overexploitation encourages extinction and is most likely to affect",
+    "options": [
+      "edge-adapted species.",
+      "large animals with low intrinsic reproductive rates.",
+      "most organisms that live in the oceans.",
+      "terrestrial organisms more than aquatic organisms.",
+      "animals that occupy a broad ecological niche."
+    ],
+    "answer": "large animals with low intrinsic reproductive rates."
+  },
+  {
+    "question": "Which statement best describes the difference between extinction and extirpation?",
+    "options": [
+      "Extinction means no living individuals of the species exist anywhere in the world, while extirpation refers to the disappearance of a species from a specific region",
+      "Extirpation occurs when a species loses its genetic diversity but still exists in other forms",
+      "Extinction is caused by natural processes, while extirpation always results from human activities",
+      "Extirpation occurs globally, while extinction is limited to specific regions",
+      "Extinction and extirpation are interchangeable terms that describe the same process"
+    ],
+    "answer": "Extinction means no living individuals of the species exist anywhere in the world, while extirpation refers to the disappearance of a species from a specific region"
+  },
+  {
+    "question": "Which of the following organisms would be the most negatively impacted by global warming?",
+    "options": [
+      "A squirrel that lives in a redwood forest",
+      "A wasp that inhabits the lowlands of Australia",
+      "A pronghorn sheep living in the American grasslands",
+      "A mouse living in the top of the Canadian rockies",
+      "A bird living in a tropical wet forest"
+    ],
+    "answer": "A mouse living in the top of the Canadian rockies"
+  },
+  {
+    "question": "In binomial nomenclature, the specific epithet:",
+    "options": [
+      "Is unique within a genus but may be reused in different genera",
+      "Always begins with a capital letter",
+      "Can independently identify a species without the genus name",
+      "Is the first part of a species\u2019 scientific name",
+      "Refers to the genus of the organism"
+    ],
+    "answer": "Is unique within a genus but may be reused in different genera"
+  },
+  {
+    "question": "The giraffe, opossum, and black rat belong to the same class but to different orders; the cat, weasel, and skunk belong to the same order but to different families, which of the following pairs of organisms would be expected to show the greatest degree of structural homology?",
+    "options": [
+      "giraffe and opossum",
+      "giraffe and black rat",
+      "opossum and cat",
+      "black rat and skunk",
+      "cat and skunk"
+    ],
+    "answer": "cat and skunk"
+  },
+  {
+    "question": "The domestic dog, red fox, and wolf belong to the family Canidae. The dog is Canis lupus familiaris, the red fox is Vulpes vulpes, and the wolf is Canis lupus. Which of the following statements is correct?",
+    "options": [
+      "All three belong to the same genera but are different species.",
+      "The red fox is in the same family, but of a different genus, than wolves and dogs.",
+      "All three canids should successfully breed with one another.",
+      "All three canids are in different genera.",
+      "All three canids live on different continents."
+    ],
+    "answer": "The red fox is in the same family, but of a different genus, than wolves and dogs."
+  },
+  {
+    "question": "Short Description: Two phylogenetic trees. Long Description: The trees are as follows. _Tree 1. Root leads to branch point A. Branch point A splits to branch points B and C. Branch point C splits to branch tips 5 and 6. Branch point B splits to branch point D and branch tip 4. Branch tip D splits to branch point E and branch tip 3. Branch point E splits to branch tips 1 and 2. _Tree 2. Root leads to branch point A. Branch point A splits to branch points B and C. Branch point B splits to branch tips 6 and 5. Branch point C splits to branch points D and E. Branch point D splits to branch tips 4 and 3. Branch point E splits to branch tips 2 and 1.\n\nIn the phylogenetic trees above, numbers represent species and the same species are shown in both trees. Which two species are represented as sister species in Tree 2 but are not shown as sister species in Tree 1?",
+    "options": [
+      "5 and 6",
+      "4 and 5",
+      "2 and 3",
+      "1 and 2",
+      "3 and 4"
+    ],
+    "answer": "3 and 4",
+    "image_url": "./res/quiz1-q10.png"
+  },
+  {
+    "question": "Consider the human arm, a dog's foreleg, and a seal's flipper. These three structures are examples of ________ structures.",
+    "options": [
+      "related",
+      "homologous",
+      "mammalian",
+      "analogous",
+      "similar function in"
+    ],
+    "answer": "homologous"
+  },
+  {
+    "question": "Some molecular data place the giant panda in the bear family (Ursidae) but place the lesser panda in the raccoon family (Procyonidae). Consequently, the morphological similarities of these two species are probably due to",
+    "options": [
+      "possession of shared primitive characters.",
+      "inheritance of shared derived characters.",
+      "possession of analogous structures.",
+      "inheritance of acquired characteristics.",
+      "sexual selection."
+    ],
+    "answer": "possession of analogous structures."
+  },
+  {
+    "question": "Which of the following is/are considered a shared derived character?",
+    "options": [
+      "hair in mammals",
+      "backbone in mammals",
+      "loss of limbs in whales",
+      "A and B",
+      "A and C"
+    ],
+    "answer": "A and C"
+  },
+  {
+    "question": "When using a cladistic approach to systematics, which of the following is considered most important for classification?",
+    "options": [
+      "analogous primitive characters",
+      "overall phenotypic similarity",
+      "shared derived characters",
+      "the number of nucleotide similarities",
+      "shared primitive characters"
+    ],
+    "answer": "shared derived characters"
+  },
+  {
+    "question": "A monophyletic group",
+    "options": [
+      "is an ancestral species and includes some of its descendants.",
+      "is an ancestral species and includes all of its descendants.",
+      "includes the groups that form the nodes on a phylogenetic tree.",
+      "is the basal taxon.",
+      "includes species that show convergent evolution."
+    ],
+    "answer": "is an ancestral species and includes all of its descendants."
+  },
+  {
+    "question": "In a comparison of birds and mammals, having four limbs is",
+    "options": [
+      "an example of analogy rather than homology.",
+      "a shared derived character.",
+      "a shared ancestral character.",
+      "a character useful for distinguishing birds from mammals."
+    ],
+    "answer": "a shared ancestral character."
+  },
+  {
+    "question": "You have three species of beetles, and you are trying to determine their likely phylogeny based on their DNA sequences. You have three possible phylogenetic hypotheses. In applying parsimony to these possible phylogenies, which of the following criteria would be considered?",
+    "options": [
+      "the tree with the fewest number of changes and thus the simplest explanation",
+      "evolution is complicated so the tree that shows the greatest number of likely changes between the species would be selected",
+      "the tree with the greatest number of evolutionary changes",
+      "the tree with the fewest number of shared derived morphological characters"
+    ],
+    "answer": "the tree with the fewest number of changes and thus the simplest explanation"
+  }
+]
