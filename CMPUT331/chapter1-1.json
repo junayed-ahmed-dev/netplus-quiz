@@ -1,0 +1,1146 @@
+{
+  "title": "CMPUT 331 Test 1 Practice MCQ Bank",
+  "question_count": 95,
+  "questions": [
+    {
+      "id": 1,
+      "question": "The message before encryption is called:",
+      "options": {
+        "A": "Ciphertext",
+        "B": "Algorithm",
+        "C": "Plaintext",
+        "D": "Key",
+        "E": "Cryptogram"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 2,
+      "question": "The result after encrypting plaintext is called:",
+      "options": {
+        "A": "Algorithm",
+        "B": "Ciphertext",
+        "C": "Plaintext",
+        "D": "Keytext",
+        "E": "Codebook"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 3,
+      "question": "Cryptography primarily attempts to:",
+      "options": {
+        "A": "Authenticate the messenger",
+        "B": "Make messages shorter",
+        "C": "Hide the existence of a message",
+        "D": "Destroy a message",
+        "E": "Hide the meaning of a message"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 4,
+      "question": "Steganography primarily attempts to:",
+      "options": {
+        "A": "Generate a random key",
+        "B": "Hide the existence of a message",
+        "C": "Break a cipher",
+        "D": "Replace letters",
+        "E": "Rearrange letters"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 5,
+      "question": "Which is an example of steganography from the reading?",
+      "options": {
+        "A": "Frequency analysis",
+        "B": "Rail fence",
+        "C": "Caesar shift",
+        "D": "Writing a secret message underneath wax on a wooden tablet",
+        "E": "Monoalphabetic substitution"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 6,
+      "question": "Histaiaeus concealed a message by:",
+      "options": {
+        "A": "Writing it on a messenger's shaved scalp",
+        "B": "Using a scytale",
+        "C": "Writing it in invisible ink",
+        "D": "Hiding it inside an egg",
+        "E": "Encrypting it with Caesar's cipher"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 7,
+      "question": "The word 'steganography' derives from Greek words meaning approximately:",
+      "options": {
+        "A": "Secret mathematics",
+        "B": "Shifted alphabet",
+        "C": "Hidden key",
+        "D": "Secret language",
+        "E": "Covered writing"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 8,
+      "question": "Which statement correctly distinguishes transposition from substitution?",
+      "options": {
+        "A": "Transposition changes position; substitution changes identity.",
+        "B": "Both change letter identity.",
+        "C": "Neither changes position.",
+        "D": "Transposition changes identity; substitution changes position.",
+        "E": "There is no difference."
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 9,
+      "question": "Using a Caesar shift of +3, plaintext A becomes:",
+      "options": {
+        "A": "X",
+        "B": "C",
+        "C": "D",
+        "D": "Z",
+        "E": "B"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 10,
+      "question": "Using a Caesar shift of +3, plaintext Z becomes:",
+      "options": {
+        "A": "C",
+        "B": "W",
+        "C": "A",
+        "D": "X",
+        "E": "B"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 11,
+      "question": "Encrypt CAT using shift +3.",
+      "options": {
+        "A": "ECW",
+        "B": "ZXP",
+        "C": "FDX",
+        "D": "DBU",
+        "E": "FDW"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 12,
+      "question": "Decrypt KHOOR if it was encrypted using Caesar shift +3.",
+      "options": {
+        "A": "HOUSE",
+        "B": "THERE",
+        "C": "WORLD",
+        "D": "HELLO",
+        "E": "APPLE"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 13,
+      "question": "If encryption is E(x) = (x + 7) mod 26, the corresponding decryption is:",
+      "options": {
+        "A": "(7 - x) mod 26",
+        "B": "(x - 7) mod 26",
+        "C": "(x + 7) mod 26",
+        "D": "7x mod 26",
+        "E": "x / 7"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 14,
+      "question": "With A=0, B=1, ..., Z=25, what is the encryption of Y using key 5?",
+      "options": {
+        "A": "E",
+        "B": "F",
+        "C": "B",
+        "D": "D",
+        "E": "C"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 15,
+      "question": "How many nontrivial Caesar shift keys are possible for the 26-letter alphabet?",
+      "options": {
+        "A": "26",
+        "B": "52",
+        "C": "25",
+        "D": "24",
+        "E": "26!"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 16,
+      "question": "Why is Caesar's cipher vulnerable to brute force?",
+      "options": {
+        "A": "It rearranges letters randomly.",
+        "B": "It has only 25 nontrivial possible shifts.",
+        "C": "It requires frequency analysis.",
+        "D": "It uses numbers.",
+        "E": "It has no key."
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 17,
+      "question": "Julius Caesar's cipher described by Suetonius shifted letters by:",
+      "options": {
+        "A": "13",
+        "B": "1",
+        "C": "25",
+        "D": "3",
+        "E": "2"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 18,
+      "question": "The first documented military use of a substitution cipher mentioned in the chapter is associated with:",
+      "options": {
+        "A": "Julius Caesar",
+        "B": "Mary Queen of Scots",
+        "C": "Demaratus",
+        "D": "Walsingham",
+        "E": "al-Kindi"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 19,
+      "question": "In a transposition cipher:",
+      "options": {
+        "A": "Words are replaced by numbers.",
+        "B": "Letters are deleted.",
+        "C": "Letters are shifted three positions.",
+        "D": "Letters retain their identities but change positions.",
+        "E": "Letters are replaced by different letters."
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 20,
+      "question": "Which is a transposition cipher?",
+      "options": {
+        "A": "Monoalphabetic substitution",
+        "B": "Rail fence",
+        "C": "Caesar cipher",
+        "D": "Nomenclator",
+        "E": "Shift cipher"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 21,
+      "question": "In the two-line rail fence described in the book, the plaintext letters are:",
+      "options": {
+        "A": "Written alternately on upper and lower lines",
+        "B": "Converted to numbers",
+        "C": "Reversed alphabetically",
+        "D": "Shifted by two",
+        "E": "Replaced with symbols"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 22,
+      "question": "A three-line rail fence differs from the two-line version because:",
+      "options": {
+        "A": "Every third letter is deleted.",
+        "B": "Three keys are required.",
+        "C": "The message is initially written on three lines.",
+        "D": "Three alphabets are used.",
+        "E": "Each letter is shifted three times."
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 23,
+      "question": "Why isn't completely random transposition practical?",
+      "options": {
+        "A": "It converts plaintext into numbers.",
+        "B": "It requires a codebook.",
+        "C": "It creates too few possibilities.",
+        "D": "The intended receiver would also have difficulty unscrambling it.",
+        "E": "It changes letter frequencies."
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 24,
+      "question": "For transposition to be useful, sender and receiver need:",
+      "options": {
+        "A": "Frequency analysis",
+        "B": "Different alphabets",
+        "C": "A dictionary",
+        "D": "Different messages",
+        "E": "A systematic rearrangement method they both know"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 25,
+      "question": "How many arrangements are possible for three distinct letters?",
+      "options": {
+        "A": "9",
+        "B": "6",
+        "C": "3",
+        "D": "5",
+        "E": "4"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 26,
+      "question": "Which ancient device represents a transposition cipher?",
+      "options": {
+        "A": "Nomenclator",
+        "B": "Microdot",
+        "C": "Caesar wheel",
+        "D": "Spartan scytale",
+        "E": "Enigma"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 27,
+      "question": "The scytale consisted primarily of:",
+      "options": {
+        "A": "A wooden staff and a strip of leather or parchment",
+        "B": "A codebook",
+        "C": "Two rotating disks",
+        "D": "A mechanical calculator",
+        "E": "Two alphabets"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 28,
+      "question": "To decipher a scytale message, the receiver needed:",
+      "options": {
+        "A": "Invisible ink",
+        "B": "A scytale of the same diameter",
+        "C": "A Caesar key",
+        "D": "Frequency analysis",
+        "E": "A nomenclator"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 29,
+      "question": "The Spartan scytale dates to approximately:",
+      "options": {
+        "A": "Nineteenth century",
+        "B": "First century A.D.",
+        "C": "Sixteenth century",
+        "D": "Ninth century A.D.",
+        "E": "Fifth century B.C."
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 30,
+      "question": "In 404 B.C., the scytale helped which Spartan learn about an impending Persian attack?",
+      "options": {
+        "A": "Xerxes",
+        "B": "Caesar",
+        "C": "Lysander",
+        "D": "Leonidas",
+        "E": "Demaratus"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 31,
+      "question": "Who was planning to attack Lysander?",
+      "options": {
+        "A": "Pharnabazus",
+        "B": "Marnix",
+        "C": "Xerxes",
+        "D": "Babington",
+        "E": "Walsingham"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 32,
+      "question": "Disguising a scytale's leather strip as a belt adds an element of:",
+      "options": {
+        "A": "Brute force",
+        "B": "Substitution",
+        "C": "Frequency analysis",
+        "D": "Steganography",
+        "E": "Cryptanalysis"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 33,
+      "question": "An encryption algorithm is:",
+      "options": {
+        "A": "The alphabet size",
+        "B": "The general method used for encryption",
+        "C": "The encrypted message",
+        "D": "The plaintext",
+        "E": "Always secret"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 34,
+      "question": "A key:",
+      "options": {
+        "A": "Must contain 26 letters",
+        "B": "Is always public",
+        "C": "Is always the plaintext",
+        "D": "Specifies the particular details/settings used by the algorithm",
+        "E": "Is the same thing as ciphertext"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 35,
+      "question": "Kerckhoffs' Principle says security should depend primarily on secrecy of:",
+      "options": {
+        "A": "The ciphertext",
+        "B": "The algorithm",
+        "C": "The key",
+        "D": "The programming language",
+        "E": "The plaintext"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 36,
+      "question": "Kerckhoffs' Principle was definitively stated in:",
+      "options": {
+        "A": "1883",
+        "B": "1941",
+        "C": "404 B.C.",
+        "D": "1586",
+        "E": "1999"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 37,
+      "question": "Auguste Kerckhoffs von Nieuwenhof was described as a:",
+      "options": {
+        "A": "British spy",
+        "B": "Arab mathematician",
+        "C": "Scottish king",
+        "D": "Roman general",
+        "E": "Dutch linguist"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 38,
+      "question": "A monoalphabetic substitution cipher uses:",
+      "options": {
+        "A": "Only numbers",
+        "B": "Multiple cipher alphabets",
+        "C": "One cipher alphabet",
+        "D": "No alphabet",
+        "E": "Transposition only"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 39,
+      "question": "A general substitution alphabet can have how many possible arrangements?",
+      "options": {
+        "A": "26^2",
+        "B": "26!",
+        "C": "676",
+        "D": "26",
+        "E": "25"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 40,
+      "question": "A brute-force attack involves:",
+      "options": {
+        "A": "Trying possible keys until the correct one is found",
+        "B": "Measuring letter frequencies only",
+        "C": "Hiding the message",
+        "D": "Physically stealing a message",
+        "E": "Rearranging letters once"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 41,
+      "question": "Cryptanalysis is the science of:",
+      "options": {
+        "A": "Creating plaintext",
+        "B": "Writing Python",
+        "C": "Producing random numbers",
+        "D": "Unscrambling encrypted messages without knowing the key",
+        "E": "Hiding messages physically"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 42,
+      "question": "Who wrote the earliest known description of frequency-analysis cryptanalysis mentioned in Chapter 1?",
+      "options": {
+        "A": "Phelippes",
+        "B": "al-Kindi",
+        "C": "Caesar",
+        "D": "Kerckhoffs",
+        "E": "Alberti"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 43,
+      "question": "Al-Kindi lived during approximately which century?",
+      "options": {
+        "A": "Sixteenth century",
+        "B": "Fifth century B.C.",
+        "C": "Ninth century A.D.",
+        "D": "Nineteenth century",
+        "E": "First century A.D."
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 44,
+      "question": "Al-Kindi was known as:",
+      "options": {
+        "A": "Father of cryptography",
+        "B": "Father of history",
+        "C": "King's cryptographer",
+        "D": "Father of statistics",
+        "E": "The philosopher of the Arabs"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 45,
+      "question": "Al-Kindi's cryptanalytic breakthrough relied primarily upon:",
+      "options": {
+        "A": "Frequency analysis",
+        "B": "Rail fences",
+        "C": "Mechanical computers",
+        "D": "Modular arithmetic",
+        "E": "Invisible ink"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 46,
+      "question": "In normal English, according to the frequency table in the chapter, the most frequent letter is:",
+      "options": {
+        "A": "T",
+        "B": "I",
+        "C": "A",
+        "D": "E",
+        "E": "S"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 47,
+      "question": "Approximately what percentage of ordinary English text in the book's table consists of E?",
+      "options": {
+        "A": "8.2%",
+        "B": "12.7%",
+        "C": "25%",
+        "D": "6.1%",
+        "E": "2.7%"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 48,
+      "question": "Frequency analysis generally becomes less reliable when:",
+      "options": {
+        "A": "The ciphertext is very long.",
+        "B": "E occurs frequently.",
+        "C": "The ciphertext is short.",
+        "D": "Spaces are included.",
+        "E": "The alphabet has 26 letters."
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 49,
+      "question": "Why can frequency analysis break monoalphabetic substitution?",
+      "options": {
+        "A": "The statistical patterns of the underlying language survive the substitution.",
+        "B": "Every key equals 3.",
+        "C": "Ciphertext is always English.",
+        "D": "Substitution eliminates frequencies.",
+        "E": "Substitution rearranges words."
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 50,
+      "question": "A code typically replaces:",
+      "options": {
+        "A": "Letter positions only",
+        "B": "Individual letters only",
+        "C": "Keys with algorithms",
+        "D": "Every second letter",
+        "E": "Words or phrases with other words, numbers or symbols"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 51,
+      "question": "A cipher generally operates at the level of:",
+      "options": {
+        "A": "Entire books",
+        "B": "Individual letters or symbols",
+        "C": "Countries",
+        "D": "Paragraphs",
+        "E": "People"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 52,
+      "question": "One major disadvantage of a codebook is that:",
+      "options": {
+        "A": "It cannot be captured.",
+        "B": "It contains only 26 entries.",
+        "C": "It may need hundreds of pages.",
+        "D": "It cannot encode words.",
+        "E": "Frequency analysis always immediately solves it."
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 53,
+      "question": "If an enemy captures a codebook:",
+      "options": {
+        "A": "Only one letter is exposed.",
+        "B": "The code becomes stronger.",
+        "C": "Nothing happens.",
+        "D": "Encoded communications using it can become readable.",
+        "E": "It automatically changes keys."
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 54,
+      "question": "A nomenclator combines:",
+      "options": {
+        "A": "A cipher alphabet and a limited list of codewords",
+        "B": "Two Caesar shifts",
+        "C": "Transposition and steganography",
+        "D": "Python and cryptography",
+        "E": "Rail fence and scytale"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 55,
+      "question": "Mary's nomenclator contained how many symbols representing letters?",
+      "options": {
+        "A": "35",
+        "B": "26",
+        "C": "20",
+        "D": "25",
+        "E": "23"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 56,
+      "question": "Which letters were excluded from Mary's 23-letter cipher alphabet?",
+      "options": {
+        "A": "Q, X, Z",
+        "B": "J, V, W",
+        "C": "A, E, I",
+        "D": "J, Q, X",
+        "E": "X, Y, Z"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 57,
+      "question": "Mary's nomenclator also contained how many symbols representing words or phrases?",
+      "options": {
+        "A": "23",
+        "B": "100",
+        "C": "35",
+        "D": "4",
+        "E": "25"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 58,
+      "question": "Mary's nomenclator contained four:",
+      "options": {
+        "A": "Nulls",
+        "B": "Rail fences",
+        "C": "Keys",
+        "D": "Codebooks",
+        "E": "Alphabets"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 59,
+      "question": "The purpose of a null is primarily to:",
+      "options": {
+        "A": "End encryption",
+        "B": "Represent a plaintext letter",
+        "C": "Shift every character",
+        "D": "Add meaningless symbols to confuse cryptanalysis",
+        "E": "Identify the sender"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 60,
+      "question": "Mary Queen of Scots was tried for:",
+      "options": {
+        "A": "Fraud",
+        "B": "Treason",
+        "C": "Espionage",
+        "D": "Heresy",
+        "E": "Theft"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 61,
+      "question": "Mary was accused of participating in a plot to assassinate:",
+      "options": {
+        "A": "Queen Elizabeth I",
+        "B": "Walsingham",
+        "C": "James V",
+        "D": "Philip II",
+        "E": "Henry VIII"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 62,
+      "question": "Queen Elizabeth's Principal Secretary and spymaster was:",
+      "options": {
+        "A": "Gilbert Gifford",
+        "B": "Thomas Phelippes",
+        "C": "Anthony Babington",
+        "D": "Francis Walsingham",
+        "E": "al-Kindi"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 63,
+      "question": "Walsingham's expert cryptanalyst was:",
+      "options": {
+        "A": "Demaratus",
+        "B": "Thomas Phelippes",
+        "C": "Julius Caesar",
+        "D": "Anthony Babington",
+        "E": "Leonidas"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 64,
+      "question": "The conspiracy involving Mary became known as the:",
+      "options": {
+        "A": "Walsingham Plot",
+        "B": "Caesar Plot",
+        "C": "Babington Plot",
+        "D": "Scytale Plot",
+        "E": "Elizabeth Plot"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 65,
+      "question": "Anthony Babington was primarily:",
+      "options": {
+        "A": "King of Scotland",
+        "B": "Elizabeth's cryptanalyst",
+        "C": "An Arab cryptanalyst",
+        "D": "Mary's jailer",
+        "E": "One of the conspirators communicating with Mary"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 66,
+      "question": "Who served as the double agent in the communication channel?",
+      "options": {
+        "A": "Caesar",
+        "B": "Marnix",
+        "C": "Gifford",
+        "D": "Phelippes",
+        "E": "Babington"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 67,
+      "question": "Gilbert Gifford secretly worked for:",
+      "options": {
+        "A": "Walsingham",
+        "B": "Philip of Spain",
+        "C": "Mary",
+        "D": "Julius Caesar",
+        "E": "Babington"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 68,
+      "question": "Mary's secret letters were smuggled using:",
+      "options": {
+        "A": "A hollow spear",
+        "B": "Invisible ink",
+        "C": "A shaved head",
+        "D": "The bung of a beer barrel",
+        "E": "A scytale"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 69,
+      "question": "Hiding the letter in the beer-barrel bung is an example of:",
+      "options": {
+        "A": "Frequency analysis",
+        "B": "Steganography",
+        "C": "Transposition",
+        "D": "Substitution",
+        "E": "Cryptanalysis"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 70,
+      "question": "Encrypting the contents of that hidden letter adds:",
+      "options": {
+        "A": "Authentication",
+        "B": "Compression",
+        "C": "Cryptography",
+        "D": "Only steganography",
+        "E": "Transposition necessarily"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 71,
+      "question": "Phelippes primarily attacked Mary's cipher using:",
+      "options": {
+        "A": "Frequency analysis",
+        "B": "Rail fence",
+        "C": "Scytale",
+        "D": "Invisible ink",
+        "E": "Brute-force Caesar shifts only"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 72,
+      "question": "After deciphering Mary's reply, Phelippes marked it with the symbol of:",
+      "options": {
+        "A": "A key",
+        "B": "A sword",
+        "C": "A crown",
+        "D": "A cross",
+        "E": "The gallows"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 73,
+      "question": "Why didn't Walsingham immediately arrest Babington after deciphering his message?",
+      "options": {
+        "A": "Elizabeth ordered him not to.",
+        "B": "He wanted Mary to reply and incriminate herself.",
+        "C": "The cipher was still unbroken.",
+        "D": "He couldn't locate Babington.",
+        "E": "Phelippes lost the message."
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 74,
+      "question": "Mary replied to Babington on:",
+      "options": {
+        "A": "October 15, 1586",
+        "B": "September 9, 1543",
+        "C": "July 17, 1586",
+        "D": "November 24, 1542",
+        "E": "July 17, 1577"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 75,
+      "question": "After obtaining Mary's incriminating response, Walsingham wanted Phelippes to:",
+      "options": {
+        "A": "Forge a postscript intended to obtain the names of other conspirators",
+        "B": "Give Mary a new key",
+        "C": "Destroy it",
+        "D": "Translate it into Latin",
+        "E": "Encrypt it again"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 76,
+      "question": "According to Herodotus, who warned Sparta about Xerxes' invasion?",
+      "options": {
+        "A": "Phelippes",
+        "B": "Caesar",
+        "C": "Lysander",
+        "D": "Demaratus",
+        "E": "Babington"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 77,
+      "question": "Demaratus concealed his message:",
+      "options": {
+        "A": "In a microdot",
+        "B": "Under wax on wooden tablets",
+        "C": "Inside a beer barrel",
+        "D": "In a codebook",
+        "E": "On a shaved head"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 78,
+      "question": "Who realized that the wax should be scraped from the tablets?",
+      "options": {
+        "A": "Artemisia",
+        "B": "Mary",
+        "C": "Hafsa",
+        "D": "Elizabeth",
+        "E": "Gorgo"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 79,
+      "question": "Histaiaeus communicated secretly by:",
+      "options": {
+        "A": "Writing on a messenger's shaved scalp and allowing the hair to regrow",
+        "B": "Using a nomenclator",
+        "C": "Using Caesar shift",
+        "D": "Using a rail fence",
+        "E": "Writing beneath wax"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 80,
+      "question": "A microdot is primarily an example of:",
+      "options": {
+        "A": "Brute force",
+        "B": "Rail-fence transposition",
+        "C": "Steganography",
+        "D": "Frequency analysis",
+        "E": "Caesar substitution"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 81,
+      "question": "Microdots became particularly popular during:",
+      "options": {
+        "A": "The American Revolution",
+        "B": "World War II",
+        "C": "Roman times",
+        "D": "The Cold War only",
+        "E": "World War I"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 82,
+      "question": "What is printed by: x = 5; print(x + 3)",
+      "options": {
+        "A": "53",
+        "B": "5",
+        "C": "Error",
+        "D": "8",
+        "E": "3"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 83,
+      "question": "What is printed by: print(17 % 5)",
+      "options": {
+        "A": "2",
+        "B": "17",
+        "C": "12",
+        "D": "5",
+        "E": "3"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 84,
+      "question": "What is printed by: s = 'CIPHER'; print(s[0])",
+      "options": {
+        "A": "I",
+        "B": "R",
+        "C": "C",
+        "D": "Error",
+        "E": "0"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 85,
+      "question": "What is printed by: s = 'CIPHER'; print(s[-1])",
+      "options": {
+        "A": "C",
+        "B": "R",
+        "C": "I",
+        "D": "Error",
+        "E": "E"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 86,
+      "question": "What is the value of len('CAESAR')?",
+      "options": {
+        "A": "26",
+        "B": "Error",
+        "C": "5",
+        "D": "7",
+        "E": "6"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 87,
+      "question": "What is produced by list(range(3))?",
+      "options": {
+        "A": "[0, 1, 2, 3]",
+        "B": "[3]",
+        "C": "[0, 1, 2]",
+        "D": "[1, 2, 3]",
+        "E": "0, 1, 2, 3"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 88,
+      "question": "What values are printed by: for i in range(3): print(i)",
+      "options": {
+        "A": "0, 1, 2",
+        "B": "3 only",
+        "C": "1, 2, 3",
+        "D": "Nothing",
+        "E": "0, 1, 2, 3"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 89,
+      "question": "Which operator tests equality in Python?",
+      "options": {
+        "A": "===",
+        "B": "=",
+        "C": "!=",
+        "D": "==",
+        "E": ":="
+      },
+      "correct_answer": "D"
+    },
+    {
+      "id": 90,
+      "question": "Which operator performs integer remainder/modulo?",
+      "options": {
+        "A": "//",
+        "B": "%",
+        "C": "**",
+        "D": "/",
+        "E": "&"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 91,
+      "question": "What is printed by: x = 25; print((x + 3) % 26)",
+      "options": {
+        "A": "25",
+        "B": "28",
+        "C": "1",
+        "D": "3",
+        "E": "2"
+      },
+      "correct_answer": "E"
+    },
+    {
+      "id": 92,
+      "question": "What does ord('A') do?",
+      "options": {
+        "A": "Returns the character code for A",
+        "B": "Returns 0",
+        "C": "Converts 65 to A",
+        "D": "Encrypts A",
+        "E": "Returns 'A'"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "id": 93,
+      "question": "What does chr(65) produce?",
+      "options": {
+        "A": "65",
+        "B": "'B'",
+        "C": "'A'",
+        "D": "'65'",
+        "E": "Error"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "id": 94,
+      "question": "What is printed by: x = 'ABC'; print(x[1])",
+      "options": {
+        "A": "ABC",
+        "B": "B",
+        "C": "Error",
+        "D": "C",
+        "E": "A"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "id": 95,
+      "question": "Strings in Python are indexed beginning at:",
+      "options": {
+        "A": "2",
+        "B": "Depends on the string",
+        "C": "1",
+        "D": "0",
+        "E": "-1"
+      },
+      "correct_answer": "D"
+    }
+  ]
+}

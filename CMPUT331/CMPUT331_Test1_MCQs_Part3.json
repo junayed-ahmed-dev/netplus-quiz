@@ -1,0 +1,1136 @@
+{
+  "title": "Bank 3 - Python, Assignments and Mixed Exam-Style Questions",
+  "course": "CMPUT 331 - Test 1 Practice",
+  "question_count": 80,
+  "format": "MCQ with five options; answer positions reproducibly randomized",
+  "basis": [
+    "The Code Book, Chapter 1 (uploaded reading)",
+    "CMPUT 331 lecture notes/slides supplied by the user",
+    "Assignment 1",
+    "Assignment 2",
+    "Columnar transposition examples",
+    "Basic Python concepts used in the supplied course material"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Python",
+      "question": "What is list(range(3))?",
+      "options": {
+        "A": "[0, 1, 2, 3]",
+        "B": "range(1, 3)",
+        "C": "[0, 1, 2]",
+        "D": "[1, 2, 3]",
+        "E": "[3]"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 2,
+      "topic": "Python",
+      "question": "Python string indexing begins at:",
+      "options": {
+        "A": "0",
+        "B": "the string length",
+        "C": "-1 only",
+        "D": "1",
+        "E": "2"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 3,
+      "topic": "Python",
+      "question": "What does 'CIPHER'[0] evaluate to?",
+      "options": {
+        "A": "0",
+        "B": "'R'",
+        "C": "'I'",
+        "D": "'C'",
+        "E": "'CIPHER'"
+      },
+      "correct_answer": "D",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 4,
+      "topic": "Python",
+      "question": "What does 'CIPHER'[-1] evaluate to?",
+      "options": {
+        "A": "'R'",
+        "B": "an error",
+        "C": "-1",
+        "D": "'C'",
+        "E": "'E'"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 5,
+      "topic": "Python",
+      "question": "What is len('CAESAR')?",
+      "options": {
+        "A": "5",
+        "B": "0",
+        "C": "6",
+        "D": "26",
+        "E": "7"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 6,
+      "topic": "Python",
+      "question": "What is 17 % 5?",
+      "options": {
+        "A": "5",
+        "B": "3",
+        "C": "17",
+        "D": "12",
+        "E": "2"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / assignment context"
+    },
+    {
+      "id": 7,
+      "topic": "Python",
+      "question": "Which operator tests equality in Python?",
+      "options": {
+        "A": "!=",
+        "B": "=",
+        "C": ":=",
+        "D": "==",
+        "E": "=>"
+      },
+      "correct_answer": "D",
+      "source": "Basic Python"
+    },
+    {
+      "id": 8,
+      "topic": "Python",
+      "question": "Which operator computes remainder/modulo in Python?",
+      "options": {
+        "A": "/",
+        "B": "&",
+        "C": "//",
+        "D": "%",
+        "E": "**"
+      },
+      "correct_answer": "D",
+      "source": "Basic Python"
+    },
+    {
+      "id": 9,
+      "topic": "Python",
+      "question": "What is (25 + 3) % 26?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "25",
+        "E": "28"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / Caesar"
+    },
+    {
+      "id": 10,
+      "topic": "Python",
+      "question": "What does split() do in the Assignment 1 dictionary-building context?",
+      "options": {
+        "A": "separates text into words using whitespace boundaries",
+        "B": "encrypts each word",
+        "C": "reverses the message",
+        "D": "sorts all letters",
+        "E": "creates a Caesar key"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 11,
+      "topic": "Python",
+      "question": "Why is a set useful for the Assignment 1 English dictionary?",
+      "options": {
+        "A": "it automatically decrypts Caesar",
+        "B": "it stores only integers",
+        "C": "membership testing and unique stored words",
+        "D": "it sorts ciphertext into columns",
+        "E": "it preserves duplicate words as separate entries"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 12,
+      "topic": "Python",
+      "question": "In char_to_index={'A':0,'B':1}, char_to_index['B'] returns:",
+      "options": {
+        "A": "2",
+        "B": "0",
+        "C": "1",
+        "D": "'B'",
+        "E": "an empty set"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 13,
+      "topic": "Python",
+      "question": "In index_to_char={0:'A',1:'B'}, index_to_char[0] returns:",
+      "options": {
+        "A": "0",
+        "B": "'A'",
+        "C": "'B'",
+        "D": "None necessarily",
+        "E": "1"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 14,
+      "topic": "Python",
+      "question": "What should a decrypt function do relative to encrypt?",
+      "options": {
+        "A": "return only the key",
+        "B": "apply an unrelated random key",
+        "C": "delete punctuation",
+        "D": "sort letters alphabetically",
+        "E": "reverse the encryption transformation and recover plaintext"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 15,
+      "topic": "Python",
+      "question": "For a Caesar implementation, modulo 26 is useful because it:",
+      "options": {
+        "A": "reverses a string",
+        "B": "wraps alphabet indices back into the range 0–25",
+        "C": "sorts a dictionary",
+        "D": "removes spaces",
+        "E": "creates 26 words"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1 / Caesar"
+    },
+    {
+      "id": 16,
+      "topic": "Python",
+      "question": "If x=25, what does (x+1)%26 produce?",
+      "options": {
+        "A": "26",
+        "B": "1",
+        "C": "0",
+        "D": "-1",
+        "E": "25"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / Caesar"
+    },
+    {
+      "id": 17,
+      "topic": "Python",
+      "question": "If x=0, what does (x-1)%26 produce in Python?",
+      "options": {
+        "A": "1",
+        "B": "25",
+        "C": "0",
+        "D": "-1",
+        "E": "26"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / Caesar"
+    },
+    {
+      "id": 18,
+      "topic": "Python",
+      "question": "What is printed by: for i in range(3): print(i) ?",
+      "options": {
+        "A": "1, then 2, then 3",
+        "B": "0, then 1, then 2",
+        "C": "0 through 3",
+        "D": "nothing",
+        "E": "3 only"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python"
+    },
+    {
+      "id": 19,
+      "topic": "Python",
+      "question": "A Python function sends a result back to its caller using:",
+      "options": {
+        "A": "break",
+        "B": "return",
+        "C": "print only",
+        "D": "class",
+        "E": "import"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / assignments"
+    },
+    {
+      "id": 20,
+      "topic": "Python",
+      "question": "Which structure maps keys to values?",
+      "options": {
+        "A": "comment",
+        "B": "string",
+        "C": "dictionary",
+        "D": "set",
+        "E": "boolean"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 21,
+      "topic": "Python",
+      "question": "Which structure was requested for the collection of valid English words?",
+      "options": {
+        "A": "dictionary only",
+        "B": "boolean",
+        "C": "set",
+        "D": "float",
+        "E": "tuple only"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 22,
+      "topic": "Python",
+      "question": "If s='ABC', what is s[1]?",
+      "options": {
+        "A": "'C'",
+        "B": "'A'",
+        "C": "'B'",
+        "D": "1",
+        "E": "'ABC'"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python"
+    },
+    {
+      "id": 23,
+      "topic": "Python",
+      "question": "What is len('')?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "None",
+        "E": "an error"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python"
+    },
+    {
+      "id": 24,
+      "topic": "Python",
+      "question": "What is list(range(1,4))?",
+      "options": {
+        "A": "[0, 1, 2]",
+        "B": "[1, 2, 3]",
+        "C": "[1, 2, 3, 4]",
+        "D": "[4]",
+        "E": "[0, 1, 2, 3]"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python"
+    },
+    {
+      "id": 25,
+      "topic": "Python",
+      "question": "What does .upper() do to an alphabetic string?",
+      "options": {
+        "A": "removes punctuation",
+        "B": "converts letters to uppercase",
+        "C": "splits it into words",
+        "D": "encrypts with Caesar",
+        "E": "reverses it"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1 context"
+    },
+    {
+      "id": 26,
+      "topic": "Python",
+      "question": "In a loop that tries every Caesar key, the main purpose is to:",
+      "options": {
+        "A": "perform steganography",
+        "B": "translate every word",
+        "C": "sort letters alphabetically",
+        "D": "create a scytale",
+        "E": "generate candidate decryptions for all possible shifts"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 27,
+      "topic": "Python",
+      "question": "If a character is non-alphabetic in Assignment 1 Problem 1, encryption should:",
+      "options": {
+        "A": "shift its Unicode value by 3",
+        "B": "replace it with A",
+        "C": "delete it",
+        "D": "turn it into a space always",
+        "E": "leave it unchanged"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 28,
+      "topic": "Python",
+      "question": "What does a boolean condition in an if statement control?",
+      "options": {
+        "A": "whether a block of code executes",
+        "B": "the Caesar history",
+        "C": "the number of dictionaries",
+        "D": "the file name only",
+        "E": "the alphabet size"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python"
+    },
+    {
+      "id": 29,
+      "topic": "Python",
+      "question": "If words={'HELLO','WORLD'}, what is 'HELLO' in words?",
+      "options": {
+        "A": "an error",
+        "B": "0",
+        "C": "False",
+        "D": "True",
+        "E": "'HELLO'"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1 context"
+    },
+    {
+      "id": 30,
+      "topic": "Python",
+      "question": "Why regularize dictionary words to uppercase?",
+      "options": {
+        "A": "to hide punctuation",
+        "B": "to make candidate-word comparison consistent",
+        "C": "to increase the Caesar keyspace",
+        "D": "to create transposition columns",
+        "E": "to make every word unique in meaning"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 31,
+      "topic": "Mixed",
+      "question": "Which statement is FALSE?",
+      "options": {
+        "A": "A transposition necessarily replaces every plaintext symbol with a different symbol.",
+        "B": "Steganography hides existence/location.",
+        "C": "A Caesar shift is substitution.",
+        "D": "A scytale is a transposition example.",
+        "E": "A pure transposition preserves unigram counts."
+      },
+      "correct_answer": "A",
+      "source": "Lecture + textbook"
+    },
+    {
+      "id": 32,
+      "topic": "Mixed",
+      "question": "Which is NOT an example of transposition?",
+      "options": {
+        "A": "Caesar shift",
+        "B": "scytale",
+        "C": "columnar transposition",
+        "D": "back slang",
+        "E": "anagramming"
+      },
+      "correct_answer": "A",
+      "source": "Lecture + assignments"
+    },
+    {
+      "id": 33,
+      "topic": "Mixed",
+      "question": "Which is NOT primarily substitution-like?",
+      "options": {
+        "A": "one-to-one symbol replacement",
+        "B": "monoalphabetic substitution",
+        "C": "Caesar shift",
+        "D": "simple transliteration",
+        "E": "anagramming"
+      },
+      "correct_answer": "E",
+      "source": "Lecture"
+    },
+    {
+      "id": 34,
+      "topic": "Mixed",
+      "question": "Which is NOT a reason Caesar is easy to brute-force?",
+      "options": {
+        "A": "All possible shifts can be tried.",
+        "B": "It has only 26 shifts including the trivial one.",
+        "C": "Candidate plaintexts can be checked for English.",
+        "D": "It has factorially many column permutations.",
+        "E": "The keyspace is small."
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 35,
+      "topic": "Mixed",
+      "question": "Which statement about columnar transposition is TRUE?",
+      "options": {
+        "A": "It changes every letter's identity.",
+        "B": "It always shifts letters by 3.",
+        "C": "It is steganography.",
+        "D": "A permutation can specify the order in which columns are read.",
+        "E": "It requires a bilingual dictionary."
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 36,
+      "topic": "Mixed",
+      "question": "Which statement about a language model is TRUE?",
+      "options": {
+        "A": "It can rank candidate sequences by how language-like they are.",
+        "B": "It hides the existence of ciphertext.",
+        "C": "It makes all permutations equally likely.",
+        "D": "It guarantees a unique decryption in every case.",
+        "E": "It is the same as a scytale."
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 37,
+      "topic": "Mixed",
+      "question": "Which is NOT established by the Voynich research described in lecture?",
+      "options": {
+        "A": "The Voynich Manuscript has been deciphered as Hebrew.",
+        "B": "Language statistics can constrain reorderings.",
+        "C": "Hebrew was statistically closest in one comparison.",
+        "D": "Anagramming was considered as a hypothesis.",
+        "E": "The manuscript remains undeciphered."
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 38,
+      "topic": "Mixed",
+      "question": "Which statement about translation and transliteration is correct?",
+      "options": {
+        "A": "Translation is only character substitution.",
+        "B": "Both are identical to Caesar encryption.",
+        "C": "Translation operates through meaning; transliteration primarily changes script/form.",
+        "D": "Translation never reorders words.",
+        "E": "Transliteration is always steganography."
+      },
+      "correct_answer": "C",
+      "source": "Sept. 9 lecture"
+    },
+    {
+      "id": 39,
+      "topic": "Mixed",
+      "question": "Which transformation preserves exact unigram counts?",
+      "options": {
+        "A": "deleting punctuation",
+        "B": "codebook substitution",
+        "C": "pure transposition",
+        "D": "Caesar substitution under the same symbol labels",
+        "E": "translation"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 40,
+      "topic": "Mixed",
+      "question": "Which historical pairing is correct?",
+      "options": {
+        "A": "Gorgo — columnar permutation key",
+        "B": "Walsingham — Cognitive Revolution",
+        "C": "al-Kindi — frequency analysis",
+        "D": "Caesar — Voynich decipherer",
+        "E": "Phelippes — scytale inventor"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 41,
+      "topic": "Mixed",
+      "question": "Which historical pairing is correct?",
+      "options": {
+        "A": "Babington — Arab frequency analyst",
+        "B": "Lysander — Python programmer",
+        "C": "Demaratus — Voynich researcher",
+        "D": "Gifford — inventor of Caesar shift",
+        "E": "Phelippes — cryptanalysis of Mary's correspondence"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 42,
+      "topic": "Mixed",
+      "question": "Which historical pairing is correct?",
+      "options": {
+        "A": "al-Kindi — Spartan commander",
+        "B": "Caesar — Elizabethan cryptanalyst",
+        "C": "Phelippes — Roman general",
+        "D": "Mary — inventor of scytale",
+        "E": "Gifford — double agent"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 43,
+      "topic": "Mixed",
+      "question": "Which example combines steganography and cryptography?",
+      "options": {
+        "A": "a Caesar key with no message",
+        "B": "a hidden letter whose contents are also encrypted",
+        "C": "an anagram with no concealment",
+        "D": "a translation dictionary",
+        "E": "a plaintext written openly"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 44,
+      "topic": "Mixed",
+      "question": "Which statement best describes brute force?",
+      "options": {
+        "A": "translating its meaning",
+        "B": "hiding a message physically",
+        "C": "using one known key once",
+        "D": "systematically trying possible keys/candidates",
+        "E": "sorting letters alphabetically only"
+      },
+      "correct_answer": "D",
+      "source": "Assignments"
+    },
+    {
+      "id": 45,
+      "topic": "Mixed",
+      "question": "Which keyspace is larger?",
+      "options": {
+        "A": "the 26 Caesar shifts",
+        "B": "the 25 nontrivial Caesar shifts",
+        "C": "they are equal",
+        "D": "a 5-column permutation keyspace (5! = 120)",
+        "E": "a single +3 shift"
+      },
+      "correct_answer": "D",
+      "source": "Assignments 1–2"
+    },
+    {
+      "id": 46,
+      "topic": "Mixed",
+      "question": "Which has 720 possible orders?",
+      "options": {
+        "A": "2 distinct items",
+        "B": "4 distinct items",
+        "C": "5 distinct items",
+        "D": "6 distinct items",
+        "E": "3 distinct items"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 47,
+      "topic": "Mixed",
+      "question": "Which quantity equals 120?",
+      "options": {
+        "A": "3!",
+        "B": "4!",
+        "C": "5!",
+        "D": "6!",
+        "E": "2!"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 48,
+      "topic": "Mixed",
+      "question": "Which is the trivial Caesar operation?",
+      "options": {
+        "A": "shift by 3",
+        "B": "shift by 0 modulo 26",
+        "C": "shift by 25",
+        "D": "shift by 1",
+        "E": "shift by 13"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 49,
+      "topic": "Mixed",
+      "question": "A shift by 26 is equivalent to:",
+      "options": {
+        "A": "shift by 1",
+        "B": "shift by 0",
+        "C": "shift by 13",
+        "D": "shift by 25",
+        "E": "transposition"
+      },
+      "correct_answer": "B",
+      "source": "Caesar/modulo concept"
+    },
+    {
+      "id": 50,
+      "topic": "Mixed",
+      "question": "If A=0, what numeric index is Z?",
+      "options": {
+        "A": "1",
+        "B": "26",
+        "C": "24",
+        "D": "25",
+        "E": "0"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 51,
+      "topic": "Mixed",
+      "question": "If key B is used under A=0 mapping, the shift amount is:",
+      "options": {
+        "A": "25",
+        "B": "1",
+        "C": "2",
+        "D": "26",
+        "E": "0"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 52,
+      "topic": "Mixed",
+      "question": "If key Z is used under A=0 mapping, the shift amount is:",
+      "options": {
+        "A": "24",
+        "B": "0",
+        "C": "1",
+        "D": "25",
+        "E": "26"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 53,
+      "topic": "Mixed",
+      "question": "Which statement is FALSE about Assignment 1's standard Caesar cipher?",
+      "options": {
+        "A": "A maps to shift 0.",
+        "B": "The key is represented by a letter.",
+        "C": "Decrypt reverses encrypt.",
+        "D": "Punctuation must be Caesar-shifted as if it were a letter.",
+        "E": "Nonletters remain unchanged."
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 54,
+      "topic": "Mixed",
+      "question": "Which statement is FALSE about the modified Caesar cipher?",
+      "options": {
+        "A": "Every plaintext letter uses the same fixed shift.",
+        "B": "The first letter uses the chosen key.",
+        "C": "Punctuation does not become the new letter key.",
+        "D": "Later letters use a previous plaintext letter as key.",
+        "E": "It differs from standard Caesar."
+      },
+      "correct_answer": "A",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 55,
+      "topic": "Mixed",
+      "question": "Which statement is FALSE about columnar transposition?",
+      "options": {
+        "A": "Its key must always be a single letter A–Z.",
+        "B": "Factorial growth enlarges the keyspace.",
+        "C": "Columns can be read in permuted order.",
+        "D": "A permutation can be the key.",
+        "E": "It rearranges message symbols."
+      },
+      "correct_answer": "A",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 56,
+      "topic": "Mixed",
+      "question": "Which is most directly useful for testing whether a Caesar candidate is meaningful English in Assignment 1?",
+      "options": {
+        "A": "a wax tablet",
+        "B": "a scytale",
+        "C": "a column permutation",
+        "D": "a set of valid English words",
+        "E": "a pangram key necessarily"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 57,
+      "topic": "Mixed",
+      "question": "Which is most directly useful for ranking possible transposition reorderings as English?",
+      "options": {
+        "A": "a wax tablet",
+        "B": "a beer-barrel bung",
+        "C": "a language model",
+        "D": "a trivial Caesar key",
+        "E": "a codebook capture"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 58,
+      "topic": "Mixed",
+      "question": "Which operation turns casa blanca → house white in the simplified translation example?",
+      "options": {
+        "A": "Caesar shift",
+        "B": "alphagramming",
+        "C": "word reordering",
+        "D": "lexical substitution",
+        "E": "steganography"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 59,
+      "topic": "Mixed",
+      "question": "Which operation turns house white → white house?",
+      "options": {
+        "A": "frequency analysis",
+        "B": "transliteration",
+        "C": "steganography",
+        "D": "Caesar substitution",
+        "E": "reordering"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 60,
+      "topic": "Mixed",
+      "question": "Which statement about natural language is emphasized in the lecture?",
+      "options": {
+        "A": "Every permutation is equally grammatical.",
+        "B": "Letter order carries no information.",
+        "C": "Word order is irrelevant.",
+        "D": "Language models cannot help cryptanalysis.",
+        "E": "Only a tiny fraction of possible sequences look like natural language."
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 61,
+      "topic": "Python/Caesar",
+      "question": "What is (0 + 3) % 26?",
+      "options": {
+        "A": "26",
+        "B": "29",
+        "C": "23",
+        "D": "3",
+        "E": "0"
+      },
+      "correct_answer": "D",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 62,
+      "topic": "Python/Caesar",
+      "question": "What is (24 + 5) % 26?",
+      "options": {
+        "A": "2",
+        "B": "29",
+        "C": "5",
+        "D": "24",
+        "E": "3"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 63,
+      "topic": "Python/Caesar",
+      "question": "What is (2 - 5) % 26 in Python?",
+      "options": {
+        "A": "3",
+        "B": "21",
+        "C": "-3",
+        "D": "26",
+        "E": "23"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 64,
+      "topic": "Python/Caesar",
+      "question": "If char_to_index['D']=3, what shift does key D represent?",
+      "options": {
+        "A": "0",
+        "B": "4",
+        "C": "3",
+        "D": "25",
+        "E": "2"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 65,
+      "topic": "Python/Caesar",
+      "question": "If index_to_char[25]='Z', what letter corresponds to index 25?",
+      "options": {
+        "A": "A",
+        "B": "Z",
+        "C": "Y",
+        "D": "B",
+        "E": "X"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 66,
+      "topic": "Python",
+      "question": "What is len(['A','B','C'])?",
+      "options": {
+        "A": "6",
+        "B": "2",
+        "C": "3",
+        "D": "4",
+        "E": "0"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 67,
+      "topic": "Python",
+      "question": "What does range(26) generate as its last integer?",
+      "options": {
+        "A": "24",
+        "B": "26",
+        "C": "27",
+        "D": "0",
+        "E": "25"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 68,
+      "topic": "Python",
+      "question": "If x='ABC', what is x.upper()?",
+      "options": {
+        "A": "3",
+        "B": "'Abc'",
+        "C": "'ABC'",
+        "D": "['A','B','C']",
+        "E": "'abc'"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 69,
+      "topic": "Python",
+      "question": "If x='abc', what is x.upper()?",
+      "options": {
+        "A": "3",
+        "B": "'ABC'",
+        "C": "'abc'",
+        "D": "'Abc'",
+        "E": "['A','B','C']"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 70,
+      "topic": "Python",
+      "question": "What is 'A B C'.split()?",
+      "options": {
+        "A": "{'A B C'}",
+        "B": "['A B C']",
+        "C": "3",
+        "D": "'ABC'",
+        "E": "['A', 'B', 'C']"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 71,
+      "topic": "Python",
+      "question": "What is len(set(['A','A','B']))?",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "1",
+        "D": "0",
+        "E": "3"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 72,
+      "topic": "Python",
+      "question": "If d={'A':0}, what does d['A'] return?",
+      "options": {
+        "A": "{}",
+        "B": "'A'",
+        "C": "1",
+        "D": "None",
+        "E": "0"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 73,
+      "topic": "Python",
+      "question": "What does not True evaluate to?",
+      "options": {
+        "A": "None",
+        "B": "True",
+        "C": "0 only",
+        "D": "an error",
+        "E": "False"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 74,
+      "topic": "Python",
+      "question": "What does 5 < 7 evaluate to?",
+      "options": {
+        "A": "None",
+        "B": "5",
+        "C": "True",
+        "D": "7",
+        "E": "False"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 75,
+      "topic": "Python",
+      "question": "What does 5 == 5 evaluate to?",
+      "options": {
+        "A": "True",
+        "B": "5",
+        "C": "'5'",
+        "D": "False",
+        "E": "None"
+      },
+      "correct_answer": "A",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 76,
+      "topic": "Python",
+      "question": "What is 26 % 26?",
+      "options": {
+        "A": "52",
+        "B": "1",
+        "C": "26",
+        "D": "25",
+        "E": "0"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 77,
+      "topic": "Python",
+      "question": "What is 27 % 26?",
+      "options": {
+        "A": "27",
+        "B": "0",
+        "C": "1",
+        "D": "25",
+        "E": "26"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 78,
+      "topic": "Python",
+      "question": "What is 52 % 26?",
+      "options": {
+        "A": "26",
+        "B": "0",
+        "C": "52",
+        "D": "2",
+        "E": "1"
+      },
+      "correct_answer": "B",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 79,
+      "topic": "Python",
+      "question": "What is (25-25)%26?",
+      "options": {
+        "A": "1",
+        "B": "26",
+        "C": "-25",
+        "D": "25",
+        "E": "0"
+      },
+      "correct_answer": "E",
+      "source": "Basic Python / course cipher context"
+    },
+    {
+      "id": 80,
+      "topic": "Python",
+      "question": "A loop 'for key in range(26)' executes how many iterations?",
+      "options": {
+        "A": "27",
+        "B": "1",
+        "C": "26",
+        "D": "52",
+        "E": "25"
+      },
+      "correct_answer": "C",
+      "source": "Basic Python / course cipher context"
+    }
+  ]
+}

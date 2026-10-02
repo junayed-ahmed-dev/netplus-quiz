@@ -98,16 +98,16 @@ body {
   font-size: 10px; color: var(--muted);
   text-transform: uppercase; letter-spacing: 2.5px;
   margin-bottom: 14px;
-  align-self: flex-start; max-width: 500px; width: 100%;
+  align-self: flex-start; max-width: 560px; width: 100%;
 }
 
 /* ── course cards ── */
 .course-cards {
-  display: flex; gap: 18px; margin-bottom: 36px;
-  justify-content: center; width: 100%; max-width: 500px;
+  display: flex; gap: 14px; margin-bottom: 36px; flex-wrap: wrap;
+  justify-content: center; width: 100%; max-width: 560px;
 }
 .course-card {
-  flex:1; min-width:150px; padding:32px 20px;
+  flex:1; min-width:120px; padding:32px 16px;
   background:var(--surface); border:2px solid var(--border);
   border-radius:22px; cursor:pointer; text-align:center;
   position:relative; overflow:hidden; will-change:transform;
@@ -139,6 +139,7 @@ body {
   z-index:2; box-shadow:0 0 12px var(--accent);
 }
 .course-card[data-course="200"] .c-check{background:var(--accent2);box-shadow:0 0 12px var(--accent2)}
+.course-card[data-course="331"] .c-check{background:var(--amber);box-shadow:0 0 12px var(--amber)}
 .course-card.active .c-check{display:flex}
 .c-check::after{content:'✓';font-size:11px;color:#fff;font-weight:900}
 .c-num{font-size:.8rem;font-weight:800;letter-spacing:3px;color:var(--muted);margin-bottom:6px;position:relative;z-index:1}
@@ -146,10 +147,16 @@ body {
 .course-card:hover .c-course-num{transform:scale(1.08)}
 .course-card[data-course="404"] .c-course-num{color:var(--accent);text-shadow:0 0 24px rgba(124,111,255,.7)}
 .course-card[data-course="200"] .c-course-num{color:var(--accent2);text-shadow:0 0 24px rgba(0,229,184,.7)}
+.course-card[data-course="331"] .c-course-num{color:var(--amber);text-shadow:0 0 24px rgba(245,158,11,.7)}
+.course-card[data-course="331"]::before { border-color:rgba(245,158,11,.12); }
+.course-card[data-course="331"].active {
+  border-color:var(--amber);
+  box-shadow:0 0 32px rgba(245,158,11,.28),inset 0 0 24px rgba(245,158,11,.06);
+}
 
 /* ── step panels (animated in/out) ── */
 .step-panel {
-  width: 100%; max-width: 500px;
+  width: 100%; max-width: 560px;
   transition: opacity .25s ease, transform .25s ease;
 }
 .step-panel.hidden {
@@ -212,7 +219,7 @@ body {
   padding:12px 18px; background:rgba(255,77,109,.1);
   border:1.5px solid rgba(255,77,109,.35); border-radius:12px;
   margin-bottom:20px; font-size:.88rem; color:#ff8099;
-  width:100%; max-width:500px;
+  width:100%; max-width:560px;
 }
 #timer-notice .tn-icon{font-size:1.2rem}
 #timer-notice strong{color:var(--coral)}
@@ -290,6 +297,23 @@ body {
   width:13px;height:13px;border-radius:50%;background:var(--accent2);
   box-shadow:0 0 10px var(--accent2),0 0 20px var(--accent2);
 }
+
+/* time bar (elapsed / remaining) — CMPUT 331 timed attempts */
+.time-bar-wrap{display:none;margin-bottom:22px}
+.time-bar-track{
+  height:10px;background:var(--surface2);border-radius:999px;
+  overflow:hidden;position:relative;border:1px solid var(--border);
+}
+.time-bar-fill{
+  height:100%;width:0%;background:linear-gradient(90deg,var(--accent2),var(--accent));
+  border-radius:999px;transition:width 1s linear,background .4s;
+}
+.time-bar-wrap.warning .time-bar-fill{background:linear-gradient(90deg,var(--amber),var(--coral))}
+.time-bar-labels{
+  display:flex;justify-content:space-between;margin-top:6px;
+  font-size:11px;color:var(--muted);letter-spacing:.3px;
+}
+.time-bar-labels strong{color:var(--text);font-weight:700}
 
 /* stat cards */
 .stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
@@ -379,6 +403,46 @@ body {
 }
 #timesup button:hover{transform:translateY(-3px)}
 
+/* auth gate overlay */
+#authOverlay{
+  position:fixed;inset:0;z-index:950;
+  background:rgba(8,8,16,.92);backdrop-filter:blur(8px);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;
+}
+.auth-box{
+  width:100%;max-width:380px;background:var(--surface);
+  border:1.5px solid var(--border);border-radius:20px;
+  padding:32px 28px;position:relative;
+}
+.auth-box h2{font-size:1.4rem;font-weight:900;margin-bottom:6px}
+.auth-box .auth-sub{font-size:.85rem;color:var(--muted);margin-bottom:22px}
+.auth-field{margin-bottom:14px}
+.auth-field label{display:block;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:6px}
+.auth-field input{
+  width:100%;padding:13px 14px;border-radius:10px;
+  border:1.5px solid var(--border);background:var(--surface2);
+  color:var(--text);font-size:.95rem;outline:none;
+  transition:border-color .2s,box-shadow .2s;
+}
+.auth-field input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(124,111,255,.15)}
+.auth-error{
+  color:var(--coral);font-size:.82rem;min-height:18px;margin-bottom:8px;
+}
+.auth-actions{display:flex;gap:10px;margin-top:8px}
+.auth-actions button{
+  flex:1;padding:13px;border-radius:10px;font-size:.92rem;font-weight:700;cursor:pointer;
+  border:1.5px solid var(--border);background:transparent;color:var(--muted);transition:all .2s;
+}
+.auth-actions button.primary{
+  background:linear-gradient(135deg,var(--accent),#a09aff);border-color:var(--accent);color:#fff;
+}
+.auth-actions button:hover{transform:translateY(-2px)}
+.auth-close{
+  position:absolute;top:16px;right:18px;background:none;border:none;
+  color:var(--muted);font-size:1.3rem;cursor:pointer;line-height:1;
+}
+
 #overlay{
   position:fixed;inset:0;background:linear-gradient(135deg,var(--accent),#3d2ea0);
   z-index:500;transform:scaleY(0);transform-origin:bottom;pointer-events:none;
@@ -426,6 +490,10 @@ body {
       <div class="shine"></div><div class="c-check"></div>
       <div class="c-num">BIOL</div><div class="c-course-num">108</div>
     </div>
+    <div class="course-card" data-course="331" onclick="selectCourse('331')">
+      <div class="shine"></div><div class="c-check"></div>
+      <div class="c-num">CMPUT</div><div class="c-course-num">331</div>
+    </div>
   </div>
 
   <!-- Step 2a: Category (200 only) -->
@@ -459,15 +527,21 @@ body {
     <div class="deck-row" id="landingDecks"></div>
   </div>
 
-  <!-- Timer notice (finals only) -->
+  <!-- Step 2c: Attempt chips (CMPUT 331 only) -->
+  <div id="attemptStep" class="step-panel hidden">
+    <p class="section-label">Choose your attempt</p>
+    <div class="deck-row" id="landingAttempts"></div>
+  </div>
+
+  <!-- Timer notice (finals + CMPUT 331) -->
   <div id="timer-notice" class="step-panel hidden">
     <div id="timer-notice-inner" style="display:flex;align-items:center;gap:10px;padding:12px 18px;background:rgba(255,77,109,.1);border:1.5px solid rgba(255,77,109,.35);border-radius:12px;font-size:.88rem;color:#ff8099;width:100%">
       <span style="font-size:1.2rem">⏱</span>
-      <span>This is a <strong style="color:var(--coral)">timed exam</strong> — 1 hour 30 minutes. Timer starts when you begin and resets if you go home.</span>
+      <span id="timer-notice-text">This is a <strong style="color:var(--coral)">timed exam</strong> — 1 hour 30 minutes. Timer starts when you begin and resets if you go home.</span>
     </div>
   </div>
 
-  <button class="start-btn disabled" id="startBtn" onclick="startQuiz(event)">Start Quiz →</button>
+  <button class="start-btn disabled" id="startBtn" onclick="onStartClick()">Start Quiz →</button>
   <div class="footer-credit" style="margin-top:44px">built by <span>@junayed</span></div>
 </div>
 
@@ -483,6 +557,14 @@ body {
   </div>
 
   <div class="wrap">
+    <div class="time-bar-wrap" id="timeBarWrap">
+      <div class="time-bar-track"><div class="time-bar-fill" id="timeBarFill"></div></div>
+      <div class="time-bar-labels">
+        <span>Elapsed <strong id="timeElapsedLabel">0:00</strong></span>
+        <span>Remaining <strong id="timeRemainingLabel">—</strong></span>
+      </div>
+    </div>
+
     <div class="prog-wrap">
       <span class="prog-label" id="progress">Q 1 / —</span>
       <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
@@ -515,8 +597,30 @@ body {
 <div id="timesup">
   <div class="tu-icon">⏰</div>
   <h2>Time's Up!</h2>
-  <p>Your 1h 30m final exam session has ended.</p>
+  <p id="timesup-text">Your 1h 30m final exam session has ended.</p>
   <button onclick="goHome()">← Go Home</button>
+</div>
+
+<!-- Auth gate overlay -->
+<div id="authOverlay">
+  <div class="auth-box">
+    <button class="auth-close" onclick="closeAuthModal()">&times;</button>
+    <h2>Access Required</h2>
+    <p class="auth-sub">Enter your name and the access password to start this set.</p>
+    <div class="auth-field">
+      <label for="authName">Your name</label>
+      <input type="text" id="authName" autocomplete="off" placeholder="e.g. Junayed">
+    </div>
+    <div class="auth-field">
+      <label for="authPass">Password</label>
+      <input type="password" id="authPass" autocomplete="off" placeholder="••••••••">
+    </div>
+    <div class="auth-error" id="authError"></div>
+    <div class="auth-actions">
+      <button onclick="closeAuthModal()">Cancel</button>
+      <button class="primary" onclick="submitAuth()">Continue →</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -667,11 +771,23 @@ const DECKS_BIOL108 = [
   {value:'quiz1',label:'Quiz 1 (Topics 1-3)'},
   {value:'quiz2',label:'Quiz 2 (Topics 4-7)'},
 ];
+const DECKS_331 = [
+  {value:'CMPUT331_Test1_MCQs_Part1',label:'Test 1 · Bank 1'},
+  {value:'CMPUT331_Test1_MCQs_Part2',label:'Test 1 · Bank 2'},
+  {value:'CMPUT331_Test1_MCQs_Part3',label:'Test 1 · Bank 3'},
+  {value:'chapter1-1',               label:'Chapter 1 Quiz'},
+];
+const ATTEMPTS_331 = [
+  {value:1, label:'Attempt 1 · 120 min', minutes:120},
+  {value:2, label:'Attempt 2 · 96 min',  minutes:96},
+  {value:3, label:'Attempt 3 · 90 min',  minutes:90},
+];
 
 let activeCourse   = '404';
 let activeCategory = null;   // 'sessions' | 'midterm' | 'final'
 let activeDeck     = '1';
 let activeFolder   = '400';
+let activeAttempt  = 1;      // CMPUT 331 only: 1 | 2 | 3
 
 // ── SHOW / HIDE panels ──
 function showPanel(id){
@@ -694,6 +810,7 @@ function selectCourse(course){
   if(course==='404'){
     activeFolder='400';
     hidePanel('catStep');
+    hidePanel('attemptStep');
     hidePanel('timer-notice');
     document.getElementById('deckStepLabel').textContent='Choose a deck';
     renderChips(DECKS_404,'var(--accent)');
@@ -703,15 +820,30 @@ function selectCourse(course){
   } else if(course==='biol108'){
     activeFolder='biol108';
     hidePanel('catStep');
+    hidePanel('attemptStep');
     hidePanel('timer-notice');
     document.getElementById('deckStepLabel').textContent='Choose a quiz';
     renderChips(DECKS_BIOL108,'var(--accent)');
     activeDeck=DECKS_BIOL108[0].value;
     showPanel('deckStep');
     setStartEnabled(true);
+  } else if(course==='331'){
+    activeFolder='CMPUT331';
+    hidePanel('catStep');
+    document.getElementById('deckStepLabel').textContent='Choose a set';
+    renderChips(DECKS_331,'var(--amber)');
+    activeDeck=DECKS_331[0].value;
+    showPanel('deckStep');
+    renderAttemptChips();
+    activeAttempt=1;
+    showPanel('attemptStep');
+    updateNotice331();
+    showPanel('timer-notice');
+    setStartEnabled(true);
   } else {
     activeFolder='200';
     hidePanel('deckStep');
+    hidePanel('attemptStep');
     hidePanel('timer-notice');
     showPanel('catStep');
     setStartEnabled(false);
@@ -724,6 +856,7 @@ function selectCategory(cat){
   document.querySelectorAll('.cat-card').forEach(c=>c.classList.toggle('active',c.dataset.cat===cat));
 
   hidePanel('timer-notice');
+  hidePanel('attemptStep');
   if(cat==='sessions'){
     document.getElementById('deckStepLabel').textContent='Choose a session';
     renderChips(SESSIONS,'var(--accent)');
@@ -739,9 +872,32 @@ function selectCategory(cat){
     renderChips(FINAL_SETS,'var(--coral)');
     activeDeck=FINAL_SETS[0].value;
     showPanel('deckStep');
+    document.getElementById('timer-notice-text').innerHTML=
+      'This is a <strong style="color:var(--coral)">timed exam</strong> — 1 hour 30 minutes. Timer starts when you begin and resets if you go home.';
     showPanel('timer-notice');
     setStartEnabled(true);
   }
+}
+
+// ── ATTEMPT SELECTION (CMPUT 331) ──
+function renderAttemptChips(){
+  const row=document.getElementById('landingAttempts');
+  row.innerHTML=ATTEMPTS_331.map((a,i)=>
+    `<button class="deck-chip ${i===0?'active':''}" style="--chip-color:var(--amber)"
+      onclick="selectAttempt(${a.value},this)">${a.label}</button>`
+  ).join('');
+}
+function selectAttempt(val,el){
+  activeAttempt=val;
+  document.querySelectorAll('#landingAttempts .deck-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  updateNotice331();
+}
+function updateNotice331(){
+  const a=ATTEMPTS_331.find(a=>a.value===activeAttempt)||ATTEMPTS_331[0];
+  document.getElementById('timer-notice-text').innerHTML=
+    `This is <strong style="color:var(--coral)">${a.label}</strong> — ${a.minutes} minutes. `+
+    `Timer starts when you begin and resets if you go home.`;
 }
 
 // ── CHIP RENDERING ──
@@ -761,18 +917,34 @@ function selectDeck(val,el,chipColor){
 // ── TIMER ──
 let timerInterval = null;
 let timeLeft = 0;
+let timeTotal = 0;
+let showTimeBar = false;
 const FINAL_SECONDS = 90 * 60;
 
-function startTimer(){
-  timeLeft = FINAL_SECONDS;
+function fmtClock(sec){
+  const h=Math.floor(sec/3600);
+  const m=Math.floor((sec%3600)/60);
+  const s=sec%60;
+  return `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+function startTimer(totalSeconds, withBar){
+  timeTotal = totalSeconds;
+  timeLeft = totalSeconds;
+  showTimeBar = !!withBar;
   const display = document.getElementById('timerDisplay');
   display.style.display = 'block';
   display.classList.remove('warning');
+  document.getElementById('timeBarWrap').style.display = showTimeBar ? 'block' : 'none';
+  document.getElementById('timeBarWrap').classList.remove('warning');
   updateTimerDisplay();
   timerInterval = setInterval(()=>{
     timeLeft--;
     updateTimerDisplay();
-    if(timeLeft <= 5*60) display.classList.add('warning');
+    if(timeLeft <= 5*60){
+      display.classList.add('warning');
+      document.getElementById('timeBarWrap').classList.add('warning');
+    }
     if(timeLeft <= 0){
       clearInterval(timerInterval); timerInterval=null;
       document.getElementById('timesup').style.display='flex';
@@ -784,15 +956,20 @@ function stopTimer(){
   if(timerInterval){ clearInterval(timerInterval); timerInterval=null; }
   document.getElementById('timerDisplay').style.display='none';
   document.getElementById('timerDisplay').classList.remove('warning');
+  document.getElementById('timeBarWrap').style.display='none';
+  document.getElementById('timeBarWrap').classList.remove('warning');
   document.getElementById('timesup').style.display='none';
 }
 
 function updateTimerDisplay(){
-  const h=Math.floor(timeLeft/3600);
-  const m=Math.floor((timeLeft%3600)/60);
-  const s=timeLeft%60;
-  document.getElementById('timerDisplay').textContent=
-    `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  document.getElementById('timerDisplay').textContent = fmtClock(timeLeft);
+  if(showTimeBar){
+    const elapsed = timeTotal - timeLeft;
+    const pct = timeTotal>0 ? Math.min(100, (elapsed/timeTotal)*100) : 0;
+    document.getElementById('timeBarFill').style.width = pct+'%';
+    document.getElementById('timeElapsedLabel').textContent = fmtClock(elapsed);
+    document.getElementById('timeRemainingLabel').textContent = fmtClock(timeLeft);
+  }
 }
 
 // ── WIPE TRANSITION ──
@@ -810,17 +987,87 @@ function wipe(cb){
 // ── START QUIZ ──
 let current=0, questions=[], answers={};
 
+// ── ACCESS GATE ──
+// Password is stored as a SHA-256 hash, never in plaintext, so it isn't
+// readable just by browsing this file on GitHub. NOTE: this is a static
+// site with no server — anyone who opens devtools on the *live* page can
+// still find this hash and brute-force an 8-digit numeric password in
+// well under a second. Treat this as a soft gate to keep casual visitors
+// out, not as real access control.
+const AUTH_PASS_HASH = '7ee3252727a279061073ac3f1b33fd0b46320e32597e95d62814aa7545469137';
+
+async function sha256Hex(str){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+function onStartClick(){
+  if(document.getElementById('startBtn').classList.contains('disabled'))return;
+  if(sessionStorage.getItem('quizAuthed')==='1'){
+    startQuiz();
+  } else {
+    openAuthModal();
+  }
+}
+
+function openAuthModal(){
+  document.getElementById('authError').textContent='';
+  document.getElementById('authPass').value='';
+  const nameEl=document.getElementById('authName');
+  nameEl.value = sessionStorage.getItem('quizName') || '';
+  document.getElementById('authOverlay').style.display='flex';
+  setTimeout(()=>nameEl.focus(),50);
+}
+function closeAuthModal(){
+  document.getElementById('authOverlay').style.display='none';
+}
+async function submitAuth(){
+  const name=document.getElementById('authName').value.trim();
+  const pass=document.getElementById('authPass').value;
+  const err=document.getElementById('authError');
+  if(!name){ err.textContent='Enter your name.'; return; }
+  if(!pass){ err.textContent='Enter the password.'; return; }
+  const hash=await sha256Hex(pass);
+  if(hash!==AUTH_PASS_HASH){
+    err.textContent='Incorrect password.';
+    document.getElementById('authPass').value='';
+    document.getElementById('authPass').focus();
+    return;
+  }
+  sessionStorage.setItem('quizAuthed','1');
+  sessionStorage.setItem('quizName',name);
+  closeAuthModal();
+  startQuiz();
+}
+document.getElementById('authPass').addEventListener('keydown',e=>{
+  if(e.key==='Enter') submitAuth();
+});
+document.getElementById('authName').addEventListener('keydown',e=>{
+  if(e.key==='Enter') document.getElementById('authPass').focus();
+});
+
 async function startQuiz(e){
   if(document.getElementById('startBtn').classList.contains('disabled'))return;
   try{
     const res=await fetch(`./${activeFolder}/${activeDeck}.json`);
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data=await res.json();
-    questions=data.map(q=>({question:q.question,options:q.options,answer:q.answer,image_url:q.image_url||null}));
+
+    if(activeCourse==='331'){
+      // {questions:[{question, options:{A..E}, correct_answer:'A'}]}
+      questions=data.questions.map(q=>({
+        question:q.question,
+        options:Object.values(q.options),
+        answer:q.options[q.correct_answer],
+        image_url:null
+      }));
+    } else {
+      questions=data.map(q=>({question:q.question,options:q.options,answer:q.answer,image_url:q.image_url||null}));
+    }
     current=0; answers={};
 
     // header labels
-    let courseLabel = activeCourse==='404' ? 'Cmput 404' : activeCourse==='biol108' ? 'Biol 108' : 'Cmput 200';
+    let courseLabel = activeCourse==='404' ? 'Cmput 404' : activeCourse==='biol108' ? 'Biol 108' : activeCourse==='331' ? 'Cmput 331' : 'Cmput 200';
     let deckLabel = activeDeck;
     if(activeCategory==='sessions'){
       const found=SESSIONS.find(d=>d.value===activeDeck);
@@ -833,6 +1080,10 @@ async function startQuiz(e){
     } else if(activeCourse==='biol108'){
       const found=DECKS_BIOL108.find(d=>d.value===activeDeck);
       deckLabel=found?found.label:activeDeck;
+    } else if(activeCourse==='331'){
+      const found=DECKS_331.find(d=>d.value===activeDeck);
+      const attempt=ATTEMPTS_331.find(a=>a.value===activeAttempt);
+      deckLabel=(found?found.label:activeDeck)+' — '+(attempt?attempt.label:'Attempt '+activeAttempt);
     } else {
       const found=DECKS_404.find(d=>d.value===activeDeck);
       deckLabel=found?found.label:activeDeck;
@@ -844,7 +1095,16 @@ async function startQuiz(e){
       document.getElementById('landing').style.display='none';
       document.getElementById('quiz').style.display='block';
       window.scrollTo(0,0);
-      if(activeCategory==='final') startTimer(); else stopTimer();
+      if(activeCategory==='final'){
+        document.getElementById('timesup-text').textContent='Your 1h 30m final exam session has ended.';
+        startTimer(FINAL_SECONDS, false);
+      } else if(activeCourse==='331'){
+        const attempt=ATTEMPTS_331.find(a=>a.value===activeAttempt)||ATTEMPTS_331[0];
+        document.getElementById('timesup-text').textContent=`Your ${attempt.minutes}-minute attempt has ended.`;
+        startTimer(attempt.minutes*60, true);
+      } else {
+        stopTimer();
+      }
       render();
     });
   } catch(err){

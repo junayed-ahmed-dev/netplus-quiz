@@ -1,0 +1,1136 @@
+{
+  "title": "Bank 2 - Transposition, Permutations, Language Models and Voynich",
+  "course": "CMPUT 331 - Test 1 Practice",
+  "question_count": 80,
+  "format": "MCQ with five options; answer positions reproducibly randomized",
+  "basis": [
+    "The Code Book, Chapter 1 (uploaded reading)",
+    "CMPUT 331 lecture notes/slides supplied by the user",
+    "Assignment 1",
+    "Assignment 2",
+    "Columnar transposition examples",
+    "Basic Python concepts used in the supplied course material"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Transposition",
+      "question": "A pure transposition preserves:",
+      "options": {
+        "A": "the exact bigram counts",
+        "B": "the identity mapping of a substitution key only",
+        "C": "the symbols themselves and all unigram counts",
+        "D": "the position of every symbol",
+        "E": "word meaning necessarily"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 2,
+      "topic": "Transposition",
+      "question": "Back slang is used in lecture as an example of:",
+      "options": {
+        "A": "frequency analysis",
+        "B": "transposition by reversing letters",
+        "C": "Caesar substitution",
+        "D": "steganography",
+        "E": "a codebook"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 3,
+      "topic": "Transposition",
+      "question": "An anagram:",
+      "options": {
+        "A": "deletes repeated letters",
+        "B": "translates meaning",
+        "C": "replaces every letter with another",
+        "D": "hides the existence of text",
+        "E": "rearranges letters while preserving the same multiset of characters"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 4,
+      "topic": "Transposition",
+      "question": "An alphagram is:",
+      "options": {
+        "A": "a word translated into another language",
+        "B": "a Caesar shift by one",
+        "C": "a pangram encrypted with Caesar",
+        "D": "a word's letters sorted into alphabetical order",
+        "E": "a word written under wax"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 5,
+      "topic": "Transposition",
+      "question": "In lecture, voynich becomes which alphagram?",
+      "options": {
+        "A": "chinovy",
+        "B": "voynich",
+        "C": "hcinovy",
+        "D": "whitehouse",
+        "E": "silent"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 6,
+      "topic": "Transposition",
+      "question": "Which pair is used as an anagram example?",
+      "options": {
+        "A": "casa → house",
+        "B": "A → D",
+        "C": "listen → silent",
+        "D": "plaintext → ciphertext",
+        "E": "th → ht as preferred English"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 7,
+      "topic": "Permutations",
+      "question": "How many permutations do 4 distinct symbols have?",
+      "options": {
+        "A": "120",
+        "B": "24",
+        "C": "4",
+        "D": "16",
+        "E": "720"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 8,
+      "topic": "Permutations",
+      "question": "How many permutations do 6 distinct symbols have?",
+      "options": {
+        "A": "5040",
+        "B": "60",
+        "C": "24",
+        "D": "720",
+        "E": "120"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 9,
+      "topic": "Permutations",
+      "question": "How many distinct arrangements does 'toboot' have according to lecture?",
+      "options": {
+        "A": "120",
+        "B": "30",
+        "C": "60",
+        "D": "720",
+        "E": "24"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 10,
+      "topic": "Permutations",
+      "question": "Why does 'toboot' have fewer than 6! distinct arrangements?",
+      "options": {
+        "A": "it contains repeated letters",
+        "B": "it is not English",
+        "C": "it has no vowels",
+        "D": "it is encrypted",
+        "E": "it has six different letters"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 11,
+      "topic": "Permutations",
+      "question": "The general number of permutations of n distinct objects is:",
+      "options": {
+        "A": "n+1",
+        "B": "n^2",
+        "C": "n!",
+        "D": "2n",
+        "E": "n/2"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 12,
+      "topic": "Permutations",
+      "question": "For repeated objects with multiplicities a,b,..., the distinct arrangement count is:",
+      "options": {
+        "A": "n! times every repeated factorial",
+        "B": "n squared",
+        "C": "n/2",
+        "D": "always n!",
+        "E": "n! divided by the factorials of the repeated multiplicities"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 13,
+      "topic": "Language models",
+      "question": "A character language model is useful for deciding:",
+      "options": {
+        "A": "which character sequences look like the language",
+        "B": "which message is hidden physically",
+        "C": "which codebook was printed first",
+        "D": "which cylinder diameter to use",
+        "E": "who wrote the plaintext"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 14,
+      "topic": "Language models",
+      "question": "The lecture says English generally prefers:",
+      "options": {
+        "A": "ht over th",
+        "B": "tnoi over tion",
+        "C": "dog the runs over the dog runs",
+        "D": "th over ht",
+        "E": "house white over white house"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 15,
+      "topic": "Language models",
+      "question": "The lecture says English generally prefers:",
+      "options": {
+        "A": "tion over tnoi",
+        "B": "ht over th",
+        "C": "tnoi over tion",
+        "D": "random permutations equally",
+        "E": "house white over white house"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 16,
+      "topic": "Language models",
+      "question": "A word language model evaluates:",
+      "options": {
+        "A": "only Caesar keys",
+        "B": "physical hiding locations",
+        "C": "cylinder diameters",
+        "D": "only individual Unicode codes",
+        "E": "sequences of words"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 17,
+      "topic": "Language models",
+      "question": "The lecture uses which preferred English word order?",
+      "options": {
+        "A": "white house",
+        "B": "both orders equally",
+        "C": "house white",
+        "D": "white the house",
+        "E": "house the white"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 18,
+      "topic": "Language models",
+      "question": "Why can language models help attack transposition?",
+      "options": {
+        "A": "transposition destroys all symbol counts",
+        "B": "natural language occupies only a tiny fraction of all possible sequences",
+        "C": "all permutations are equally grammatical",
+        "D": "language models reveal the secret key directly",
+        "E": "transposition always uses shift 3"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 19,
+      "topic": "Translation",
+      "question": "The simplified lecture model treats translation as:",
+      "options": {
+        "A": "lexical substitution plus reordering",
+        "B": "steganography plus frequency analysis",
+        "C": "alphabet sorting only",
+        "D": "only Caesar shifting",
+        "E": "only transposition"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 20,
+      "topic": "Translation",
+      "question": "The example casa blanca is first mapped word-for-word to:",
+      "options": {
+        "A": "casa white",
+        "B": "silent listen",
+        "C": "house white",
+        "D": "blanca house",
+        "E": "white house"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 21,
+      "topic": "Translation",
+      "question": "English reordering then changes house white to:",
+      "options": {
+        "A": "white house",
+        "B": "the dog runs",
+        "C": "silent listen",
+        "D": "house white",
+        "E": "white casa"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 22,
+      "topic": "Pangram",
+      "question": "A pangram is a sequence that:",
+      "options": {
+        "A": "is always a Caesar cipher",
+        "B": "sorts letters alphabetically",
+        "C": "contains every symbol of an alphabet",
+        "D": "contains no repeated words necessarily",
+        "E": "hides a message physically"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 23,
+      "topic": "Pangram",
+      "question": "A 26-letter English pangram with each letter exactly once can define:",
+      "options": {
+        "A": "a permutation of the alphabet",
+        "B": "a null symbol",
+        "C": "only a transposition table with no mapping",
+        "D": "a word language model only",
+        "E": "a scytale diameter"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 24,
+      "topic": "Voynich",
+      "question": "The Voynich Manuscript is described as a:",
+      "options": {
+        "A": "Roman wax tablet",
+        "B": "Spartan military staff",
+        "C": "15th-century manuscript on vellum",
+        "D": "19th-century codebook",
+        "E": "modern Python program"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 25,
+      "topic": "Voynich",
+      "question": "Approximately how many word tokens are mentioned for the Voynich Manuscript?",
+      "options": {
+        "A": "380",
+        "B": "1,586",
+        "C": "38,000",
+        "D": "380,000",
+        "E": "3,800"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 26,
+      "topic": "Voynich",
+      "question": "The underlying language of the Voynich Manuscript is:",
+      "options": {
+        "A": "proven to be Greek",
+        "B": "unknown",
+        "C": "proven to be Latin",
+        "D": "proven to be English",
+        "E": "proven to be Hebrew"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 27,
+      "topic": "Voynich",
+      "question": "The Voynich Manuscript is currently described in the lecture as:",
+      "options": {
+        "A": "undeciphered",
+        "B": "a known columnar cipher",
+        "C": "fully deciphered",
+        "D": "a modern forgery proven in lecture",
+        "E": "a known Caesar cipher"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 28,
+      "topic": "Voynich",
+      "question": "One hypothesis discussed was that Voynich letters within words may have been:",
+      "options": {
+        "A": "deleted completely",
+        "B": "shifted only by +3",
+        "C": "hidden beneath wax",
+        "D": "translated directly into English",
+        "E": "reordered/anagrammed"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 29,
+      "topic": "Voynich",
+      "question": "William F. Friedman is mentioned in connection with:",
+      "options": {
+        "A": "the scytale",
+        "B": "Caesar's Gallic War only",
+        "C": "an anagrammed statement about the manuscript",
+        "D": "al-Kindi's manuscript",
+        "E": "Mary's beer barrel"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 30,
+      "topic": "Voynich",
+      "question": "The instructor's computational model considered:",
+      "options": {
+        "A": "one-to-one substitution plus anagramming within words",
+        "B": "only Caesar +3",
+        "C": "only steganography",
+        "D": "only scytale transposition",
+        "E": "only translation"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 31,
+      "topic": "Voynich",
+      "question": "In the Voynich research, which language was statistically closest among the comparison set?",
+      "options": {
+        "A": "English",
+        "B": "Hebrew",
+        "C": "Greek",
+        "D": "Latin",
+        "E": "Japanese"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 32,
+      "topic": "Voynich",
+      "question": "What did the Hebrew result establish?",
+      "options": {
+        "A": "that Voynich is definitively Hebrew",
+        "B": "that all words were decoded",
+        "C": "statistical similarity, not a decipherment",
+        "D": "that Caesar wrote it",
+        "E": "that the manuscript is English"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 33,
+      "topic": "Columnar transposition",
+      "question": "The basic transposition example writes the message in:",
+      "options": {
+        "A": "a codebook",
+        "B": "a Caesar alphabet",
+        "C": "columns and reads random letters only",
+        "D": "a frequency table",
+        "E": "rows and then reads columns"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 34,
+      "topic": "Columnar transposition",
+      "question": "For 'CIPHERS ARE FUN' with key 5, the assignment's regular transposition ciphertext is:",
+      "options": {
+        "A": "CIPHERS ARE FUN",
+        "B": "FUN ARE CIPHERS",
+        "C": "IS HAUCREERNP F",
+        "D": "CREIS P FHAUERN",
+        "E": "HAUERNP FCREIS "
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 35,
+      "topic": "Columnar transposition",
+      "question": "With column order 4,5,3,1,2, the assignment gives ciphertext:",
+      "options": {
+        "A": "CREIS P FHAUERN",
+        "B": "IS HAUCREERNP F",
+        "C": "CIPHERS ARE FUN",
+        "D": "HAUERNP FCREIS ",
+        "E": "HREIS PCAFUERN"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 36,
+      "topic": "Columnar transposition",
+      "question": "With column order 2,4,1,5,3, the assignment gives ciphertext:",
+      "options": {
+        "A": "HAUERNP FCREIS ",
+        "B": "CIPHERS ARE FUN",
+        "C": "IS HAUCREERNP F",
+        "D": "CREIS P FHAUERN",
+        "E": "P FCREIS HAUERN"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 37,
+      "topic": "Columnar transposition",
+      "question": "Five columns can be read in how many distinct orders?",
+      "options": {
+        "A": "5",
+        "B": "25",
+        "C": "720",
+        "D": "120",
+        "E": "60"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 38,
+      "topic": "Columnar transposition",
+      "question": "The key of the stronger columnar cipher is:",
+      "options": {
+        "A": "the message length divided by two only",
+        "B": "always the number 3",
+        "C": "a single plaintext letter only",
+        "D": "a permutation of column numbers",
+        "E": "a dictionary word only"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 39,
+      "topic": "Columnar transposition",
+      "question": "Why is a permutation key stronger than always reading columns left-to-right?",
+      "options": {
+        "A": "it hides the existence of the message",
+        "B": "it removes all repeated letters",
+        "C": "it guarantees perfect secrecy",
+        "D": "it translates the message",
+        "E": "it creates factorially many possible column orders"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 40,
+      "topic": "Columnar transposition",
+      "question": "For 10 columns, the number of possible column orders is:",
+      "options": {
+        "A": "20",
+        "B": "10!",
+        "C": "5!",
+        "D": "10^2",
+        "E": "10"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 41,
+      "topic": "Columnar transposition",
+      "question": "For 15 columns, the number of possible orders is:",
+      "options": {
+        "A": "225",
+        "B": "15!",
+        "C": "7.5",
+        "D": "30",
+        "E": "15"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 42,
+      "topic": "Columnar transposition",
+      "question": "According to Assignment 2, the basic transposition cipher's number of possible keys is:",
+      "options": {
+        "A": "26!",
+        "B": "half the length of the message",
+        "C": "always 26",
+        "D": "the square of the message length",
+        "E": "always 25"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 43,
+      "topic": "Shaded boxes",
+      "question": "Shaded boxes occur because:",
+      "options": {
+        "A": "the Caesar key is zero",
+        "B": "the final row may not completely fill the table",
+        "C": "all rows must contain punctuation",
+        "D": "the message is translated",
+        "E": "frequency analysis removes cells"
+      },
+      "correct_answer": "B",
+      "source": "Columnar transposition examples"
+    },
+    {
+      "id": 44,
+      "topic": "Shaded boxes",
+      "question": "With 13 characters and 5 columns, how many rows are needed?",
+      "options": {
+        "A": "8",
+        "B": "5",
+        "C": "2",
+        "D": "3",
+        "E": "13"
+      },
+      "correct_answer": "D",
+      "source": "Columnar transposition examples"
+    },
+    {
+      "id": 45,
+      "topic": "Shaded boxes",
+      "question": "With 13 characters and 5 columns, how many unused/shaded cells are there in a 3×5 grid?",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "3",
+        "D": "2",
+        "E": "13"
+      },
+      "correct_answer": "D",
+      "source": "Columnar transposition examples"
+    },
+    {
+      "id": 46,
+      "topic": "Shaded boxes",
+      "question": "During reconstruction, shaded cells should:",
+      "options": {
+        "A": "be used as Caesar keys",
+        "B": "always contain A",
+        "C": "be skipped rather than filled with ciphertext",
+        "D": "be assigned random letters",
+        "E": "always contain spaces"
+      },
+      "correct_answer": "C",
+      "source": "Columnar transposition examples"
+    },
+    {
+      "id": 47,
+      "topic": "Permutations",
+      "question": "How many permutations are possible for 3 distinct items?",
+      "options": {
+        "A": "3",
+        "B": "24",
+        "C": "6",
+        "D": "9",
+        "E": "2"
+      },
+      "correct_answer": "C",
+      "source": "Permutation material"
+    },
+    {
+      "id": 48,
+      "topic": "Permutations",
+      "question": "How many permutations are possible for 5 distinct items?",
+      "options": {
+        "A": "24",
+        "B": "120",
+        "C": "25",
+        "D": "5",
+        "E": "720"
+      },
+      "correct_answer": "B",
+      "source": "Permutation material"
+    },
+    {
+      "id": 49,
+      "topic": "Permutations",
+      "question": "How many permutations are possible for 7 distinct items?",
+      "options": {
+        "A": "5040",
+        "B": "720",
+        "C": "40320",
+        "D": "7",
+        "E": "49"
+      },
+      "correct_answer": "A",
+      "source": "Permutation material"
+    },
+    {
+      "id": 50,
+      "topic": "Permutations",
+      "question": "How many permutations are possible for 8 distinct items?",
+      "options": {
+        "A": "8",
+        "B": "5040",
+        "C": "40320",
+        "D": "64",
+        "E": "362880"
+      },
+      "correct_answer": "C",
+      "source": "Permutation material"
+    },
+    {
+      "id": 51,
+      "topic": "Permutations",
+      "question": "How many permutations are possible for 10 distinct items?",
+      "options": {
+        "A": "3628804",
+        "B": "362880",
+        "C": "3628800",
+        "D": "10",
+        "E": "100"
+      },
+      "correct_answer": "C",
+      "source": "Permutation material"
+    },
+    {
+      "id": 52,
+      "topic": "Repeated-symbol permutations",
+      "question": "How many distinct permutations does AAB have?",
+      "options": {
+        "A": "1",
+        "B": "3",
+        "C": "6",
+        "D": "6",
+        "E": "6"
+      },
+      "correct_answer": "B",
+      "source": "Permutation principle from Sept. 16 lecture"
+    },
+    {
+      "id": 53,
+      "topic": "Repeated-symbol permutations",
+      "question": "How many distinct permutations does AABC have?",
+      "options": {
+        "A": "6",
+        "B": "16",
+        "C": "12",
+        "D": "24",
+        "E": "24"
+      },
+      "correct_answer": "C",
+      "source": "Permutation principle from Sept. 16 lecture"
+    },
+    {
+      "id": 54,
+      "topic": "Repeated-symbol permutations",
+      "question": "How many distinct permutations does AABB have?",
+      "options": {
+        "A": "3",
+        "B": "12",
+        "C": "24",
+        "D": "10",
+        "E": "6"
+      },
+      "correct_answer": "E",
+      "source": "Permutation principle from Sept. 16 lecture"
+    },
+    {
+      "id": 55,
+      "topic": "Repeated-symbol permutations",
+      "question": "How many distinct permutations does AAABC have?",
+      "options": {
+        "A": "20",
+        "B": "120",
+        "C": "10",
+        "D": "25",
+        "E": "40"
+      },
+      "correct_answer": "A",
+      "source": "Permutation principle from Sept. 16 lecture"
+    },
+    {
+      "id": 56,
+      "topic": "Repeated-symbol permutations",
+      "question": "How many distinct permutations does AABBC have?",
+      "options": {
+        "A": "60",
+        "B": "120",
+        "C": "35",
+        "D": "30",
+        "E": "15"
+      },
+      "correct_answer": "D",
+      "source": "Permutation principle from Sept. 16 lecture"
+    },
+    {
+      "id": 57,
+      "topic": "Transposition",
+      "question": "Which property is NOT guaranteed to be preserved by a pure transposition?",
+      "options": {
+        "A": "the total number of symbols",
+        "B": "the number of occurrences of each symbol",
+        "C": "the multiset of symbols",
+        "D": "bigram/order patterns",
+        "E": "unigram counts"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 58,
+      "topic": "Transposition",
+      "question": "If ciphertext contains exactly the same letters with the same counts as plaintext but in a different order, this is consistent with:",
+      "options": {
+        "A": "frequency deletion",
+        "B": "translation necessarily",
+        "C": "pure transposition",
+        "D": "steganography only",
+        "E": "a Caesar substitution necessarily"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 59,
+      "topic": "Language models",
+      "question": "Which model is most directly useful for ranking 'th' versus 'ht'?",
+      "options": {
+        "A": "Caesar key map",
+        "B": "scytale model",
+        "C": "word language model only",
+        "D": "character language model",
+        "E": "codebook"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 60,
+      "topic": "Language models",
+      "question": "Which model is most directly useful for ranking 'the dog runs' versus 'dog the runs'?",
+      "options": {
+        "A": "Caesar shift",
+        "B": "scytale",
+        "C": "word language model",
+        "D": "character unigram only",
+        "E": "wax-tablet model"
+      },
+      "correct_answer": "C",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 61,
+      "topic": "Voynich",
+      "question": "Why doesn't statistical closeness to Hebrew prove Voynich is Hebrew?",
+      "options": {
+        "A": "the generated readings were not coherent enough to establish decipherment",
+        "B": "the manuscript contains no repeated symbols",
+        "C": "Voynich has already been proven Latin",
+        "D": "Hebrew has no alphabet",
+        "E": "frequency statistics can never be used"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 62,
+      "topic": "Security",
+      "question": "Factorial growth matters for transposition because:",
+      "options": {
+        "A": "it makes all messages shorter",
+        "B": "it removes the need for a key",
+        "C": "it makes every key trivial",
+        "D": "the number of possible reorderings grows extremely quickly",
+        "E": "it guarantees plaintext is English"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 63,
+      "topic": "Translation",
+      "question": "Which transformation is primarily symbol substitution with no reordering in the simple case?",
+      "options": {
+        "A": "back slang",
+        "B": "transliteration",
+        "C": "columnar transposition",
+        "D": "anagramming",
+        "E": "translation"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 64,
+      "topic": "Translation",
+      "question": "Which transformation is character-level transposition?",
+      "options": {
+        "A": "anagramming",
+        "B": "Caesar shift",
+        "C": "codebook substitution",
+        "D": "translation",
+        "E": "transliteration"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 65,
+      "topic": "Transposition",
+      "question": "Which is a whole-message transposition operation?",
+      "options": {
+        "A": "mapping a word to a code number",
+        "B": "hiding text under wax",
+        "C": "replacing A with D",
+        "D": "translating Latin into English",
+        "E": "rearranging the same message symbols into new positions"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 66,
+      "topic": "Anagrams",
+      "question": "What information does an anagram preserve exactly?",
+      "options": {
+        "A": "the multiset and frequency of its letters",
+        "B": "the original order",
+        "C": "the plaintext key",
+        "D": "the original pronunciation necessarily",
+        "E": "the original bigrams"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 16 lecture"
+    },
+    {
+      "id": 67,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 4 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "6",
+        "B": "4",
+        "C": "16",
+        "D": "24",
+        "E": "28"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 68,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 5 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "24",
+        "B": "125",
+        "C": "120",
+        "D": "25",
+        "E": "5"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 69,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 6 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "726",
+        "B": "120",
+        "C": "6",
+        "D": "720",
+        "E": "36"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 70,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 7 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "7",
+        "B": "720",
+        "C": "5040",
+        "D": "49",
+        "E": "5047"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 71,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 8 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "8",
+        "B": "64",
+        "C": "5040",
+        "D": "40328",
+        "E": "40320"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 72,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 3 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "2",
+        "B": "9",
+        "C": "6",
+        "D": "9",
+        "E": "3"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 73,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 4 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "24",
+        "B": "16",
+        "C": "6",
+        "D": "28",
+        "E": "4"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 74,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 5 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "125",
+        "B": "120",
+        "C": "24",
+        "D": "25",
+        "E": "5"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 75,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 6 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "726",
+        "B": "120",
+        "C": "36",
+        "D": "720",
+        "E": "6"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 76,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 7 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "5040",
+        "B": "7",
+        "C": "5047",
+        "D": "49",
+        "E": "720"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 77,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 8 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "40328",
+        "B": "5040",
+        "C": "64",
+        "D": "40320",
+        "E": "8"
+      },
+      "correct_answer": "D",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 78,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 3 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "2",
+        "B": "6",
+        "C": "9",
+        "D": "9",
+        "E": "3"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 79,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 4 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "24",
+        "B": "28",
+        "C": "6",
+        "D": "16",
+        "E": "4"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 2"
+    },
+    {
+      "id": 80,
+      "topic": "Columnar transposition",
+      "question": "If a columnar transposition uses 5 columns and any permutation is allowed, how many column-order keys are possible?",
+      "options": {
+        "A": "25",
+        "B": "125",
+        "C": "5",
+        "D": "24",
+        "E": "120"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 2"
+    }
+  ]
+}

@@ -1,0 +1,1136 @@
+{
+  "title": "Bank 1 - Shift, Caesar, Chapter 1, History and Core Concepts",
+  "course": "CMPUT 331 - Test 1 Practice",
+  "question_count": 80,
+  "format": "MCQ with five options; answer positions reproducibly randomized",
+  "basis": [
+    "The Code Book, Chapter 1 (uploaded reading)",
+    "CMPUT 331 lecture notes/slides supplied by the user",
+    "Assignment 1",
+    "Assignment 2",
+    "Columnar transposition examples",
+    "Basic Python concepts used in the supplied course material"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Terminology",
+      "question": "The message before encryption is called:",
+      "options": {
+        "A": "key",
+        "B": "algorithm",
+        "C": "ciphertext",
+        "D": "codebook",
+        "E": "plaintext"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 2,
+      "topic": "Terminology",
+      "question": "The result after encrypting plaintext is called:",
+      "options": {
+        "A": "codebook",
+        "B": "algorithm",
+        "C": "plaintext",
+        "D": "key",
+        "E": "ciphertext"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 3,
+      "topic": "Concepts",
+      "question": "Cryptography primarily aims to:",
+      "options": {
+        "A": "reorder words for grammar",
+        "B": "shorten a message",
+        "C": "hide the existence of a message",
+        "D": "translate a message",
+        "E": "hide the meaning of a message"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 4,
+      "topic": "Concepts",
+      "question": "Steganography primarily aims to:",
+      "options": {
+        "A": "hide meaning by substitution",
+        "B": "hide the existence or location of a message",
+        "C": "count letter frequencies",
+        "D": "translate between languages",
+        "E": "find a cipher key"
+      },
+      "correct_answer": "B",
+      "source": "Lecture notes + The Code Book Ch. 1"
+    },
+    {
+      "id": 5,
+      "topic": "Concepts",
+      "question": "In substitution, what is changed?",
+      "options": {
+        "A": "the number of symbols necessarily",
+        "B": "the meaning of every word directly",
+        "C": "the writing medium",
+        "D": "the identity of symbols",
+        "E": "only the order of symbols"
+      },
+      "correct_answer": "D",
+      "source": "Lecture notes"
+    },
+    {
+      "id": 6,
+      "topic": "Concepts",
+      "question": "In transposition, what is changed?",
+      "options": {
+        "A": "the identity of every symbol",
+        "B": "the key into plaintext",
+        "C": "the order/position of symbols",
+        "D": "the language",
+        "E": "the alphabet necessarily"
+      },
+      "correct_answer": "C",
+      "source": "Lecture notes"
+    },
+    {
+      "id": 7,
+      "topic": "Concepts",
+      "question": "A Caesar shift is a special type of:",
+      "options": {
+        "A": "codebook",
+        "B": "word language model",
+        "C": "transposition cipher",
+        "D": "substitution cipher",
+        "E": "steganography"
+      },
+      "correct_answer": "D",
+      "source": "Lecture notes"
+    },
+    {
+      "id": 8,
+      "topic": "Concepts",
+      "question": "The Spartan scytale is used in the course as an example of:",
+      "options": {
+        "A": "frequency analysis",
+        "B": "monoalphabetic substitution",
+        "C": "a codebook",
+        "D": "transposition",
+        "E": "translation"
+      },
+      "correct_answer": "D",
+      "source": "Lecture notes + The Code Book Ch. 1"
+    },
+    {
+      "id": 9,
+      "topic": "Language",
+      "question": "Translation primarily attempts to preserve:",
+      "options": {
+        "A": "the encryption key",
+        "B": "letter positions",
+        "C": "exact characters",
+        "D": "ciphertext",
+        "E": "meaning"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 10,
+      "topic": "Language",
+      "question": "Transliteration primarily attempts to preserve:",
+      "options": {
+        "A": "frequency-analysis results",
+        "B": "word order by encryption",
+        "C": "cipher strength",
+        "D": "written form or pronunciation across scripts",
+        "E": "a secret key"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 11,
+      "topic": "Language",
+      "question": "At the symbol level, simple transliteration most closely resembles:",
+      "options": {
+        "A": "brute force",
+        "B": "monoalphabetic substitution",
+        "C": "steganography",
+        "D": "frequency analysis",
+        "E": "columnar transposition"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 12,
+      "topic": "Language",
+      "question": "A bilingual dictionary was compared in lecture to a:",
+      "options": {
+        "A": "language model",
+        "B": "scytale",
+        "C": "rail fence",
+        "D": "null symbol",
+        "E": "codebook"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 13,
+      "topic": "Code vs cipher",
+      "question": "A code can replace:",
+      "options": {
+        "A": "meaningful units such as words or phrases",
+        "B": "only keys",
+        "C": "only column numbers",
+        "D": "only punctuation",
+        "E": "only individual letter positions"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 9 lecture notes + The Code Book Ch. 1"
+    },
+    {
+      "id": 14,
+      "topic": "Code vs cipher",
+      "question": "A classical cipher typically transforms:",
+      "options": {
+        "A": "smaller symbols according to a systematic rule",
+        "B": "only codebooks",
+        "C": "only spoken sounds",
+        "D": "only complete paragraphs",
+        "E": "only meanings"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 15,
+      "topic": "History",
+      "question": "Demaratus hid his warning by:",
+      "options": {
+        "A": "using a language model",
+        "B": "using a beer-barrel bung",
+        "C": "writing beneath the wax of a wooden tablet",
+        "D": "using a scytale only",
+        "E": "using a Caesar shift"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 16,
+      "topic": "History",
+      "question": "Who realized that the wax on Demaratus's tablets should be removed?",
+      "options": {
+        "A": "al-Kindi",
+        "B": "Thomas Phelippes",
+        "C": "Gorgo",
+        "D": "Mary Queen of Scots",
+        "E": "Elizabeth I"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 17,
+      "topic": "History",
+      "question": "Histaiaeus concealed a message by:",
+      "options": {
+        "A": "writing on a messenger's shaved scalp and waiting for hair to regrow",
+        "B": "using a nomenclator",
+        "C": "putting it under wax",
+        "D": "sorting letters alphabetically",
+        "E": "using a Caesar shift"
+      },
+      "correct_answer": "A",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 18,
+      "topic": "History",
+      "question": "Julius Caesar's conventional shift described in the reading is:",
+      "options": {
+        "A": "+13",
+        "B": "+3",
+        "C": "+1",
+        "D": "+25",
+        "E": "+2"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1 + lecture notes"
+    },
+    {
+      "id": 19,
+      "topic": "History",
+      "question": "The scytale was associated with:",
+      "options": {
+        "A": "Baghdad",
+        "B": "Rome",
+        "C": "Sparta",
+        "D": "Elizabethan England",
+        "E": "Scotland"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 20,
+      "topic": "History",
+      "question": "The scytale works by wrapping a strip around:",
+      "options": {
+        "A": "a wax tablet",
+        "B": "a rotating cipher disk",
+        "C": "a staff/cylinder of the appropriate diameter",
+        "D": "a codebook",
+        "E": "a beer barrel"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 21,
+      "topic": "History",
+      "question": "Al-Kindi is associated in the reading with:",
+      "options": {
+        "A": "frequency analysis",
+        "B": "the scytale",
+        "C": "the Babington Plot",
+        "D": "the Voynich Manuscript",
+        "E": "columnar transposition"
+      },
+      "correct_answer": "A",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 22,
+      "topic": "Frequency analysis",
+      "question": "According to the chapter's English-frequency discussion, the most frequent letter is generally:",
+      "options": {
+        "A": "Z",
+        "B": "J",
+        "C": "E",
+        "D": "X",
+        "E": "Q"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 23,
+      "topic": "Frequency analysis",
+      "question": "Why can monoalphabetic substitution be attacked with frequency analysis?",
+      "options": {
+        "A": "it changes all frequencies to equal values",
+        "B": "it always uses key 3",
+        "C": "it always reveals spaces and the key",
+        "D": "it deletes repeated letters",
+        "E": "language frequency patterns survive under consistent symbol replacement"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 24,
+      "topic": "Frequency analysis",
+      "question": "Frequency analysis is generally less reliable when:",
+      "options": {
+        "A": "the language has statistical structure",
+        "B": "the same substitution is used consistently",
+        "C": "the ciphertext is longer",
+        "D": "the ciphertext is very short",
+        "E": "letters repeat"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 25,
+      "topic": "Mary Queen of Scots",
+      "question": "Mary Queen of Scots was tried for:",
+      "options": {
+        "A": "theft",
+        "B": "forgery",
+        "C": "treason",
+        "D": "fraud",
+        "E": "piracy"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 26,
+      "topic": "Mary Queen of Scots",
+      "question": "The assassination target in the Babington Plot was:",
+      "options": {
+        "A": "Mary Queen of Scots",
+        "B": "Gilbert Gifford",
+        "C": "Queen Elizabeth I",
+        "D": "Thomas Phelippes",
+        "E": "al-Kindi"
+      },
+      "correct_answer": "C",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 27,
+      "topic": "Mary Queen of Scots",
+      "question": "Elizabeth's spymaster/Principal Secretary in the story was:",
+      "options": {
+        "A": "Thomas Phelippes",
+        "B": "Demaratus",
+        "C": "Gilbert Gifford",
+        "D": "Anthony Babington",
+        "E": "Francis Walsingham"
+      },
+      "correct_answer": "E",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 28,
+      "topic": "Mary Queen of Scots",
+      "question": "Walsingham's expert cryptanalyst was:",
+      "options": {
+        "A": "Lysander",
+        "B": "Anthony Babington",
+        "C": "Gilbert Gifford",
+        "D": "Thomas Phelippes",
+        "E": "Julius Caesar"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 29,
+      "topic": "Mary Queen of Scots",
+      "question": "Gilbert Gifford secretly acted as:",
+      "options": {
+        "A": "Mary's cryptanalyst",
+        "B": "a double agent working for Walsingham",
+        "C": "an Arab scholar",
+        "D": "Caesar's messenger",
+        "E": "a Spartan general"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 30,
+      "topic": "Mary Queen of Scots",
+      "question": "Mary's letters were secretly carried in:",
+      "options": {
+        "A": "a shaved scalp",
+        "B": "a microdot only",
+        "C": "a scytale cylinder",
+        "D": "the bung of a beer barrel",
+        "E": "a bilingual dictionary"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 31,
+      "topic": "Mary Queen of Scots",
+      "question": "Hiding a letter in a beer-barrel bung is an example of:",
+      "options": {
+        "A": "brute force",
+        "B": "frequency analysis",
+        "C": "Caesar substitution",
+        "D": "steganography",
+        "E": "columnar transposition"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 32,
+      "topic": "Mary Queen of Scots",
+      "question": "Mary's system combined a cipher alphabet with special code symbols; this is called a:",
+      "options": {
+        "A": "language model",
+        "B": "nomenclator",
+        "C": "pangram",
+        "D": "alphagram",
+        "E": "rail fence"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 33,
+      "topic": "Mary Queen of Scots",
+      "question": "What is the purpose of a null in a nomenclator?",
+      "options": {
+        "A": "to add meaningless symbols that can confuse analysis",
+        "B": "to reverse the alphabet",
+        "C": "to reveal the key",
+        "D": "to sort the ciphertext",
+        "E": "to mark every vowel"
+      },
+      "correct_answer": "A",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 34,
+      "topic": "Mary Queen of Scots",
+      "question": "Why did Walsingham wait after Babington's incriminating message was deciphered?",
+      "options": {
+        "A": "he wanted to teach Caesar cipher",
+        "B": "he wanted Mary to reply and incriminate herself",
+        "C": "he believed Babington was Phelippes",
+        "D": "he could not read any of it",
+        "E": "he had lost the key permanently"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 35,
+      "topic": "Mary Queen of Scots",
+      "question": "Mary's incriminating reply to Babington was sent on:",
+      "options": {
+        "A": "July 17, 1586",
+        "B": "July 17, 1577",
+        "C": "January 1, 1883",
+        "D": "March 1, 404 BC",
+        "E": "September 9, 1543"
+      },
+      "correct_answer": "A",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 36,
+      "topic": "Mary Queen of Scots",
+      "question": "Phelippes marked Mary's deciphered letter with a drawing of:",
+      "options": {
+        "A": "a scytale",
+        "B": "a wax tablet",
+        "C": "a crown",
+        "D": "the gallows",
+        "E": "a key"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 37,
+      "topic": "Security",
+      "question": "An encryption algorithm is best described as:",
+      "options": {
+        "A": "the ciphertext",
+        "B": "the general method or procedure for encryption",
+        "C": "the frequency table",
+        "D": "the exact key only",
+        "E": "the plaintext"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 38,
+      "topic": "Security",
+      "question": "A cryptographic key specifies:",
+      "options": {
+        "A": "the existence of a message",
+        "B": "the particular setting/details used with an algorithm",
+        "C": "the number of words in a dictionary",
+        "D": "the definition of plaintext",
+        "E": "the entire English language"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 39,
+      "topic": "Security",
+      "question": "Kerckhoffs' Principle says security should depend on secrecy of the:",
+      "options": {
+        "A": "algorithm",
+        "B": "key",
+        "C": "computer model",
+        "D": "plaintext language",
+        "E": "alphabet size"
+      },
+      "correct_answer": "B",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 40,
+      "topic": "Caesar",
+      "question": "How many possible Caesar shifts are there modulo 26 if the trivial shift is included?",
+      "options": {
+        "A": "26!",
+        "B": "26",
+        "C": "52",
+        "D": "25",
+        "E": "24"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 41,
+      "topic": "Caesar",
+      "question": "How many nontrivial Caesar shifts are there for a 26-letter alphabet?",
+      "options": {
+        "A": "676",
+        "B": "52",
+        "C": "26",
+        "D": "25",
+        "E": "24"
+      },
+      "correct_answer": "D",
+      "source": "The Code Book Ch. 1"
+    },
+    {
+      "id": 42,
+      "topic": "Caesar",
+      "question": "Which Caesar key is trivial under A=0, B=1, ..., Z=25?",
+      "options": {
+        "A": "X (shift 23)",
+        "B": "A (shift 0)",
+        "C": "Z (shift 25)",
+        "D": "B (shift 1)",
+        "E": "D (shift 3)"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 43,
+      "topic": "Caesar",
+      "question": "Under A=0, B=1, ..., Z=25, key D represents shift:",
+      "options": {
+        "A": "4",
+        "B": "13",
+        "C": "25",
+        "D": "2",
+        "E": "3"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 44,
+      "topic": "Caesar",
+      "question": "Under A=0, B=1, ..., Z=25, key X represents shift:",
+      "options": {
+        "A": "24",
+        "B": "23",
+        "C": "25",
+        "D": "3",
+        "E": "22"
+      },
+      "correct_answer": "B",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 45,
+      "topic": "Assignment 1",
+      "question": "The get_map function is intended to return:",
+      "options": {
+        "A": "a set of punctuation",
+        "B": "one list of ciphertexts",
+        "C": "a transposition table",
+        "D": "a word language model",
+        "E": "two dictionaries for character-to-index and index-to-character mappings"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 46,
+      "topic": "Assignment 1",
+      "question": "In Assignment 1's standard Caesar implementation, spaces and punctuation should:",
+      "options": {
+        "A": "be reversed",
+        "B": "be shifted by the key",
+        "C": "remain unmodified",
+        "D": "be deleted",
+        "E": "always become A"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 47,
+      "topic": "Assignment 1",
+      "question": "The Caesar cracking task tries how many candidate keys?",
+      "options": {
+        "A": "25",
+        "B": "52",
+        "C": "26",
+        "D": "720",
+        "E": "120"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 48,
+      "topic": "Assignment 1",
+      "question": "The dictionary used to recognize English candidates is stored as a Python:",
+      "options": {
+        "A": "tuple only",
+        "B": "boolean",
+        "C": "integer",
+        "D": "float",
+        "E": "set"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 49,
+      "topic": "Assignment 1",
+      "question": "When forming the dictionary, words are regularized to:",
+      "options": {
+        "A": "reverse order",
+        "B": "binary",
+        "C": "uppercase",
+        "D": "lowercase only",
+        "E": "ASCII numbers only"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 50,
+      "topic": "Assignment 1",
+      "question": "Which Python method is specifically used to determine word boundaries in the assignment?",
+      "options": {
+        "A": "split()",
+        "B": "append()",
+        "C": "reverse()",
+        "D": "sort()",
+        "E": "pop()"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 51,
+      "topic": "Modified Caesar",
+      "question": "In the modified Caesar cipher, the first plaintext letter is shifted using:",
+      "options": {
+        "A": "a random permutation",
+        "B": "the last ciphertext letter",
+        "C": "the message length",
+        "D": "the number of spaces",
+        "E": "the chosen initial key"
+      },
+      "correct_answer": "E",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 52,
+      "topic": "Modified Caesar",
+      "question": "After the first letter in the modified Caesar cipher, each letter is shifted using:",
+      "options": {
+        "A": "the previous punctuation mark",
+        "B": "always D",
+        "C": "the previous plaintext letter as the key",
+        "D": "the number of words",
+        "E": "the next ciphertext letter"
+      },
+      "correct_answer": "C",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 53,
+      "topic": "Modified Caesar",
+      "question": "If punctuation occurs before a letter in the modified Caesar scheme, the key comes from:",
+      "options": {
+        "A": "the preceding plaintext letter before the punctuation",
+        "B": "the next word",
+        "C": "a random key",
+        "D": "shift 0 always",
+        "E": "the punctuation's ASCII code"
+      },
+      "correct_answer": "A",
+      "source": "Assignment 1"
+    },
+    {
+      "id": 54,
+      "topic": "Concepts",
+      "question": "Which transformation can operate mechanically without understanding word meaning?",
+      "options": {
+        "A": "a classical Caesar shift",
+        "B": "human semantic interpretation",
+        "C": "lexical concept selection",
+        "D": "meaning-preserving translation necessarily",
+        "E": "contextual sense resolution"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 55,
+      "topic": "Cognitive Revolution",
+      "question": "The Cognitive Revolution is placed at roughly:",
+      "options": {
+        "A": "500 years ago",
+        "B": "70,000 years ago",
+        "C": "150 years ago",
+        "D": "2,000 years ago",
+        "E": "12,000 years ago"
+      },
+      "correct_answer": "B",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 56,
+      "topic": "Cognitive Revolution",
+      "question": "The Agricultural Revolution is placed at roughly:",
+      "options": {
+        "A": "70,000 years ago",
+        "B": "1,586 years ago",
+        "C": "150 years ago",
+        "D": "500 years ago",
+        "E": "12,000 years ago"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 9 lecture slides"
+    },
+    {
+      "id": 57,
+      "topic": "Cognitive Revolution",
+      "question": "The Scientific Revolution is placed at roughly:",
+      "options": {
+        "A": "500 years ago",
+        "B": "12,000 years ago",
+        "C": "5,000 years ago",
+        "D": "150,000 years ago",
+        "E": "70,000 years ago"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 9 lecture slides"
+    },
+    {
+      "id": 58,
+      "topic": "Cognitive Revolution",
+      "question": "Harari's shared abstractions help humans primarily by enabling:",
+      "options": {
+        "A": "perfect translation",
+        "B": "Caesar decryption",
+        "C": "automatic frequency analysis",
+        "D": "large-scale cooperation among strangers",
+        "E": "removal of grammar"
+      },
+      "correct_answer": "D",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 59,
+      "topic": "Lexical concepts",
+      "question": "A lexical concept is best described as:",
+      "options": {
+        "A": "an idea that a word can express",
+        "B": "a column number",
+        "C": "the spelling of a word only",
+        "D": "a Caesar key",
+        "E": "a ciphertext symbol necessarily"
+      },
+      "correct_answer": "A",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 60,
+      "topic": "Lexical concepts",
+      "question": "The lecture uses 'bug' to illustrate that a word can:",
+      "options": {
+        "A": "only be a cipher symbol",
+        "B": "not express a concept",
+        "C": "never be translated",
+        "D": "have only one possible meaning",
+        "E": "have different senses depending on context"
+      },
+      "correct_answer": "E",
+      "source": "Sept. 9 lecture notes"
+    },
+    {
+      "id": 61,
+      "topic": "Caesar calculation",
+      "question": "Encrypt A using Caesar shift +5.",
+      "options": {
+        "A": "G",
+        "B": "J",
+        "C": "H",
+        "D": "I",
+        "E": "F"
+      },
+      "correct_answer": "E",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 62,
+      "topic": "Caesar calculation",
+      "question": "Encrypt Y using Caesar shift +5.",
+      "options": {
+        "A": "G",
+        "B": "E",
+        "C": "H",
+        "D": "D",
+        "E": "F"
+      },
+      "correct_answer": "D",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 63,
+      "topic": "Caesar calculation",
+      "question": "Encrypt Z using Caesar shift +3.",
+      "options": {
+        "A": "F",
+        "B": "C",
+        "C": "G",
+        "D": "E",
+        "E": "D"
+      },
+      "correct_answer": "B",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 64,
+      "topic": "Caesar calculation",
+      "question": "Encrypt M using Caesar shift +13.",
+      "options": {
+        "A": "B",
+        "B": "A",
+        "C": "Z",
+        "D": "C",
+        "E": "D"
+      },
+      "correct_answer": "C",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 65,
+      "topic": "Caesar calculation",
+      "question": "Encrypt B using Caesar shift +25.",
+      "options": {
+        "A": "A",
+        "B": "D",
+        "C": "E",
+        "D": "B",
+        "E": "C"
+      },
+      "correct_answer": "A",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 66,
+      "topic": "Caesar calculation",
+      "question": "Encrypt X using Caesar shift +4.",
+      "options": {
+        "A": "D",
+        "B": "C",
+        "C": "F",
+        "D": "E",
+        "E": "B"
+      },
+      "correct_answer": "E",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 67,
+      "topic": "Caesar calculation",
+      "question": "Encrypt C using Caesar shift +7.",
+      "options": {
+        "A": "M",
+        "B": "K",
+        "C": "J",
+        "D": "N",
+        "E": "L"
+      },
+      "correct_answer": "C",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 68,
+      "topic": "Caesar calculation",
+      "question": "Encrypt T using Caesar shift +10.",
+      "options": {
+        "A": "D",
+        "B": "E",
+        "C": "H",
+        "D": "F",
+        "E": "G"
+      },
+      "correct_answer": "A",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 69,
+      "topic": "Caesar calculation",
+      "question": "Encrypt Q using Caesar shift +12.",
+      "options": {
+        "A": "C",
+        "B": "E",
+        "C": "D",
+        "D": "G",
+        "E": "F"
+      },
+      "correct_answer": "A",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 70,
+      "topic": "Caesar calculation",
+      "question": "Encrypt H using Caesar shift +19.",
+      "options": {
+        "A": "E",
+        "B": "C",
+        "C": "D",
+        "D": "A",
+        "E": "B"
+      },
+      "correct_answer": "D",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 71,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter D using Caesar shift +3.",
+      "options": {
+        "A": "Y",
+        "B": "A",
+        "C": "X",
+        "D": "W",
+        "E": "Z"
+      },
+      "correct_answer": "B",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 72,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter C using Caesar shift +3.",
+      "options": {
+        "A": "W",
+        "B": "Y",
+        "C": "V",
+        "D": "X",
+        "E": "Z"
+      },
+      "correct_answer": "E",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 73,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter A using Caesar shift +5.",
+      "options": {
+        "A": "U",
+        "B": "V",
+        "C": "T",
+        "D": "S",
+        "E": "R"
+      },
+      "correct_answer": "B",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 74,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter Z using Caesar shift +1.",
+      "options": {
+        "A": "U",
+        "B": "Y",
+        "C": "W",
+        "D": "X",
+        "E": "V"
+      },
+      "correct_answer": "B",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 75,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter N using Caesar shift +13.",
+      "options": {
+        "A": "Y",
+        "B": "W",
+        "C": "A",
+        "D": "X",
+        "E": "Z"
+      },
+      "correct_answer": "C",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 76,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter A using Caesar shift +25.",
+      "options": {
+        "A": "Z",
+        "B": "X",
+        "C": "A",
+        "D": "B",
+        "E": "Y"
+      },
+      "correct_answer": "D",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 77,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter B using Caesar shift +7.",
+      "options": {
+        "A": "Q",
+        "B": "T",
+        "C": "U",
+        "D": "R",
+        "E": "S"
+      },
+      "correct_answer": "C",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 78,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter G using Caesar shift +10.",
+      "options": {
+        "A": "T",
+        "B": "S",
+        "C": "V",
+        "D": "W",
+        "E": "U"
+      },
+      "correct_answer": "D",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 79,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter C using Caesar shift +12.",
+      "options": {
+        "A": "P",
+        "B": "M",
+        "C": "N",
+        "D": "Q",
+        "E": "O"
+      },
+      "correct_answer": "D",
+      "source": "Shift/Caesar material"
+    },
+    {
+      "id": 80,
+      "topic": "Caesar calculation",
+      "question": "Decrypt ciphertext letter A using Caesar shift +19.",
+      "options": {
+        "A": "F",
+        "B": "H",
+        "C": "D",
+        "D": "G",
+        "E": "E"
+      },
+      "correct_answer": "B",
+      "source": "Shift/Caesar material"
+    }
+  ]
+}
