@@ -241,6 +241,8 @@ body {
 .start-btn:hover{transform:translateY(-4px) scale(1.03)}
 .start-btn:active{transform:scale(.97)}
 .start-btn.disabled{opacity:.4;cursor:not-allowed;animation:none;transform:none!important}
+.lab-launch{display:none;background:linear-gradient(135deg,#39754f,#8dbb73);box-shadow:0 8px 32px rgba(57,117,79,.4)}
+.lab-launch.visible{display:inline-block}
 
 .ripple{
   position:absolute;border-radius:50%;transform:scale(0);
@@ -525,6 +527,7 @@ body {
   <div id="deckStep" class="step-panel">
     <p class="section-label" id="deckStepLabel">Choose a deck</p>
     <div class="deck-row" id="landingDecks"></div>
+    <button class="start-btn lab-launch" id="openLabBtn" onclick="openLabExam()">Open Microscopy Lab Exam →</button>
   </div>
 
   <!-- Step 2c: Attempt chips (CMPUT 331 only) -->
@@ -805,6 +808,7 @@ function setStartEnabled(on){
 // ── COURSE SELECTION ──
 function selectCourse(course){
   activeCourse=course; activeCategory=null;
+  document.getElementById('openLabBtn').classList.toggle('visible',course==='biol108');
   document.querySelectorAll('.course-card').forEach(c=>c.classList.toggle('active',c.dataset.course===course));
 
   if(course==='404'){
@@ -908,6 +912,12 @@ function renderChips(list, chipColor){
       onclick="selectDeck('${d.value}',this,'${chipColor}')">${d.label}</button>`
   ).join('');
 }
+function openLabExam(){
+  activeCourse='biol108';
+  activeDeck='lab';
+  onStartClick();
+}
+
 function selectDeck(val,el,chipColor){
   activeDeck=val;
   document.querySelectorAll('.deck-chip').forEach(c=>c.classList.remove('active'));
@@ -1048,6 +1058,10 @@ document.getElementById('authName').addEventListener('keydown',e=>{
 
 async function startQuiz(e){
   if(document.getElementById('startBtn').classList.contains('disabled'))return;
+  if(activeCourse==='biol108' && activeDeck==='lab'){
+    window.location.href='./biol108/lab/index.html';
+    return;
+  }
   try{
     const res=await fetch(`./${activeFolder}/${activeDeck}.json`);
     if(!res.ok) throw new Error('HTTP '+res.status);
