@@ -1,0 +1,566 @@
+{
+  "exam": {
+    "id": "biol108-microscopy-final",
+    "title": "BIOL 108 Microscopy Practical Exam",
+    "durationMinutes": 25,
+    "totalMarks": 40,
+    "totalQuestions": 30,
+    "calculatorAllowed": true,
+    "closedBook": true,
+    "passingTarget": 90,
+    "settings": {
+      "showTimer": true,
+      "allowQuestionNavigation": true,
+      "allowFlagging": true,
+      "showProgress": true,
+      "automaticGrading": true,
+      "showAnswersAfterSubmission": true
+    },
+    "formulaSheet": {
+      "calibration": [
+        {
+          "objective": 4,
+          "calibration": 25,
+          "unit": "µm/EPU"
+        },
+        {
+          "objective": 10,
+          "calibration": 10,
+          "unit": "µm/EPU"
+        },
+        {
+          "objective": 40,
+          "calibration": 2.5,
+          "unit": "µm/EPU"
+        }
+      ],
+      "formulas": [
+        "Actual size = EPU × Calibration",
+        "EPU = Actual size / Calibration",
+        "Drawing magnification = Drawing size / Actual size",
+        "Total microscope magnification = Ocular × Objective",
+        "1 mm = 1000 µm",
+        "1 cm = 10000 µm"
+      ]
+    },
+    "stations": [
+      {
+        "id": 1,
+        "title": "Microscope selection",
+        "totalMarks": 4,
+        "images": [
+          {
+            "id": "station1",
+            "type": "url",
+            "caption": "Specimen A: celery cross-section · Specimen B: Euglena",
+            "alt": "Celery cross-section and Euglena viewed under a microscope",
+            "src": "./images/Station1.png"
+          }
+        ],
+        "questions": [
+          {
+            "id": 1,
+            "question": "Which microscope would you use to observe specimen A as an intact cross-section?",
+            "marks": 1,
+            "type": "short_answer",
+            "imageIds": [
+              "celery"
+            ],
+            "correctAnswer": "Dissecting microscope",
+            "acceptedAnswers": [
+              "dissecting",
+              "dissecting microscope",
+              "stereo microscope"
+            ],
+            "explanation": "A dissecting microscope is appropriate for larger, intact specimens."
+          },
+          {
+            "id": 2,
+            "question": "Which microscope would you use to observe an individual organism of specimen B?",
+            "marks": 1,
+            "type": "short_answer",
+            "imageIds": [
+              "euglena"
+            ],
+            "correctAnswer": "Compound microscope",
+            "acceptedAnswers": [
+              "compound",
+              "compound microscope",
+              "compound light microscope"
+            ],
+            "explanation": "Euglena is a microscopic unicellular organism."
+          },
+          {
+            "id": 3,
+            "question": "Which microscope provides an upright, three-dimensional view?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "Dissecting microscope",
+            "acceptedAnswers": [
+              "dissecting",
+              "dissecting microscope",
+              "stereo microscope"
+            ],
+            "explanation": "A dissecting microscope provides an upright stereoscopic view."
+          },
+          {
+            "id": 4,
+            "question": "A compound microscope has a 10× ocular lens and a 40× objective. Calculate its total magnification.",
+            "marks": 1,
+            "type": "numeric",
+            "correctAnswer": 400,
+            "unit": "×",
+            "explanation": "Total magnification = 10 × 40 = 400×."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Focusing and observation",
+        "totalMarks": 5,
+        "images": [
+          {
+            "id": "station2",
+            "type": "url",
+            "caption": "Field of view through the eyepiece",
+            "alt": "Microscope field of view with a specimen in the upper-right quadrant",
+            "src": "./images/Station2.png"
+          }
+        ],
+        "questions": [
+          {
+            "id": 5,
+            "question": "Which objective should you select when initially focusing on a specimen?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "4× objective",
+            "acceptedAnswers": [
+              "4",
+              "4x",
+              "4×",
+              "lowest power",
+              "scanning objective"
+            ],
+            "explanation": "Begin with the lowest-power objective."
+          },
+          {
+            "id": 6,
+            "question": "Which adjustment knob should you use at the 40× objective?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "Fine adjustment knob",
+            "acceptedAnswers": [
+              "fine",
+              "fine focus",
+              "fine adjustment",
+              "fine adjustment knob"
+            ],
+            "explanation": "Fine adjustment allows precise focusing and reduces the risk of damaging the slide."
+          },
+          {
+            "id": 7,
+            "question": "What happens to the field of view when you increase magnification?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "Decreases",
+            "acceptedAnswers": [
+              "decreases",
+              "gets smaller",
+              "narrows"
+            ],
+            "explanation": "Higher magnification allows a smaller area of the specimen to be observed."
+          },
+          {
+            "id": 8,
+            "question": "What happens to the working distance when you increase objective magnification from 4× to 40×?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "Decreases",
+            "acceptedAnswers": [
+              "decreases",
+              "gets smaller",
+              "shorter"
+            ],
+            "explanation": "The higher-power objective generally sits closer to the specimen."
+          },
+          {
+            "id": 9,
+            "question": "A specimen appears in the following position under a compound microscope. In which direction should you move the slide to centre it?",
+            "marks": 1,
+            "type": "short_answer",
+            "imageIds": [
+              "field-of-view"
+            ],
+            "correctAnswer": "Up and right",
+            "acceptedAnswers": [
+              "up and right",
+              "upper right",
+              "top right",
+              "diagonally up and right"
+            ],
+            "explanation": "The image moves in the opposite direction to the physical movement of the slide."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Wet mount preparation",
+        "totalMarks": 5,
+        "images": [],
+        "questions": [
+          {
+            "id": 10,
+            "question": "Arrange the following steps in the correct order for Protocol #1.",
+            "marks": 2,
+            "type": "ordering",
+            "options": [
+              {
+                "id": "A",
+                "text": "Remove excess water with a Kimwipe."
+              },
+              {
+                "id": "B",
+                "text": "Lower the coverslip at an angle."
+              },
+              {
+                "id": "C",
+                "text": "Add a drop of culture suspension to a clean slide."
+              }
+            ],
+            "correctAnswer": [
+              "C",
+              "B",
+              "A"
+            ],
+            "explanation": "Place the culture on the slide, lower the coverslip at an angle, and remove excess water."
+          },
+          {
+            "id": 11,
+            "question": "Why should the coverslip be lowered at an angle?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "To minimize trapped air bubbles.",
+            "acceptedKeywords": [
+              "air bubbles",
+              "trapped air"
+            ],
+            "explanation": "Lowering the coverslip gradually allows air to escape."
+          },
+          {
+            "id": 12,
+            "question": "Can a wet mount be used to observe both living and preserved organisms?",
+            "marks": 1,
+            "type": "boolean",
+            "correctAnswer": true,
+            "explanation": "Wet mounts can be used to observe living or fixed organisms."
+          },
+          {
+            "id": 13,
+            "question": "In Protocol #2 of your lab manual, is the culture suspension initially placed on the microscope slide or the coverslip?",
+            "marks": 1,
+            "type": "short_answer",
+            "correctAnswer": "Coverslip",
+            "acceptedAnswers": [
+              "coverslip",
+              "cover slip",
+              "cover glass"
+            ],
+            "explanation": "Protocol #2 begins by placing a drop of culture suspension on the coverslip."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Ocular micrometre measurement",
+        "totalMarks": 7,
+        "instructions": "You are observing an organism under the 10× objective.",
+        "images": [
+          {
+            "id": "station4",
+            "type": "url",
+            "caption": "Ocular micrometre observation",
+            "alt": "Organism aligned with an ocular micrometre scale",
+            "src": "./images/Station4.png"
+          }
+        ],
+        "questions": [
+          {
+            "id": 14,
+            "question": "What is the starting EPU reading?",
+            "marks": 1,
+            "type": "numeric",
+            "imageIds": [
+              "ocular-micrometre"
+            ],
+            "correctAnswer": 16,
+            "unit": "EPU",
+            "explanation": "The left edge of the organism aligns with division 16."
+          },
+          {
+            "id": 15,
+            "question": "What is the ending EPU reading?",
+            "marks": 1,
+            "type": "numeric",
+            "imageIds": [
+              "ocular-micrometre"
+            ],
+            "correctAnswer": 40,
+            "unit": "EPU",
+            "explanation": "The right edge aligns with division 40."
+          },
+          {
+            "id": 16,
+            "question": "How many EPU does the organism occupy?",
+            "marks": 1,
+            "type": "numeric",
+            "imageIds": [
+              "ocular-micrometre"
+            ],
+            "correctAnswer": 24,
+            "unit": "EPU",
+            "explanation": "40 - 16 = 24 EPU."
+          },
+          {
+            "id": 17,
+            "question": "Calculate the actual size in µm.",
+            "marks": 2,
+            "type": "numeric",
+            "imageIds": [
+              "ocular-micrometre"
+            ],
+            "correctAnswer": 240,
+            "unit": "µm",
+            "explanation": "24 EPU × 10 µm/EPU = 240 µm.",
+            "dependsOn": [
+              16
+            ]
+          },
+          {
+            "id": 18,
+            "question": "Express the actual size in mm.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 0.24,
+            "unit": "mm",
+            "explanation": "240 / 1000 = 0.24 mm.",
+            "dependsOn": [
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Changing objectives",
+        "totalMarks": 6,
+        "instructions": "A different organism occupies 6 EPU under the 4× objective.",
+        "images": [],
+        "questions": [
+          {
+            "id": 19,
+            "question": "Calculate the actual size of this organism in µm.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 150,
+            "unit": "µm",
+            "explanation": "6 × 25 = 150 µm."
+          },
+          {
+            "id": 20,
+            "question": "How many EPU will the same organism occupy under the 10× objective?",
+            "marks": 1,
+            "type": "numeric",
+            "correctAnswer": 15,
+            "unit": "EPU",
+            "explanation": "150 / 10 = 15 EPU.",
+            "dependsOn": [
+              19
+            ]
+          },
+          {
+            "id": 21,
+            "question": "How many EPU will it occupy under the 40× objective, assuming it remains fully visible?",
+            "marks": 1,
+            "type": "numeric",
+            "correctAnswer": 60,
+            "unit": "EPU",
+            "explanation": "150 / 2.5 = 60 EPU.",
+            "dependsOn": [
+              19
+            ]
+          },
+          {
+            "id": 22,
+            "question": "Does the actual size of the organism change when you switch objectives? Explain your answer.",
+            "marks": 2,
+            "type": "long_answer",
+            "correctAnswer": "No. Magnification changes the apparent size and EPU measurement, but the physical size of the organism remains constant.",
+            "rubric": [
+              {
+                "criterion": "Correctly answers no.",
+                "marks": 1
+              },
+              {
+                "criterion": "Explains that apparent size changes but physical size remains constant.",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Drawing magnification",
+        "totalMarks": 6,
+        "instructions": "You observe an organism under the 40× objective. It occupies 32 EPU. You then make the following biological drawing.",
+        "images": [
+          {
+            "id": "station6",
+            "type": "url",
+            "caption": "Biological drawing and ruler",
+            "alt": "Biological drawing positioned above a graduated centimetre ruler",
+            "src": "./images/Station6.png"
+          }
+        ],
+        "questions": [
+          {
+            "id": 23,
+            "question": "Calculate the actual size of the organism in µm.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 80,
+            "unit": "µm",
+            "explanation": "32 × 2.5 = 80 µm."
+          },
+          {
+            "id": 24,
+            "question": "Determine the length of the drawing in cm.",
+            "marks": 1,
+            "type": "numeric",
+            "imageIds": [
+              "biological-drawing"
+            ],
+            "correctAnswer": 5.4,
+            "unit": "cm",
+            "explanation": "Ending reading 6.2 cm - starting reading 0.8 cm = 5.4 cm."
+          },
+          {
+            "id": 25,
+            "question": "Convert the drawing length into µm.",
+            "marks": 1,
+            "type": "numeric",
+            "correctAnswer": 54000,
+            "unit": "µm",
+            "explanation": "5.4 × 10000 = 54000 µm.",
+            "dependsOn": [
+              24
+            ]
+          },
+          {
+            "id": 26,
+            "question": "Calculate the magnification of the drawing.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 675,
+            "unit": "×",
+            "explanation": "Drawing magnification = 54000 / 80 = 675×.",
+            "dependsOn": [
+              23,
+              25
+            ]
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Advanced application",
+        "totalMarks": 7,
+        "images": [],
+        "questions": [
+          {
+            "id": 27,
+            "question": "A photograph of an organism is 7.5 cm long and has a magnification of 500×. Calculate the actual size of the organism in µm.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 150,
+            "unit": "µm",
+            "explanation": "7.5 cm = 75000 µm. Actual size = 75000 / 500 = 150 µm."
+          },
+          {
+            "id": 28,
+            "question": "An organism is 120 µm long. You want to produce a drawing with a magnification of 250×. Calculate the required drawing length in cm.",
+            "marks": 2,
+            "type": "numeric",
+            "correctAnswer": 3,
+            "unit": "cm",
+            "explanation": "120 × 250 = 30000 µm. 30000 / 10000 = 3 cm."
+          },
+          {
+            "id": 29,
+            "question": "Two students measure the same organism. Calculate the actual size obtained by each student. Are their measurements consistent?",
+            "marks": 2,
+            "type": "multipart",
+            "table": {
+              "headers": [
+                "Student",
+                "Objective",
+                "Measurement"
+              ],
+              "rows": [
+                [
+                  "A",
+                  "10×",
+                  "18 EPU"
+                ],
+                [
+                  "B",
+                  "40×",
+                  "72 EPU"
+                ]
+              ]
+            },
+            "answerFields": [
+              {
+                "id": "studentA",
+                "label": "Student A actual size",
+                "type": "numeric",
+                "unit": "µm",
+                "correctAnswer": 180,
+                "marks": 0.5
+              },
+              {
+                "id": "studentB",
+                "label": "Student B actual size",
+                "type": "numeric",
+                "unit": "µm",
+                "correctAnswer": 180,
+                "marks": 0.5
+              },
+              {
+                "id": "consistent",
+                "label": "Are the measurements consistent?",
+                "type": "boolean",
+                "correctAnswer": true,
+                "marks": 1
+              }
+            ],
+            "explanation": "Student A: 18 × 10 = 180 µm. Student B: 72 × 2.5 = 180 µm. Both students obtained the same actual size."
+          },
+          {
+            "id": 30,
+            "question": "A student uses a microscope with a total magnification of 400× but calculates a drawing magnification of 750×. Is this necessarily a mistake? Explain.",
+            "marks": 1,
+            "type": "long_answer",
+            "correctAnswer": "No. Microscope magnification is calculated using the ocular and objective lenses, while drawing magnification is calculated using the drawing size divided by the actual specimen size. They do not have to be equal.",
+            "rubric": [
+              {
+                "criterion": "Correctly states that the two magnifications are independent and explains why.",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+
+{
+  "title": "BIOL 108 Final Microscopy Mock Exam — Answer Key",
+  "total_marks": 40,
+  "question_count": 30,
+  "answers": [
+    {
+      "id": 1,
+      "station_id": 1,
+      "marks": 1,
+      "correctAnswer": "Dissecting microscope"
+    },
+    {
+      "id": 2,
+      "station_id": 1,
+      "marks": 1,
+      "correctAnswer": "Compound microscope"
+    },
+    {
+      "id": 3,
+      "station_id": 1,
+      "marks": 1,
+      "correctAnswer": "Dissecting microscope"
+    },
+    {
+      "id": 4,
+      "station_id": 1,
+      "marks": 1,
+      "correctAnswer": "400×"
+    },
+    {
+      "id": 5,
+      "station_id": 2,
+      "marks": 1,
+      "correctAnswer": "4×"
+    },
+    {
+      "id": 6,
+      "station_id": 2,
+      "marks": 1,
+      "correctAnswer": "Fine adjustment"
+    },
+    {
+      "id": 7,
+      "station_id": 2,
+      "marks": 1,
+      "correctAnswer": "Decreases"
+    },
+    {
+      "id": 8,
+      "station_id": 2,
+      "marks": 1,
+      "correctAnswer": "Decreases"
+    },
+    {
+      "id": 9,
+      "station_id": 2,
+      "marks": 1,
+      "correctAnswer": "Up and right"
+    },
+    {
+      "id": 10,
+      "station_id": 3,
+      "marks": 2,
+      "correctAnswer": "C, B, A"
+    },
+    {
+      "id": 11,
+      "station_id": 3,
+      "marks": 1,
+      "correctAnswer": "To minimize trapped air bubbles."
+    },
+    {
+      "id": 12,
+      "station_id": 3,
+      "marks": 1,
+      "correctAnswer": "Yes"
+    },
+    {
+      "id": 13,
+      "station_id": 3,
+      "marks": 1,
+      "correctAnswer": "Coverslip"
+    },
+    {
+      "id": 14,
+      "station_id": 4,
+      "marks": 1,
+      "correctAnswer": "16 EPU"
+    },
+    {
+      "id": 15,
+      "station_id": 4,
+      "marks": 1,
+      "correctAnswer": "40 EPU"
+    },
+    {
+      "id": 16,
+      "station_id": 4,
+      "marks": 1,
+      "correctAnswer": "24 EPU"
+    },
+    {
+      "id": 17,
+      "station_id": 4,
+      "marks": 2,
+      "correctAnswer": "240 µm"
+    },
+    {
+      "id": 18,
+      "station_id": 4,
+      "marks": 2,
+      "correctAnswer": "0.24 mm"
+    },
+    {
+      "id": 19,
+      "station_id": 5,
+      "marks": 2,
+      "correctAnswer": "150 µm"
+    },
+    {
+      "id": 20,
+      "station_id": 5,
+      "marks": 1,
+      "correctAnswer": "15 EPU"
+    },
+    {
+      "id": 21,
+      "station_id": 5,
+      "marks": 1,
+      "correctAnswer": "60 EPU"
+    },
+    {
+      "id": 22,
+      "station_id": 5,
+      "marks": 2,
+      "correctAnswer": "No. Only apparent size changes."
+    },
+    {
+      "id": 23,
+      "station_id": 6,
+      "marks": 2,
+      "correctAnswer": "80 µm"
+    },
+    {
+      "id": 24,
+      "station_id": 6,
+      "marks": 1,
+      "correctAnswer": "5.4 cm"
+    },
+    {
+      "id": 25,
+      "station_id": 6,
+      "marks": 1,
+      "correctAnswer": "54000 µm"
+    },
+    {
+      "id": 26,
+      "station_id": 6,
+      "marks": 2,
+      "correctAnswer": "675×"
+    },
+    {
+      "id": 27,
+      "station_id": 7,
+      "marks": 2,
+      "correctAnswer": "150 µm"
+    },
+    {
+      "id": 28,
+      "station_id": 7,
+      "marks": 2,
+      "correctAnswer": "3 cm"
+    },
+    {
+      "id": 29,
+      "station_id": 7,
+      "marks": 2,
+      "correctAnswer": "A = 180 µm; B = 180 µm; yes."
+    },
+    {
+      "id": 30,
+      "station_id": 7,
+      "marks": 1,
+      "correctAnswer": "No. Drawing magnification is calculated independently of microscope magnification."
+    }
+  ]
+}
